@@ -16,20 +16,24 @@
                 <li><a href="#">Kontak</a></li>
             </ul>
         </nav>
-     </header>
+    </header>
+
+
     <!-- Main Content Area -->
      <main>
-
         <!-- Artikel Utama -->
-         <article>
-            <h2>Belajar Semantic HTML</h2>
-            <p>Ini adalah contoh artikel tentang semantic HTML.</p>
+        <section id="content">
+            <article>
+                <h2>Belajar Semantic HTML</h2>
+                <p>Ini adalah contoh artikel tentang semantic HTML.</p>
+            </article>
+            <article>
+                <h2>Kenapa Harus move on dari Div Soup</h2>
+                <p>Karena div tidak memiliki makna semantik yang jelas.</p>
+            </article>
+        </section>
 
-            <h2>Kenapa Harus move on dari Div Soup</h2>
-            <p>Karena div tidak memiliki makna semantik yang jelas.</p>
-         </article>
-
-         <section>
+         <aside id="sidebar">
             <!-- Sidebar Kanan -->
              <h3>Berita Populer</h3>
              <ul>
@@ -37,9 +41,11 @@
                 <li><a href="#">Tutorial Solidity</a></li>
                 <li><a href="#">Tutorial Semantic HTML</a></li>
              </ul>
-         </section>
-         <aside>
-            <p>[Iklan disini]</p>
+
+             <div id="ads">
+                 <p>[Iklan disini]</p>
+                <p>[Iklan disini]</p>
+             </div>
          </aside>
      </main>
 
