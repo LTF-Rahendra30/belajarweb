@@ -7,7 +7,42 @@
 </head>
 <body>
     <h1>Contoh Input Radio & Button</h1>
-    
+    <form>
+        <label for="nama">nama
+            <input type="text" name="nama" id="nama"
+            placeholder="Masukan nama" autocomplete="off" autofocus required>
+        </label>
+        <br>
+        <h3>Hobby</h3>
 
+        <label for="hobi1">
+            <input type="checkbox" name="hobi1" id="hobi1" value="Olahraga">
+            Olahraga
+        </label>
+        <br>
+        <label for="hobi2">
+            <input type="checkbox" name="hobi2" id="hobi2" value="Senam">
+            Senam
+        </label>
+        <br>
+
+        <h3>Gender</h3>
+        <label for="Pria">
+            <input type="radio" name="gender1" id="Pria" value="Pria" checked>
+            Pria
+        </label>
+        <br>
+
+        <label for="Wanita">
+            <input type="radio" name="gender1" id="Wanita" value="Wanita">
+            Wanita
+        </label>
+
+        <br>
+        <button type="submit">
+            Kirim
+        </button>
+
+    </form>
 </body>
 </html>
