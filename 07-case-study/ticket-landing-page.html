@@ -196,37 +196,84 @@
                 <table cellpading="5">
 
                     <tr>
-                        <td>
-                            <input type="text">
+                        <td align="right">
+                            <label for="nama">Nama: </label>
                         </td>
-                        <td></td>
+                        <td>
+                            <input type="text" name="nama" id="nama" autocomplete="off"
+                            placeholder="Masukan Nama" autofocus required>
+                            
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <label for="email">Email: </label>
+                        </td>
+                        <td>
+                            <input type="email" name="email" id="email" autocomplete="off">
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <label for="nomor">Nomor Telepon: </label>
+                        </td>
+                        <td>
+                            <input type="tel" name="nomor" id="nomor" autocomplete="off">
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                        <td>
+                            <span>Ticket Type: </span>
+                        </td>
+                        <td>
+                            <label for="reguler">
+                                <input type="radio" name="tipe-tiket" id="reguler" value="Reguler Rp 500,000">Reguler Rp 500,000
+                            </label>
+                            <br>
 
+                            <label for="vip">
+                                <input type="radio" name="tipe-tiket" id="vip" value="VIP Rp 1,500,000">VIP Rp 1,500,000
+                            </label>
+                            <br>
 
-
+                            <label for="vvip">
+                                <input type="radio" name="tipe-tiket" id="vvip" value="VVIP Rp 3,000,000">VVIP Rp 3,000,000
+                            </label> 
+                        </td>
+                    </tr>
+                        <td>
+                            <label for="number-of-ticket">Jumlah Tiket: </label>
+                        </td>
+                        <td>
+                            <input type="number" name="amount" id="number-of-ticket" min="1" max="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Day Pass:</span>
+                        </td>
+                        <td>
+                            <label for="Day 1">
+                                <input type="checkbox" name="day-pass" id="Day 1" value="Day 1 Senin">Day 1 Senin
+                            </label>
+                            <label for="Day 2">
+                                <input type="checkbox" name="day-pass" id="Day 2" value="Day 2 Selasa">Day 2 Selasa
+                            </label>
+                            <label for="Day 3">
+                                <input type="checkbox" name="day-pass" id="Day 3" value="Day 3 Rabu">Day 3 Rabu
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">Beli</button>
+                        </td>
+                    </tr>
                 </table>
             </form>
         </section>
+
+        
     </main>
 </body>
 </html>
