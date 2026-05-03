@@ -1,0 +1,18 @@
+h1{
+            font-size: 50px;
+            font-family: Arial;
+            color: coral;
+            text-align: center;
+        }
+        p{
+            color: brown;
+            font-size: 20px;
+            text-align: center;
+        }
+        .p2{
+            color: cornflowerblue;
+
+        }
+        .italic{
+            font-style: italic;
+        }
