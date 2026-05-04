@@ -46,5 +46,8 @@ footer{
     font-size: 12px;
     font-weight: 400px;
     margin-top: 80px;
+}
 
+span{
+    font-style: italic;
 }
