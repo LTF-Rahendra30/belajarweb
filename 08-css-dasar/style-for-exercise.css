@@ -46,3 +46,8 @@ main{
 body{
     background-color: rgb(248, 249, 250);
 }
+footer{
+    color: #636e72;
+    font-family: "Inter",sans-serif;
+    letter-spacing: 1px;
+}
