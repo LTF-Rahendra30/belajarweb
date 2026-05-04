@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Inter;
+    src: url('assets/fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: Arvo;
+    src: url('assets/fonts/Arvo-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Arvo;
+    src: url('assets/fonts/MavenPro-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+    font-weight: normal;
+}
+
+h1{
+    font-family: "Inter",sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    color: rgb(244, 8, 0);
+
+}
+main{
+    font-family: "Arvo", sans-serif;
+    line-height: 40px;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+.introduction{
+    font-family: "MavenPro", sans-serif;
+    line-height: 40px;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+body{
+    background-color: rgb(248, 249, 250);
+}
