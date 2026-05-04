@@ -1,3 +1,6 @@
 {
-    "github.copilot.inlineSuggest.enable": false
+    "github.copilot.eneble": {
+        "*": false
+    },
+    "github.copilot.chat.generateCommitMessage": true
 }
