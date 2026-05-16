@@ -2,5 +2,6 @@
     "github.copilot.eneble": {
         "*": false
     },
-    "github.copilot.chat.generateCommitMessage": true
+    "github.copilot.chat.generateCommitMessage": true,
+    "liveServer.settings.CustomBrowser": "chrome"
 }
