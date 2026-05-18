@@ -51,6 +51,17 @@
             box-shadow: 0 0 15px 3px;
             font-weight: bold;
         }
+        input:disabled{
+            background-color: coral;
+            cursor: not-allowed;
+        }
+        input:enabled{
+            cursor: pointer;
+            border: 1px solid;
+            transform: scale(1.1);
+        }
+
+        
     </style>
 </head>
 <body>
@@ -89,7 +100,6 @@
 
 
   <h2>3. Form States (:disabled, :checked)</h2>
-
 
   <input type="text" disabled placeholder="Saya Disabled">
   <input type="text" placeholder="Saya Enabled">
