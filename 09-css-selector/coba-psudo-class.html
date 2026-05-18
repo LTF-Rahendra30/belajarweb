@@ -1,9 +1,53 @@
 <!DOCTYPE html>
-< lang="en">
+<lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psudo Class</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+        }
+        /* Historic */
+        .link-demo:link{
+            color: red;
+        }
+        .link-demo:visited{
+            color: darkmagenta;
+        }
+        /* Interactive State */
+        .btn{
+            background-color: bisque;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: chocolate;
+
+        }
+        .btn:active{
+            background-color: rgb(105, 191, 14);
+            transform: scale(1.1);
+        }
+        input:focus{
+            background-color: orange;
+            border: 2px;
+            outline: none;
+        }
+        /* Navigation Psedo */
+        .target-box{
+            border: 1px solid;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 20px;
+            background-color: bisque;
+
+        }
+        .target-box:target{}
+    </style>
 </head>
 <body>
     <h1>Playground Pseudo-classes</h1>
