@@ -32,7 +32,7 @@
             background-color: rgb(105, 191, 14);
             transform: scale(1.1);
         }
-        input:focus{
+        input[type="text"]:focus{
             background-color: orange;
             border: 2px;
             outline: none;
@@ -61,6 +61,27 @@
             transform: scale(1.1);
         }
 
+        /* Form State */
+        input[type="checkbox"]:checked + label{
+            color: blue;
+            font-weight: bold;
+            text-decoration: line-through;
+
+        }
+        /* Validation State */
+        .input-email{
+            border: 2px solid #a61616;
+            padding: 5px;
+            outline: none;
+        }
+        input[type="email"]:invalid{
+            border-color: red;
+            background-color: #e6ffe6;
+        }
+        input[type="email"]:valid{
+            border-color: green;
+            background-color: #e6ffe6;
+        }
         
     </style>
 </head>
