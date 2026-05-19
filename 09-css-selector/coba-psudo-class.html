@@ -82,7 +82,42 @@
             border-color: #2ed573;
             background-color: #e6ffe6;
         }
-        
+        /* Index & Occurrence */
+        li {
+            padding: 5px;
+            border-bottom: 1px solid gray;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+
+        li:first-child{
+            background-color: #333;
+            color: white;
+        }
+        li:nth-child(even){
+            background-color: salmon;
+        }
+        li:last-child{
+            background-color: gray;
+        }
+        li:nth-child(3){
+            background-color: lightgreen;
+        }
+
+        /* Empty State */
+        .kotak-kosong{
+            width: 100px;
+            height: 90px;
+            margin-bottom: 20px;
+            background-color: blueviolet;
+            display: none;
+        }
+        .kotak-kosong:empty{
+            display: block;
+            background-color: salmon;
+        }
     </style>
 </head>
 <body>
