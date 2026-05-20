@@ -15,9 +15,25 @@
         h2{
             text-decoration: underline;
         }
+
+        /* Is */
         :is(header,main,footer) h3{
             font-style: italic;
             color: chocolate;
+
+        }
+        
+        /* Not */
+        .gallery{
+            text-align: center;
+        }
+        .gallery img{
+            width: 120px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+        .gallery:hover img:not(:hover) {
+            opacity: 0.3;
         }
     </style>
 </head>
