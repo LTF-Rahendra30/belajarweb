@@ -84,3 +84,8 @@ body{
 .tombol-sekunder:hover{
     background: #243c62;
 }
+
+p::first-line{
+    text-decoration: underline;
+    font-style: italic;
+}
