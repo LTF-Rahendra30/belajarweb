@@ -29,7 +29,7 @@ body{
     color: transparent;
     filter: drop-shadow(0 0 10px rgba(126, 118, 118, 0.8));
 }
-h2,h3{
+:is(h2,h3){
     color: #e8eef2;
 }
 .hero{
@@ -44,5 +44,19 @@ h2,h3{
 :is(.hero,.navigasi) a{
     font-family: "Inter";
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
+    color: #e8eef2;
+    padding: 10px;
+    margin: 10px;
+}
+.logo{
+    margin: 10px;
+}
+:is(.hero,.navigasi) a:hover{
+    border: none;
+    border-radius: 15px;
+    background-color: #1d4d5c;
+}
+.site-header{
+    padding: 10px;
 }
