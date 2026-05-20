@@ -44,6 +44,22 @@
             background-color: wheat;
             outline: 1px solid #333;
         }
+
+        .badge{
+            background-color: red;
+            color: white;
+            font-size: 0.8em;
+
+        }
+
+        li:has(.badge){
+            background-color: rgb(255, 203, 203);
+            font-weight: bold;
+        }
+        li:has(img){
+            background-color: rgb(186, 250, 202);
+            color: teal;
+        }
     </style>
 </head>
 <body>
