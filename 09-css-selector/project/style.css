@@ -53,7 +53,7 @@ body{
 .logo{
     margin: 10px;
 }
-:is(.hero,.navigasi) a:hover{
+:is(.navigasi) a:hover{
     border: none;
     border-radius: 15px;
     background-color: #1d4d5c;
@@ -61,4 +61,26 @@ body{
 .site-header{
     padding: 20px;
     margin-bottom: 40px;
+}
+
+
+/* Hero Section */
+.tombol-utama{
+    margin: 30px;
+    background: linear-gradient(135deg, #00d9ff, #001aff);
+    border-radius: 10px;
+    
+}
+.tombol-utama:hover{
+    background:linear-gradient(135deg, #00b3ff, #7300ff);
+}
+.tombol-sekunder{
+    border-radius: 10px;
+    border: none ;
+    box-shadow: 0 0 5px #6da7ff;
+    background: #1a2332;
+
+}
+.tombol-sekunder:hover{
+    background: #243c62;
 }
