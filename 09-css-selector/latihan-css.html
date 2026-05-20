@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan CSS — Blog Fiksi</title>
+
+    <!-- ============================================================
+         AREA KERJA LO — Semua CSS ditulis di sini
+         ============================================================
+         CHECKLIST LATIHAN:
+
+         [ ] FONT STYLING
+             - Ganti font family di body (pakai Google Fonts atau font-stack)
+             - Atur font-size, font-weight, line-height di paragraf
+             - Buat .judul-utama tampil bold + letter-spacing lebar
+             - Buat .teks-miring menjadi italic + warna berbeda
+             - Buat .label-tag tampil uppercase + font-size kecil
+
+         [ ] BACKGROUND STYLING
+             - Beri background-color di body
+             - Beri background warna solid di .hero
+             - Beri background gradient di .hero (coba linear-gradient)
+             - Beri background-color berbeda di tiap .card
+             - Beri background warna di .site-footer
+
+         [ ] PEWARNAAN
+             - Atur color teks di body
+             - Beri warna berbeda di .nav-link
+             - Beri color di .harga (gunakan warna mencolok)
+             - Bedakan warna teks .badge-baru vs .badge-lama
+
+         [ ] PSEUDO SELECTORS (class & element)
+             - .nav-link:hover  → ubah warna saat mouse hover
+             - .tombol:hover    → ubah background saat hover
+             - .tombol:active   → efek saat diklik
+             - input:focus      → highlight border saat fokus
+             - .card:nth-child(2) → styling khusus card ke-2
+             - .daftar-fitur li:first-child  → styling item pertama
+             - .daftar-fitur li:last-child   → styling item terakhir
+             - .judul-utama::before          → sisipkan simbol/ikon sebelum judul
+             - .hero p::first-line           → styling baris pertama paragraf hero
+
+         [ ] COMPLEX SELECTORS
+             - .card p          → styling semua <p> di dalam card
+             - .card > h3       → hanya <h3> anak langsung dari card
+             - h2 + p           → paragraf tepat setelah h2
+             - h2 ~ p           → semua paragraf setelah h2 di level yang sama
+
+         [ ] SMART SELECTORS
+             - input[type="email"]      → styling khusus input email
+             - a[href^="https"]         → styling link external
+             - .nav-link:not(.aktif)    → style semua nav link KECUALI yang aktif
+             - :is(h1, h2, h3)          → margin/padding semua heading sekaligus
+             - .card:not(:last-child)   → semua card kecuali yang terakhir
+    ============================================================ -->
+    <style>
+      /* ==============================================
+         TULIS CSS LO DI SINI — Hapus komentar ini
+         setelah lo paham strukturnya
+         ============================================== */
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- =============================================
+         NAVIGASI
+         Gunakan untuk latihan: .nav-link:hover,
+         .nav-link:not(.aktif), a[href^="https"]
+         ============================================= -->
+    <header class="site-header">
+      <div class="logo">DevBlog</div>
+      <nav class="navigasi">
+        <a href="#" class="nav-link aktif">Beranda</a>
+        <a href="#" class="nav-link">Artikel</a>
+        <a href="#" class="nav-link">Portofolio</a>
+        <a href="https://github.com" class="nav-link external">GitHub ↗</a>
+        <a href="https://twitter.com" class="nav-link external">Twitter ↗</a>
+      </nav>
+    </header>
+
+
+    <!-- =============================================
+         HERO SECTION
+         Gunakan untuk latihan: background gradient,
+         ::before pada judul, ::first-line pada paragraf,
+         h2 + p selector
+         ============================================= -->
+    <section class="hero" id="hero">
+      <h1 class="judul-utama">Belajar Web3 dari Nol</h1>
+      <p>
+        Selamat datang di DevBlog — tempat gw dokumentasiin perjalanan
+        belajar dari HTML murni sampai jadi Fullstack Web3 Developer.
+        Ini baris pertama paragraf yang bisa lo styling pakai ::first-line.
+        Baris selanjutnya ikut aturan styling normal dari body.
+      </p>
+      <a href="#" class="tombol tombol-utama">Mulai Belajar</a>
+      <a href="#" class="tombol tombol-sekunder">Lihat Portofolio</a>
+    </section>
+
+
+    <!-- =============================================
+         SECTION ARTIKEL / KARTU
+         Gunakan untuk latihan: .card:nth-child(2),
+         .card > h3, .card p, .card:not(:last-child),
+         h2 ~ p, h2 + p
+         ============================================= -->
+    <section class="section-artikel">
+      <h2>Artikel Terbaru</h2>
+      <p>Ini paragraf tepat setelah h2 — cocok buat latihan <code>h2 + p</code>.</p>
+      <p>Ini paragraf kedua setelah h2 — cocok buat latihan <code>h2 ~ p</code>.</p>
+
+      <div class="grid-kartu">
+
+        <article class="card">
+          <div class="card-header">
+            <span class="badge badge-baru">Baru</span>
+          </div>
+          <h3>Apa itu Blockchain?</h3>
+          <p class="teks-ringkasan">
+            Blockchain adalah struktur data terdesentralisasi yang menyimpan
+            transaksi dalam blok-blok yang saling terhubung secara kriptografis.
+          </p>
+          <ul class="daftar-fitur">
+            <li>Desentralisasi</li>
+            <li>Immutable (tidak bisa diubah)</li>
+            <li>Transparan</li>
+            <li>Aman</li>
+          </ul>
+          <div class="card-footer">
+            <span class="harga">Gratis</span>
+            <a href="#" class="tombol tombol-kecil">Baca Selengkapnya</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <span class="badge badge-populer">Populer</span>
+          </div>
+          <h3>HTML5 Semantic Elements</h3>
+          <p class="teks-ringkasan">
+            Elemen semantik HTML5 memberikan makna struktural pada konten,
+            membantu aksesibilitas dan SEO secara signifikan.
+          </p>
+          <ul class="daftar-fitur">
+            <li>Elemen header, nav, main</li>
+            <li>Elemen section, article, aside</li>
+            <li>Elemen footer</li>
+            <li>Aksesibilitas lebih baik</li>
+          </ul>
+          <div class="card-footer">
+            <span class="harga">Gratis</span>
+            <a href="#" class="tombol tombol-kecil">Baca Selengkapnya</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <span class="badge badge-lama">Lama</span>
+          </div>
+          <h3>CSS Flexbox vs Grid</h3>
+          <p class="teks-ringkasan">
+            Flexbox dan Grid adalah dua sistem layout CSS modern. Masing-masing
+            punya kekuatan di use-case yang berbeda.
+          </p>
+          <ul class="daftar-fitur">
+            <li>Flexbox: layout 1 dimensi</li>
+            <li>Grid: layout 2 dimensi</li>
+            <li>Bisa dikombinasikan</li>
+            <li>Support browser modern</li>
+          </ul>
+          <div class="card-footer">
+            <span class="harga">Premium</span>
+            <a href="#" class="tombol tombol-kecil">Baca Selengkapnya</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         SECTION TEKS & TIPOGRAFI
+         Gunakan untuk latihan: font-styling,
+         .teks-miring, .label-tag, :is(h1,h2,h3)
+         ============================================= -->
+    <section class="section-teks">
+      <h2>Tentang Proyek Ini</h2>
+
+      <p>
+        Proyek ini adalah <span class="teks-tebal">dokumentasi perjalanan belajar</span>
+        dari nol sampai bisa bangun aplikasi Web3 yang sesungguhnya.
+        Setiap topik dipecah per bagian agar mudah dicerna.
+      </p>
+
+      <p class="teks-miring">
+        "Belajar coding itu marathon, bukan sprint. Yang penting konsisten dan
+        paham fundamentalnya."
+      </p>
+
+      <p>
+        Stack yang akan dipelajari:
+        <span class="label-tag">HTML5</span>
+        <span class="label-tag">CSS3</span>
+        <span class="label-tag">JavaScript</span>
+        <span class="label-tag">React</span>
+        <span class="label-tag">Solidity</span>
+        <span class="label-tag">Web3.js</span>
+      </p>
+    </section>
+
+
+    <!-- =============================================
+         TABEL
+         Gunakan untuk latihan: tr:nth-child(even/odd),
+         th vs td styling, table border
+         ============================================= -->
+    <section class="section-tabel">
+      <h2>Roadmap Belajar</h2>
+      <table class="tabel-roadmap">
+        <thead>
+          <tr>
+            <th>Fase</th>
+            <th>Topik</th>
+            <th>Durasi</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HTML5 Dasar</td>
+            <td>2 Minggu</td>
+            <td class="status selesai">Selesai ✓</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>CSS Fundamentals</td>
+            <td>3 Minggu</td>
+            <td class="status proses">Sedang Berjalan</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>JavaScript Dasar</td>
+            <td>4 Minggu</td>
+            <td class="status belum">Belum Mulai</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>React JS</td>
+            <td>6 Minggu</td>
+            <td class="status belum">Belum Mulai</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Solidity + Web3</td>
+            <td>8 Minggu</td>
+            <td class="status belum">Belum Mulai</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+    <!-- =============================================
+         FORM KONTAK
+         Gunakan untuk latihan: input:focus,
+         input[type="email"], input[type="text"],
+         button:hover, button:active, label styling
+         ============================================= -->
+    <section class="section-form">
+      <h2>Kirim Pesan</h2>
+      <p>Ada pertanyaan? Isi form di bawah ini.</p>
+
+      <div class="form-kontak">
+        <div class="form-grup">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Contoh: Budi Santoso" />
+        </div>
+
+        <div class="form-grup">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="kamu@email.com" />
+        </div>
+
+        <div class="form-grup">
+          <label for="topik">Topik</label>
+          <input type="text" id="topik" name="topik" placeholder="Tentang apa?" />
+        </div>
+
+        <div class="form-grup">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesanmu di sini..."></textarea>
+        </div>
+
+        <button type="submit" class="tombol tombol-submit">Kirim Pesan</button>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         FOOTER
+         Gunakan untuk latihan: background dark,
+         color terang, a:hover di footer
+         ============================================= -->
+    <footer class="site-footer">
+      <div class="footer-atas">
+        <div class="footer-kolom">
+          <h4>DevBlog</h4>
+          <p>Dokumentasi perjalanan belajar Web3 dari nol.</p>
+        </div>
+        <div class="footer-kolom">
+          <h4>Link Cepat</h4>
+          <ul class="footer-nav">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Artikel</a></li>
+            <li><a href="#">Portofolio</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-kolom">
+          <h4>Sosial Media</h4>
+          <ul class="footer-nav">
+            <li><a href="https://github.com">GitHub</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://linkedin.com">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bawah">
+        <p class="teks-copyright">© 2025 DevBlog. Dibuat dengan ☕ dan semangat belajar.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
