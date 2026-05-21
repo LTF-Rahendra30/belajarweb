@@ -22,7 +22,6 @@ body{
 .judul-utama{
     text-align: center;
     font-size: 3.5em;
-    font-family: "Inter";
     font-weight: 900;
     background-image: linear-gradient(to right,#bfc7cc,#e8eef2 );
     background-clip: text;
@@ -40,23 +39,31 @@ body{
 }
 
 
-/* Navigation , CTA, ReadMore Button */
-:is(.hero,.navigasi,.card) a{
+/* Navigation */
+
+/* ========== BASE LINK STYLING ========== */
+.navigasi a, :is(.hero,.card) a{
     font-family: "Inter";
     text-decoration: none;
     font-weight: bold;
     color: #e8eef2;
     padding: 10px;
     margin: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
 }
-.logo{
-    margin: 10px;
-}
-:is(.navigasi) a:hover{
+/* Navigation Specific */
+[class*="nav-link"]:hover{
     border: none;
     border-radius: 15px;
     background-color: #1d4d5c;
+    transform: scale(1.1) translateY(-5px);
 }
+
+.logo{
+    margin: 10px;
+}
+
 .site-header{
     padding: 20px;
     margin-bottom: 40px;
@@ -65,16 +72,22 @@ body{
 
 /* Hero Section */
 .tombol-utama{
+    padding: 10px 20px;
+    display: inline-block;
     margin: 30px;
     background: linear-gradient(135deg, #00d9ff, #001aff);
-    border-radius: 10px;
+    border-radius: 10px 20px;
+
         
 }
 .tombol-utama:hover{
     background:linear-gradient(135deg, #00b3ff, #7300ff);
+
 }
 .tombol-sekunder{
-    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px 20px;
     border: none ;
     box-shadow: 0 0 5px #6da7ff;
     background: #1a2332;
