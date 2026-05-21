@@ -135,32 +135,38 @@ h2~p{
     color: #4dd9d9;
 }
 .badge-populer{
-    background: #2d3d5c;
+    background: #314f8b;
     color: #4dd9d9;
 
 }
 .badge-lama{
-    background: #3d2d2d;
-    color: #d4a574;
+    background: #341876;
+    color: #50a2d5;
+}
+
+/* Styling by Psudo Element in Article Section */
+.daftar-fitur{
+    list-style: none;
+    padding-left: 0px;
+}
+.daftar-fitur li{
+    padding: 8px;
+    padding-left: 25px;
+}
+.daftar-fitur li::before{
+    content: "✓";
+    position: relative;
+    color: #4dd9d9;
+}
+.daftar-fitur li :first-child{
+    padding-top: 0px;
+}
+.daftar-fitur li :last-child{
+    padding-bottom: 0px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Styling by Psudo Element in Article Section */
 
 
 /* Styling Button Read More */
