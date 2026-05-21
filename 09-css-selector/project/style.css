@@ -112,12 +112,6 @@ body{
 .section-artikel{
     padding: 40px;
 }
-h2{
-    color: #e8eef2;
-    font-size: 2.5em;
-    font-weight: 700;
-}
-
 h2+p{
     color: #b8c5d6;
     font-style: italic;
@@ -127,7 +121,7 @@ h2~p{
     text-decoration-line: underline;
 }
 
-/* Card Styling */
+/* ================= Card Section Styling ============== */
 .card{
     padding: 30px;
     background: linear-gradient(135deg,
@@ -204,4 +198,27 @@ h2~p{
     transform: translateY(-8px);
     border-color: rgba(77, 217, 217, 0.3);
     transition: all 0.3s ease;
+}
+
+
+/* ===================== Section Text ======================== */
+
+.section-teks{
+    margin-top: 50px;
+    padding: 40px;
+    background: linear-gradient(135deg,
+    #0f1419 0%,
+    #1a2332 50%,
+    #0f1419 100%);
+    border: 1px solid rgba(77,217,217,0.1);
+    box-shadow: 0 4px 6px 0.6 rgba(0,0,0,0.1);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+:is(h2,h3){
+    color: #e8eef2;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.5em;
 }
