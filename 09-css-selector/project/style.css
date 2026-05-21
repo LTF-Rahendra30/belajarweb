@@ -165,8 +165,11 @@ h2~p{
     padding-bottom: 0px;
 }
 
-
-
-
-
-/* Styling Button Read More */
+/* Styling Button Read More Footer-Card*/
+.card-footer >a{
+    background: linear-gradient(135deg,#293754,#111f38);
+    border-radius: 12px;
+}
+.card-footer>a:hover{
+    background: linear-gradient(#3a4457,#163868);
+}
