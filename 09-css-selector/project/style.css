@@ -56,7 +56,7 @@ body{
 /* Navigation Specific */
 [class*="nav-link"]:hover{
     border: none;
-    border-radius: 15px;
+    border-radius: 15px 10px;
     background-color: #1d4d5c;
     transform: scale(1.1) translateY(-5px);
 }
@@ -80,27 +80,29 @@ body{
     display: inline-block;
     margin: 30px;
     background: linear-gradient(135deg, #00d9ff, #001aff);
-    border-radius: 10px 20px;
-    color: #0f1419;
-
-
-        
-}
-.tombol-utama:hover{
-    background:linear-gradient(135deg, #00b3ff, #7300ff);
-
+    border-radius: 10px 15px;
+    color: #0f1419;    
 }
 .tombol-sekunder{
     padding: 10px 20px;
     display: inline-block;
-    border-radius: 10px 20px;
+    border-radius: 10px 15px;
     border: none ;
     box-shadow: 0 0 5px #6da7ff;
     background: #1a2332;
-    
 }
-.tombol-sekunder:hover{
-    background: #243c62;
+
+/* Hover both button */
+[class*="tombol-utama"]:hover{
+    border: none;
+    background:linear-gradient(135deg, #00b3ff, #7300ff);
+    transform: scale(1.1) translateY(-5px);
+}
+[class*="tombol-sekunder"]:hover{
+    border: none;
+    border-radius:12px 10px;
+    transform: scale(1.1) translateY(-5px);
+    background: #1c2e4b;
 }
 
 .hero>p::first-line{
@@ -108,7 +110,7 @@ body{
     font-style: italic;
 }
 
-/* Section Artikel */
+/* =============== Section Artikel ==============*/
 .section-artikel{
     padding: 40px;
 }
