@@ -26,7 +26,7 @@ body{
     background-image: linear-gradient(to right,#bfc7cc,#e8eef2 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 10px rgba(126, 118, 118, 0.7));
+    filter: drop-shadow(0 0 10px rgba(37, 136, 212, 0.7));
 }
 .hero{
     background: linear-gradient(135deg,
@@ -254,4 +254,18 @@ h2~p{
     content: " ❞";
     color: #4dd9d9;
     font-size: 1.5em;
+}
+
+.label-tag{
+    display: inline-block;
+    padding: 5px 12px;
+    background: #1a2332;
+    color: #4dd9d9;
+    border: 1px solid rgba(77, 217, 217, 0.2);
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin: 4px 2px;
+
 }
