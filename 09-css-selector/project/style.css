@@ -200,6 +200,13 @@ body{
     transition: all 0.3s ease;
 }
 
+/* Styling H2 & H3 in All Class*/
+:is(h2,h3){
+    color: #e8eef2;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.5em;
+}
 
 /* ===================== Section Text ======================== */
 
@@ -216,12 +223,6 @@ body{
     text-decoration: none;
 }
 
-:is(h2,h3){
-    color: #e8eef2;
-    font-weight: 700;
-    line-height: 1.2;
-    font-size: 2.5em;
-}
 .section-teks p{
     line-height: 1.7;
     margin-bottom: 20px;
@@ -268,4 +269,23 @@ body{
     letter-spacing: 0.05em;
     margin: 4px 2px;
 
+}
+
+.section-teks>p{
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 1.05em;
+}
+
+/* Hover Text Miring % Label Tag*/
+.teks-miring:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+.label-tag:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    background: #2b4d63;
 }
