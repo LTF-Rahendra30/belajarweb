@@ -29,9 +29,6 @@ body{
     color: transparent;
     filter: drop-shadow(0 0 10px rgba(126, 118, 118, 0.8));
 }
-:is(h2,h3){
-    color: #e8eef2;
-}
 .hero{
     background: linear-gradient(135deg,
     #0f1419 0%,
@@ -41,8 +38,10 @@ body{
     padding: 50px;
     text-align: center;
 }
-/* Navigation */
-:is(.hero,.navigasi) a{
+
+
+/* Navigation , CTA, ReadMore Button */
+:is(.hero,.navigasi,.card) a{
     font-family: "Inter";
     text-decoration: none;
     font-weight: bold;
@@ -69,7 +68,7 @@ body{
     margin: 30px;
     background: linear-gradient(135deg, #00d9ff, #001aff);
     border-radius: 10px;
-    
+        
 }
 .tombol-utama:hover{
     background:linear-gradient(135deg, #00b3ff, #7300ff);
@@ -79,7 +78,7 @@ body{
     border: none ;
     box-shadow: 0 0 5px #6da7ff;
     background: #1a2332;
-
+    
 }
 .tombol-sekunder:hover{
     background: #243c62;
@@ -89,3 +88,38 @@ p::first-line{
     text-decoration: underline;
     font-style: italic;
 }
+
+/* Section Artikel */
+.section-artikel{
+    padding: 40px;
+}
+h2{
+    color: #e8eef2;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2+p{
+    color: #b8c5d6;
+}
+h2~p{
+    color: #b8c5d6;
+}
+
+/* Card Styling */
+.card{
+    padding: 30px;
+    background: linear-gradient(135deg,
+    #0f1419 0%,
+    #1a2332 50%,
+    #0f1419 100%);
+    border: 1px solid rgba(77,217,217,0.1);
+    box-shadow: 0 4px 6px 0.6 rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+.card > h3{
+    color: #e8eef2;
+    font-size: 1.5em;
+}
+
+/* Styling Button Read More */
