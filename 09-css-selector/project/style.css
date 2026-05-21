@@ -167,9 +167,22 @@ h2~p{
 
 /* Styling Button Read More Footer-Card*/
 .card-footer >a{
+    padding: 10px;
     background: linear-gradient(135deg,#293754,#111f38);
     border-radius: 12px;
 }
 .card-footer>a:hover{
     background: linear-gradient(#3a4457,#163868);
+}
+.card-footer{
+    display: flex;
+}
+.harga{
+    color: #6da7ff;
+    font-weight: 600;
+}
+.card:hover{
+    transform: translateY(-8px);
+    border-color: rgba(77, 217, 217, 0.3);
+    transition: all 0.3s ease;
 }
