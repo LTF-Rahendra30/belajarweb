@@ -222,3 +222,36 @@ h2~p{
     line-height: 1.2;
     font-size: 2.5em;
 }
+.section-teks p{
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 1.05em;
+}
+
+.teks-tebal{
+    font-weight: bold;
+    color: #4dd9d9;
+}
+.teks-miring{
+    font-style: italic;
+    color: #8fa3b8;
+    font-size: 1.1em;
+    line-height: 1.8;
+    padding:  20px 30px;
+    border-left: 3px solid #4dd9d9;
+    background: rgba(77, 217, 217, 0.05);
+    border-radius: 0px 12px 12px 0 ;
+    position: relative;
+}
+.teks-miring::before{
+    content: "❝ ";
+    color: #4dd9d9;
+    font-style: normal;
+    font-size: 1.5em;
+    position: inherit;
+}
+.teks-miring::after{
+    content: " ❞";
+    color: #4dd9d9;
+    font-size: 1.5em;
+}
