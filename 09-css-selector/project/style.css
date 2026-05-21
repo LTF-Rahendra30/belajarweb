@@ -328,15 +328,40 @@ body{
     text-align: left; 
 }
 
-.tbody tr:nth-child(odd){
-    background: #0f1419;
+tbody tr:nth-child(odd){
+    background: #222e3c;
 }
-.tbody tr:nth-child(even){
-    background: #1a2332;
+tbody tr:nth-child(even){
+    background: #1b222f;
 }
 
 
-
+.tabel-roadmap tbody tr:hover{
+    background: rgba(77, 217, 217, 0.1);
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+.status-belum,
+.status-proses,
+.status-selesai{
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+td.status-selesai{
+    color: #4dd9d9;
+    background: #1d4d5c;
+}
+td.status-proses{
+    background: #3d2d3d;
+    color: #ffc107;
+}
+td.status-belum{
+    background: #3d2d3d;
+    color: #b8c5d6;
+}
 
 
 
