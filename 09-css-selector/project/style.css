@@ -27,7 +27,7 @@ body{
     background-image: linear-gradient(to right,#bfc7cc,#e8eef2 );
     background-clip: text;
     color: transparent;
-    filter: drop-shadow(0 0 10px rgba(126, 118, 118, 0.8));
+    filter: drop-shadow(0 0 10px rgba(126, 118, 118, 0.7));
 }
 .hero{
     background: linear-gradient(135deg,
@@ -84,7 +84,7 @@ body{
     background: #243c62;
 }
 
-p::first-line{
+.hero>p::first-line{
     text-decoration: underline;
     font-style: italic;
 }
@@ -101,9 +101,11 @@ h2{
 
 h2+p{
     color: #b8c5d6;
+    font-style: italic;
 }
 h2~p{
     color: #b8c5d6;
+    text-decoration-line: underline;
 }
 
 /* Card Styling */
@@ -121,5 +123,44 @@ h2~p{
     color: #e8eef2;
     font-size: 1.5em;
 }
+
+/* Badge Styling */
+[class*="badge"]{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.badge-baru{
+    background: #1d4d5c;
+    color: #4dd9d9;
+}
+.badge-populer{
+    background: #2d3d5c;
+    color: #4dd9d9;
+
+}
+.badge-lama{
+    background: #3d2d2d;
+    color: #d4a574;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling by Psudo Element in Article Section */
+
 
 /* Styling Button Read More */
