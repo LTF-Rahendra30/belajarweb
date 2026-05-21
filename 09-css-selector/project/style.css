@@ -24,8 +24,8 @@ body{
     font-size: 3.5em;
     font-weight: 900;
     background-image: linear-gradient(to right,#bfc7cc,#e8eef2 );
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 10px rgba(126, 118, 118, 0.7));
 }
 .hero{
@@ -43,6 +43,7 @@ body{
 
 /* ========== BASE LINK STYLING ========== */
 .navigasi a, :is(.hero,.card) a{
+    display: inline-block;
     font-family: "Inter";
     text-decoration: none;
     font-weight: bold;
@@ -50,8 +51,8 @@ body{
     padding: 10px;
     margin: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    
 }
+
 /* Navigation Specific */
 [class*="nav-link"]:hover{
     border: none;
@@ -65,6 +66,9 @@ body{
 }
 
 .site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
     margin-bottom: 40px;
 }
@@ -77,6 +81,8 @@ body{
     margin: 30px;
     background: linear-gradient(135deg, #00d9ff, #001aff);
     border-radius: 10px 20px;
+    color: #0f1419;
+
 
         
 }
