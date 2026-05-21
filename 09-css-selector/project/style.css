@@ -112,11 +112,11 @@ body{
 .section-artikel{
     padding: 40px;
 }
-h2+p{
+.section-artikel>h2+p{
     color: #b8c5d6;
     font-style: italic;
 }
-h2~p{
+.section-artikel>h2~p{
     color: #b8c5d6;
     text-decoration-line: underline;
 }
