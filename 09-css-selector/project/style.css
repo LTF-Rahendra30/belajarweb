@@ -491,6 +491,16 @@ input:focus, textarea:focus{
 
 }
 
+
+/* Icon Footer */
+.footer-icon{
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 6px;
+
+}
 .footer-atas{
     display: flex;
     justify-content: space-between;
@@ -548,7 +558,7 @@ input:focus, textarea:focus{
     opacity: 0.7;
 }
 
-.foter-bawah{
+.footer-bawah{
     border-top: 1px solid rgba(77, 217, 217, 0.1);
     padding: 25px 0;
     text-align: center;
