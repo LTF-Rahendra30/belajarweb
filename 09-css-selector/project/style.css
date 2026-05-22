@@ -97,8 +97,7 @@ body{
     display: inline-block;
     border-radius: 10px 15px;
     border: none ;
-    box-shadow: 0 0 5px #6da7ff;
-    background: #1a2332;
+    background:linear-gradient(135deg, #0d3a8a,#1a2332);
 }
 
 /* Hover both button */
@@ -111,7 +110,7 @@ body{
     border: none;
     border-radius:12px 10px;
     transform: scale(1.1) translateY(-5px);
-    background: #1c2e4b;
+    background: linear-gradient(135deg, #0943a7,#1a2332);
 }
 
 .hero>p::first-line{
