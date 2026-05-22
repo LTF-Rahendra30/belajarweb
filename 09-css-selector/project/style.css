@@ -426,5 +426,11 @@ input ,textarea{
 input,textarea::placeholder{
     color: #4a5568;
     font-style: italic;
+}
 
+input:focus{
+    border-color: #4dd9d9;
+    box-shadow: 0 0 2px 3px rgba(77, 217, 217, 0.15);
+    background: #1a2332;
+    
 }
