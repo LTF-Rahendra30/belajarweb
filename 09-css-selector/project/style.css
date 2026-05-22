@@ -28,6 +28,15 @@ body{
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 10px rgba(37, 136, 212, 0.7));
 }
+
+
+/* Style All H2  */
+:is(.section-artikel,.section-teks,.section-tabel,.section-form) h2{
+    text-align: center;
+
+}
+
+/* Container Hero Section */
 .hero{
     background: linear-gradient(135deg,
     #0f1419 0%,
@@ -365,31 +374,6 @@ td.status-belum{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ============== Form =============== */
 .section-form{
     margin-top: 50px;
@@ -402,5 +386,4 @@ td.status-belum{
     box-shadow: 0 4px 6px 0.6 rgba(0,0,0,0.1);
     border-radius: 15px;
     text-decoration: none;
-    text-align: center;
 }
