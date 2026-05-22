@@ -141,6 +141,9 @@ body{
 }
 
 /* ================= Card Section Styling ============== */
+
+
+/* Container Teks */
 .card{
     padding: 30px;
     background: linear-gradient(135deg,
@@ -229,6 +232,8 @@ body{
 
 /* ===================== Section Text ======================== */
 
+
+/* Conntainer Teks */
 .section-teks{
     margin-top: 50px;
     padding: 40px;
