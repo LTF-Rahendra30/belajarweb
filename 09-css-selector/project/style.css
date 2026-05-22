@@ -428,9 +428,30 @@ input,textarea::placeholder{
     font-style: italic;
 }
 
-input:focus{
+input:focus, textarea:focus{
     border-color: #4dd9d9;
     box-shadow: 0 0 2px 3px rgba(77, 217, 217, 0.15);
     background: #1a2332;
     
+}
+/* Button Submit */
+
+.tombol-submit{
+    display: block;
+    width: 100%;
+
+    padding: 14px;
+    background: linear-gradient(135deg, #00d9ff, #0099ff);
+    color:#0f1419;
+    outline: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tombol-submit:hover{
+    background: linear-gradient(135deg, #00b3ff, #7300ff);
+    transform: scale(1.1) translateY(-5px);
 }
