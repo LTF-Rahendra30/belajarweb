@@ -435,7 +435,10 @@ input:focus, textarea:focus{
     
 }
 /* Button Submit */
-
+.tombol{
+    border: none;
+    outline: none;
+}
 .tombol-submit{
     display: block;
     width: 100%;
