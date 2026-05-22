@@ -516,3 +516,29 @@ input:focus, textarea:focus{
 .footer-nav a[href^="https"]{
     color: #6da7ff;
 }
+
+
+.footer-nav a[href^="https"]::after{
+    content: "↗";
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+.foter-bawah{
+    border-top: 1px solid rgba(77, 217, 217, 0.1);
+    padding: 25px 0;
+    text-align: center;
+}
+
+.teks-copyright{
+    color: #667690 ;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.footer-kolom:first-child p{
+    color: #b8c5d6;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
