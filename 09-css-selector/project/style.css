@@ -15,9 +15,18 @@ body{
     #1a2332 0%,
   #0f1419 100%);
     color: #b8c5d6;
-    padding: 20px;
 }
 
+/* Set Padding */
+.site-header,
+.hero,
+.section-artikel,
+.section-teks,
+.section-tabel,
+.section-form {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 /* Header */
 .judul-utama{
     text-align: center;
