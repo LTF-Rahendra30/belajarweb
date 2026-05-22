@@ -5,63 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latihan CSS — Blog Fiksi</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- ============================================================
-         AREA KERJA LO — Semua CSS ditulis di sini
-         ============================================================
-         CHECKLIST LATIHAN:
-
-         [ ] FONT STYLING
-             - Ganti font family di body (pakai Google Fonts atau font-stack)
-             - Atur font-size, font-weight, line-height di paragraf
-             - Buat .judul-utama tampil bold + letter-spacing lebar
-             - Buat .teks-miring menjadi italic + warna berbeda
-             - Buat .label-tag tampil uppercase + font-size kecil
-
-         [ ] BACKGROUND STYLING
-             - Beri background-color di body
-             - Beri background warna solid di .hero
-             - Beri background gradient di .hero (coba linear-gradient)
-             - Beri background-color berbeda di tiap .card
-             - Beri background warna di .site-footer
-
-         [ ] PEWARNAAN
-             - Atur color teks di body
-             - Beri warna berbeda di .nav-link
-             - Beri color di .harga (gunakan warna mencolok)
-             - Bedakan warna teks .badge-baru vs .badge-lama
-
-         [ ] PSEUDO SELECTORS (class & element)
-             - .nav-link:hover  → ubah warna saat mouse hover
-             - .tombol:hover    → ubah background saat hover
-             - .tombol:active   → efek saat diklik
-             - input:focus      → highlight border saat fokus
-             - .card:nth-child(2) → styling khusus card ke-2
-             - .daftar-fitur li:first-child  → styling item pertama
-             - .daftar-fitur li:last-child   → styling item terakhir
-             - .judul-utama::before          → sisipkan simbol/ikon sebelum judul
-             - .hero p::first-line           → styling baris pertama paragraf hero
-
-         [ ] COMPLEX SELECTORS
-             - .card p          → styling semua <p> di dalam card
-             - .card > h3       → hanya <h3> anak langsung dari card
-             - h2 + p           → paragraf tepat setelah h2
-             - h2 ~ p           → semua paragraf setelah h2 di level yang sama
-
-         [ ] SMART SELECTORS
-             - input[type="email"]      → styling khusus input email
-             - a[href^="https"]         → styling link external
-             - .nav-link:not(.aktif)    → style semua nav link KECUALI yang aktif
-             - :is(h1, h2, h3)          → margin/padding semua heading sekaligus
-             - .card:not(:last-child)   → semua card kecuali yang terakhir
-    ============================================================ -->
-    <style>
-      /* ==============================================
-         TULIS CSS LO DI SINI — Hapus komentar ini
-         setelah lo paham strukturnya
-         ============================================== */
-
-    </style>
   </head>
 
   <body>
@@ -69,7 +12,8 @@
     <!-- =============================================
          NAVIGASI
          ============================================= -->
-    <header class="site-header">
+
+    <header class="site-header" id="home">
       <div class="logo">LTF-30</div>
       <nav class="navigasi">
         <a href="#hero" class="nav-link-aktif">🏠︎ Beranda</a>
@@ -309,8 +253,8 @@
         <div class="footer-kolom">
           <h4>Link Cepat</h4>
           <ul class="footer-nav">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Artikel</a></li>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#artikel">Artikel</a></li>
             <li><a href="#">Portofolio</a></li>
             <li><a href="#">Kontak</a></li>
           </ul>
@@ -320,10 +264,48 @@
         <div class="footer-kolom">
           <h4>Sosial Media</h4>
           <ul class="footer-nav">
-            <li><a href="https://github.com"><i class="fab fa-github"></i>GitHub</a></li>
-            <li><a href="https://twitter.com">Twitter</a></li>
-            <li><a href="https://linkedin.com">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              width="16" 
+              height="16" 
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              class="footer-icon">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>
+              GitHub</a>
+            </li>
+
+
+            <li><a href="https://twitter.com" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              width="16" height="16" 
+              fill="currentColor" 
+              viewBox="0 0 16 16"
+              class="footer-icon">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg>
+          
+              Twitter</a>
+            </li>
+
+
+
+            <li><a href="https://linkedin.com" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              width="16" 
+              height="16" 
+              fill="currentColor" 
+              viewBox="0 0 16 16"
+              class="footer-icon">
+              <title>linkedin</title>
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg>
+            
+              LinkedIn</a>
+            </li>
           </ul>
+
         </div>
       </div>
 

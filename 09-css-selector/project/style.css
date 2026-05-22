@@ -311,6 +311,9 @@ body{
 
 
 /* ============= Tabel =========== */
+
+
+/* Container Tabel */
 .section-tabel{
     margin-top: 50px;
     padding: 40px;
@@ -479,6 +482,8 @@ input:focus, textarea:focus{
     /* background: #070b0f; */
     padding: 60px 40px 5px;
     margin-top: 80px;
+    border-radius: 15px;
+
 }
 
 .footer-atas{
