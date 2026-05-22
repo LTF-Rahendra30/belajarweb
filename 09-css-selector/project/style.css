@@ -110,7 +110,7 @@ body{
     border: none;
     border-radius:12px 10px;
     transform: scale(1.1) translateY(-5px);
-    background: linear-gradient(135deg, #0943a7,#1a2332);
+    background: linear-gradient(135deg, #0a4cbf,#1a2332);
 }
 
 .hero>p::first-line{
@@ -423,7 +423,7 @@ input ,textarea{
 
 /* Placeholder */
 input,textarea::placeholder{
-    color: #4a5568;
+
     font-style: italic;
 }
 
