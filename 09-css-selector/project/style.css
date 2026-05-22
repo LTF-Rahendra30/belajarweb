@@ -470,8 +470,13 @@ input:focus, textarea:focus{
 
 /* ====================== FOOTER ======================= */
 
+/* Footer Container */
 .site-footer{
-    background: #070b0f;
+    background: linear-gradient(135deg,
+    #070b0f 10%,
+    #161e28 50%,
+    #0f1419 100%);;
+    /* background: #070b0f; */
     padding: 60px 40px 5px;
     margin-top: 80px;
 }
