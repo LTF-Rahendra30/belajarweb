@@ -31,7 +31,7 @@ body{
 
 
 /* Style All H2  */
-:is(.section-artikel,.section-teks,.section-tabel,.section-form) h2{
+:is(.section-artikel,.section-teks,.section-tabel) h2{
     text-align: center;
 
 }
@@ -346,7 +346,7 @@ tbody tr:nth-child(even){
 
 
 .tabel-roadmap tbody tr:hover{
-    background: rgba(77, 217, 217, 0.1);
+    background: rgba(77, 217, 217, 0.2);
     transition: background 0.2s ease;
     cursor: pointer;
 }
@@ -375,8 +375,12 @@ td.status-belum{
 
 
 /* ============== Form =============== */
+
+
+/* Container Form */
 .section-form{
-    margin-top: 50px;
+    margin: 50px auto;
+    max-width: 600px;
     padding: 40px;
     background: linear-gradient(135deg,
     #0f1419 0%,
@@ -386,4 +390,22 @@ td.status-belum{
     box-shadow: 0 4px 6px 0.6 rgba(0,0,0,0.1);
     border-radius: 15px;
     text-decoration: none;
+}
+
+.form-kontak{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-grup{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-grup label{
+    color: #b8c5d6;
+    font-weight: 500;
+    font-size: 0.9em;
 }
