@@ -1,4 +1,1 @@
-console.log("Hello");
-
-const name = "Budi";
-console.log(name);
+window.alert("Hello World");
