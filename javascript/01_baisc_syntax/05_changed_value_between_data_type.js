@@ -12,8 +12,41 @@ const strNumber = String(number)
 const strBoolean = boolean.toString()
 
 // After
-console.log(typeof strNumber);
-console.log(typeof strBoolean); 
+console.log(typeof strNumber)
+console.log(typeof strBoolean) 
 // Output: 
 // string
 // string
+
+
+// Change to Number with explicit Controversion
+
+// Before Change string to number
+const strNumber1 = "123"
+const strFloat = "3.14"
+const boolean1 = true
+console.log(typeof strNumber1) 
+console.log(typeof strFloat) 
+console.log(typeof boolean1) 
+
+
+// After Change string to number
+const numFromString = Number(strNumber1)
+const floatFromString = Number(strFloat)
+const numFromBoolean = Number(boolean1)
+console.log(typeof numFromString) 
+console.log(typeof floatFromString) 
+console.log(typeof numFromBoolean) 
+
+// ParseInt() and parseFloat()
+
+const cm = "20cm"
+const px = "64px"
+
+const intFromCM = parseInt(cm)
+const intFromPX = parseFloat(px)
+console.log(intFromCM); // output: 20
+console.log(intFromPX); // output: 64
+
+
+// 
