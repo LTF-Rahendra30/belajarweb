@@ -36,3 +36,14 @@ console.log(massage)
 let stranger = undefined
 console.log(stranger)
 // This is data type to undined value
+
+// Try  different between null and undefined with JSON
+const name1 = {first: 'Bob', last: null}
+const name2 = {first: 'Dory', last: undefined}
+
+console.log(JSON.stringify(name1))
+console.log(JSON.stringify(name2))
+
+// The output:
+// {"first":"Bob","last":null}
+// {"first":"Dory"}
