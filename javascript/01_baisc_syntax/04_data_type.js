@@ -21,3 +21,8 @@ const rich = false
 const born = true
 console.log(rich,born)
 // output: false true
+
+// Boolean with operator
+const isGreater= 9 > 7;
+console.log(isGreater) 
+// Output: True
