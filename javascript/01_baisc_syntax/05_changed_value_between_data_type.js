@@ -49,4 +49,16 @@ console.log(intFromCM); // output: 20
 console.log(intFromPX); // output: 64
 
 
-// 
+// Change to Boolean
+
+const a = 123
+const b = "Helo"
+const c = null
+
+const boolFromNumber = Boolean(a)
+const boolFromString = Boolean(b)
+const boolFromNull = Boolean(c)
+
+console.log(boolFromNumber); // output: true
+console.log(boolFromString); // output: true
+console.log(boolFromNull); // output: false
