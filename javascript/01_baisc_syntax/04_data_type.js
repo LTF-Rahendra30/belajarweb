@@ -32,3 +32,7 @@ console.log(isGreater)
 let massage = null
 console.log(massage)
 // This is a variable with an empty value, to dedicate the absence of a value that does not exsist
+
+let stranger = undefined
+console.log(stranger)
+// This is data type to undined value
