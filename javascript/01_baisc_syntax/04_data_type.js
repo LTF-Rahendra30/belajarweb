@@ -26,3 +26,9 @@ console.log(rich,born)
 const isGreater= 9 > 7;
 console.log(isGreater) 
 // Output: True
+
+
+// Null
+let massage = null
+console.log(massage)
+// This is a variable with an empty value, to dedicate the absence of a value that does not exsist
