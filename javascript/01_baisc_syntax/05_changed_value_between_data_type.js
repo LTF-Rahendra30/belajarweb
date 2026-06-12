@@ -68,3 +68,10 @@ console.log(boolFromNull); // output: false
 const name2 = "bob"
 const age2 = "My name " + name2 + " age: " + 13
 console.log(age2)
+
+// Aritmetic for change boolean to be number
+
+const bool = true
+const result = 1 + bool
+console.log(result) 
+// Output 2, because value of boolean is always 1 , (1+1)
