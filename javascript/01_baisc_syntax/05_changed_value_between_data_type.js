@@ -62,3 +62,9 @@ const boolFromNull = Boolean(c)
 console.log(boolFromNumber); // output: true
 console.log(boolFromString); // output: true
 console.log(boolFromNull); // output: false
+
+// Conversion Implisit
+
+const name2 = "bob"
+const age2 = "My name " + name2 + " age: " + 13
+console.log(age2)
