@@ -14,3 +14,10 @@ console.log(result)
 // NaN (Not A Number)
 const result2 = Number('Bob Marley') // Try change string to number, and then the result is "NaN" because we try String that isnt Number to change Number 
 console.log(result2)
+
+
+// Boolean
+const rich = false
+const born = true
+console.log(rich,born)
+// output: false true
