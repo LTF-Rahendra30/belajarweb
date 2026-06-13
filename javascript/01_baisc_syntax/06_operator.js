@@ -39,3 +39,6 @@ console.log((5 === 5) || (3 > 5)); // true
 // NOT
 console.log(!true); // false
 console.log(!false); // true
+
+/* */
+console.log(typeof false)
