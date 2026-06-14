@@ -8,3 +8,13 @@ const calculateTax = function (price,tax) {
 const calculate = calculateTax(1000,20);
 console.log(calculate)
 // output : 1200
+
+// Use Function in the function
+
+function payement(amount,calculate){
+    return amount - calculate;
+}
+
+const result = payement(2000,calculateTax(1000,20))
+console.log(result)
+// Amount : 2000 - 1200 = 800
