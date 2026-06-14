@@ -4,4 +4,11 @@ function print(paramA){
 
 // Uses Function
 print("Hello World") 
-// Ouput : Hello World, yeah this is functions like print function in Python
+// Ouput : Hello World
+// yeah this is functions like print function in Python
+
+// Example function discount price 
+
+function calculateDiscount(price,discount){
+    return price - (discount * price / 100)
+}
