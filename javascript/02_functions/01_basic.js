@@ -12,4 +12,5 @@ function conversionCelciusToFahrenheit(temperature){
     return temperatureInFahrenheit;
 }
 
+// Uses Function
 console.log(conversionCelciusToFahrenheit(90))
