@@ -12,3 +12,10 @@ print("Hello World")
 function calculateDiscount(price,discount){
     return price - (discount * price / 100)
 }
+
+// Create Argument
+const price = 1000; // 1000 is aargument
+const discount = 50; // 50 is argument
+console.log(calculateDiscount(price,discount)) 
+// Output:
+// 500
