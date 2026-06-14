@@ -7,3 +7,13 @@ const calculateDiscountRegulerFunction = function (price,discount) {
 }
 console.log(calculateDiscountRegulerFunction(1000,50))
 // Outout: 1000 ==> 500
+
+// Delclaration with Arrow Function
+
+const calculateDiscountArrowFunction = (price,discount) => {
+    const result = price - (price * discount / 100)
+    return result
+}
+
+console.log(calculateDiscountArrowFunction(1000,20))
+// Outout: 1000 ==> 800
