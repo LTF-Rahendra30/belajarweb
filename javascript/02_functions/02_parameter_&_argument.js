@@ -14,6 +14,7 @@ function calculateDiscount(price,discount){
 }
 
 // Create Argument
+// Argument are data entered into function paremeters, which can be variabels or direct values
 const price = 1000; // 1000 is aargument
 const discount = 50; // 50 is argument
 console.log(calculateDiscount(price,discount)) 
