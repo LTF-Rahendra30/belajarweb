@@ -24,3 +24,27 @@ console.log(map);
 map.set(1,'chloe');
 console.log(map);
 // Output: Map(2) { 'name' => 'bob', 1 => 'chloe' }
+
+
+// ======= ACCESSING ========
+
+// Use Get Method
+map.set('name','bob');
+console.log(map.get('name')); // Output: bob
+
+// =========== DELETE VALUE IN MAP ==============   
+
+const map2 = new Map();
+// Create
+map2.set('name','chloe');
+map2.set('age',17);
+map2.set('single',false);
+// Before
+console.log(map2);
+// Output: Map(3) { 'name' => 'chloe', 'age' => 17, 'single' => false }
+
+
+// After Delete
+map2.delete('single');
+console.log(map2);
+// Output: Map(2) { 'name' => 'chloe', 'age' => 17 }
