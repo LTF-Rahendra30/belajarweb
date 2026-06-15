@@ -22,3 +22,10 @@ const user = new Array('Andrew','Bob','Chloe');
 const customer = Array.from(user);
 console.log(customer);
 // Output: [ 'Andrew', 'Bob', 'Chloe' ]
+
+
+// USE LITERAL ARRAY
+
+const array2 = [];
+const fruits = ['apple','banana','cerry'];
+console.log(fruits); // Output: ['apple', 'banana', 'cherry']
