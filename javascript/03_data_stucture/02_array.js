@@ -37,4 +37,18 @@ console.log(fruits); // Output: ['apple', 'banana', 'cherry']
 const myArray = [10,20,30,40];
 console.log(myArray[0]); // Output: 10
 
-// 
+// MANIPULATION ARRAY VALUE
+
+// Use Indexing
+
+let theNumber = [10,20,30,40];
+// let me change  the array value at index 2 
+theNumber[2] = 50;
+// 30 ==> 50
+console.log(theNumber); // Output: [ 10, 20, 50, 40 ]
+
+// Use Push, the methode that add value to the array at the last index or element
+let myNumber = [10,20,30,40];
+myNumber.push(50);
+console.log(myNumber)
+// Output: [ 10, 20, 30, 40, 50 ]
