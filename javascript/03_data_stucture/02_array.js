@@ -4,6 +4,7 @@
 const array = [1,2];
 console.log(typeof array); // Otput : Object
 
+// ============= CREATE ARRAY ============
 // Create Array with Constructor Object
 const users = new Array();
 const numbers = new Array(5); // 5 is initial length from array
@@ -24,7 +25,7 @@ console.log(customer);
 // Output: [ 'Andrew', 'Bob', 'Chloe' ]
 
 
-// USE LITERAL ARRAY
+// =============== USE LITERAL ARRAY =====================
 
 const array2 = [];
 const fruits = ['apple','banana','cerry'];
@@ -37,7 +38,7 @@ console.log(fruits); // Output: ['apple', 'banana', 'cherry']
 const myArray = [10,20,30,40];
 console.log(myArray[0]); // Output: 10
 
-// MANIPULATION ARRAY VALUE
+// =================== MANIPULATION ARRAY VALUE =====================
 
 // Use Indexing
 
@@ -53,7 +54,7 @@ myNumber.push(50);
 console.log(myNumber)
 // Output: [ 10, 20, 30, 40, 50 ]
 
-// Delete element and Array Data
+// =============== DATA AND VALUE IN THE ARRAY =====================
 
 let myCat = ['Tom','Herry','Mike','Kevin'];
 delete myCat[1]; // With index, delete 'Herry'
@@ -64,3 +65,12 @@ console.log(myCat);
 myCat.splice(1,1);
 console.log(myCat);
 // Output: [ 'Tom', 'Mike', 'Kevin' ]
+
+
+// =================== ARRAY DESTRUCTURING =================
+
+// To view tha content of array
+const introduction = ['Hello','Chloe'];
+const [greetinng,name2] = introduction;
+console.log(greetinng); // Output: Hello
+console.log(name2); // Output: Chloe
