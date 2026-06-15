@@ -29,3 +29,12 @@ console.log(customer);
 const array2 = [];
 const fruits = ['apple','banana','cerry'];
 console.log(fruits); // Output: ['apple', 'banana', 'cherry']
+
+// ACCESSING ARRAY ELEMENTS
+
+// With Index, start from 0
+
+const myArray = [10,20,30,40];
+console.log(myArray[0]); // Output: 10
+
+// 
