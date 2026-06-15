@@ -74,3 +74,18 @@ const introduction = ['Hello','Chloe'];
 const [greetinng,name2] = introduction;
 console.log(greetinng); // Output: Hello
 console.log(name2); // Output: Chloe
+
+
+// ============= ARRAY METHOD ================
+
+// Revese
+const theAnimal = ['Lion','Bird','Fish','Tiger'];
+theAnimal.reverse();
+console.log(theAnimal)
+// Output: [ 'Tiger', 'Fish', 'Bird', 'Lion' ]
+
+// Short
+const theGirl = ['Chloe','Anna','Emmy','Grace','Freya']
+theGirl.sort();
+console.log(theGirl)
+// Output: [ 'Anna', 'Chloe', 'Emmy', 'Freya', 'Grace' ]
