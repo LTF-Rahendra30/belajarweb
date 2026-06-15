@@ -52,3 +52,15 @@ let myNumber = [10,20,30,40];
 myNumber.push(50);
 console.log(myNumber)
 // Output: [ 10, 20, 30, 40, 50 ]
+
+// Delete element and Array Data
+
+let myCat = ['Tom','Herry','Mike','Kevin'];
+delete myCat[1]; // With index, delete 'Herry'
+console.log(myCat);
+// Output: [ 'Tom', <1 empty item>, 'Mike', 'Kevin' ]
+
+// Clear delelted with splice()
+myCat.splice(1,1);
+console.log(myCat);
+// Output: [ 'Tom', 'Mike', 'Kevin' ]
