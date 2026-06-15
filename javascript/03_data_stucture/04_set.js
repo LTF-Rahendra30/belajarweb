@@ -17,3 +17,31 @@ set.add('Andew');
 console.log(set)
 
 // Output: Set(4) { 1, 'bob', 2, 'Andew' }
+
+// ======= ACCESSING ========
+
+for (const name of set){
+    console.log(name);
+    // Output: 
+    // 1
+    // bob
+    // 2
+    // Andew
+}
+
+// =========== DELETE VALUE IN SET ==============   
+
+const theSet = new Set();
+theSet.add('Andrew')
+theSet.add('Bob')
+theSet.add('Kevin')
+
+// Before Delete
+console.log(theSet)
+// Output: Set(3) { 'Andrew', 'Bob', 'Kevin' }
+
+
+// After Delete
+theSet.delete('Kevin')
+console.log(theSet)
+// Output: Set(2) { 'Andrew', 'Bob' }
