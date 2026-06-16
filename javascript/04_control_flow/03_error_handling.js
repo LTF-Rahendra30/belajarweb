@@ -8,7 +8,7 @@ const paid = 80;
 //     throw new Error('not enough');
 // }
 
-// CATCHING ERROR
+// ================= CATCHING ERROR =======================
 
 // 1. TRY-CATCH
 
@@ -23,7 +23,7 @@ try{
 // End
 
 
-// If catct block excecuted
+// ===================== If catct block excecuted ===================
 
 try{
     console.log('Start')
@@ -37,3 +37,21 @@ try{
 
 // Start
 // cuse dont error, this block will Ignored
+
+
+// ================ FINALLY ==============
+
+// Finally is the block code at the end of Try-catch
+
+try{
+    console.log('This is try block')
+    throw new Error('Error')
+} catch(err3){
+    console.log("This is catch block")
+} finally{
+    console.log("This is finally block")
+}
+// Output:
+// This is try block
+// This is catch block
+// This is finally block
