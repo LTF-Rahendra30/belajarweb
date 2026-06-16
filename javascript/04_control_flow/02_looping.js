@@ -108,3 +108,31 @@ do {
 // Number to-3 is 3
 // Number to-4 is 4
 // Number to-5 is 5
+
+// =========== CONTROL STATEMENT ============
+
+// 1. Break
+
+for (let b = 1; b < 10; b++){
+    if (b === 5){
+        break;
+    }
+    console.log(b);
+    // Output: 
+    // 1
+    // 2
+    // 3
+    // 4
+}
+
+// 2. Continue
+const name2 = ['andrew','bob','chloe']
+for (const n of name2){
+    if (n === 'andrew'){
+        continue;
+    }
+    console.log(n);
+}    // Andrew skipped
+    // Output: 
+    // bob
+    // chloe
