@@ -27,3 +27,17 @@ function checkGreade(grades){
         console.log(`Grade ${i+1}: ${grade} (${predicate})`);
     }
 }
+
+try{
+    const students = [96,86,67,75,59];
+    checkGreade(students);
+} catch(e){
+    console.error(e);
+}
+
+// Output:
+// Grade 1: 96 (A)
+// Grade 2: 86 (B)
+// Grade 3: 67 (D)
+// Grade 4: 75 (C)
+// Grade 5: 59 (E)
