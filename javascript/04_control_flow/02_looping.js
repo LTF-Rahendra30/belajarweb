@@ -27,3 +27,44 @@ for (const property in person){
 // name has value Bob
 // age has value 12
 // region has value Alaska
+
+// 3. For Of
+// More simple than for loop  ad for in
+
+const fruits = ['apple','banana','cerry'];
+
+for (const item of fruits){
+    console.log(item);
+    // Output: 
+    // apple
+    // banana
+    // cerry
+    
+}
+
+const users = [
+    {
+        name: 'Bob',
+        age: 12,
+        region: 'Alaska',
+    },
+    {
+        name: 'Andrew',
+        age: 15,
+        region: 'Berlin',
+    },
+    {
+        name: 'Chloe',
+        age: 17,
+        region: 'Seoul',
+    },
+    
+]
+
+for (const user of users ){
+    console.log(user);
+    // Output: 
+    // { name: 'Bob', age: 12, region: 'Alaska' }
+    // { name: 'Andrew', age: 15, region: 'Berlin' }
+    // { name: 'Chloe', age: 17, region: 'Seoul' }
+}
