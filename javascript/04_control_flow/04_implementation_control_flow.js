@@ -14,8 +14,16 @@ function checkGreade(grades){
         else if (grade >= 80){
             predicate = 'B'
         }
-        else if (grade >= 80){
-            predicate = 'B'
+        else if (grade >= 70){
+            predicate = 'C'
         }
+        else if (grade >= 60){
+            predicate = 'D'
+        }
+        else{
+            predicate = 'E'
+        }
+
+        console.log(`Grade ${i+1}: ${grade} (${predicate})`);
     }
 }
