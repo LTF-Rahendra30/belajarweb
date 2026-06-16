@@ -132,7 +132,7 @@ for (const n of name2){
         continue;
     }
     console.log(n);
-}    // Andrew skipped
+}   // Andrew skipped
     // Output: 
     // bob
     // chloe
