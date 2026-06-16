@@ -18,3 +18,22 @@ try{
 } catch (err){
     console.log('cuse dont error, this block will Ignored')
 }
+// Output:
+// Start
+// End
+
+
+// If catct block excecuted
+
+try{
+    console.log('Start')
+    throw new Error('Program stop')
+    console.log('End Program')
+    
+} catch(err2){
+    console.log('cuse dont error, this block will Ignored')
+}
+// Output:
+
+// Start
+// cuse dont error, this block will Ignored
