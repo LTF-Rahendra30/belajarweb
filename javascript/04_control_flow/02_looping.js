@@ -68,3 +68,25 @@ for (const user of users ){
     // { name: 'Andrew', age: 15, region: 'Berlin' }
     // { name: 'Chloe', age: 17, region: 'Seoul' }
 }
+
+// ============== While =============
+
+let i = 0;
+
+while (i <= 10){
+    console.log(`Number to-${i} is ${i}`);
+    i ++;
+    // Output: 
+    // Number to-0 is 0
+    // Number to-1 is 1
+    // Number to-2 is 2
+    // Number to-3 is 3
+    // Number to-4 is 4
+    // Number to-5 is 5
+    // Number to-6 is 6
+    // Number to-7 is 7
+    // Number to-8 is 8
+    // Number to-9 is 9
+    // Number to-10 is 10
+
+}
