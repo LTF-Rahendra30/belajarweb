@@ -88,5 +88,23 @@ while (i <= 10){
     // Number to-8 is 8
     // Number to-9 is 9
     // Number to-10 is 10
-
+    
 }
+
+// ============== Do-While ================
+
+// While evaluates the condition at the beginning, while do-while does it at the end.
+
+let a = 0;
+
+do {
+    console.log(`Number to-${a} is ${a}`);
+    a++;
+} while(a<5); 
+// Output: 
+// Number to-0 is 0
+// Number to-1 is 1
+// Number to-2 is 2
+// Number to-3 is 3
+// Number to-4 is 4
+// Number to-5 is 5
