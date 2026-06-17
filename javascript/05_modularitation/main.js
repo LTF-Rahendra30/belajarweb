@@ -33,3 +33,11 @@ anoterName();
 // Output:
 // Goood Morning!
 // Goood Morning!
+
+
+// ================ COMBINE DEFAULT EXPORT AND NAMED EXPORT =============
+
+import sayHi, {sayGoodBye} from "./04_combine_default_named_export.js";
+
+sayHi(); // Hii ,this is Default export
+sayGoodBye(); // Bye, this is Named export
