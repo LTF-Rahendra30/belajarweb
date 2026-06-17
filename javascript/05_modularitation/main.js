@@ -21,3 +21,15 @@ import { name,age,married } from "./02_export.js";
 console.log(name,age,married);
 // Output:
 // Bob 12 false
+
+
+// ============= DEFAULT IMPORT ===============
+
+import goodMoring from "./03_default_export.js";
+import anoterName from "./03_default_export.js"
+
+goodMoring();
+anoterName();
+// Output:
+// Goood Morning!
+// Goood Morning!
