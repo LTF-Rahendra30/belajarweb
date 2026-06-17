@@ -32,3 +32,4 @@ console.log(variabel.salary);
 // male
 // Web3 Fullstack Developer
 // 120k -150k $USD / year
+

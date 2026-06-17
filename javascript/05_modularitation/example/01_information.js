@@ -7,7 +7,3 @@ const salary = '120k -150k $USD / year'
 
 export {name,age,gender,work,salary};
 
-// Say Welcome
-export function sayWelcome(name){
-    console.log(`Welcome at Import! : ${name}`);
-}
