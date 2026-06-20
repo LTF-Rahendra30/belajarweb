@@ -53,3 +53,8 @@ person4.run();
 // chloe 18
 // Bob is running
 // chloe is running
+
+console.log(typeof Person2);
+// Output:
+// function,
+// Why is function?? Because class in Javascript is just a SYNTATIC SUGAR, or alternatif for definitons constructor function
