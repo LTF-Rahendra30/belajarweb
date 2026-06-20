@@ -23,3 +23,17 @@ person2.eat();
 // Chloe 18
 // Bob is eating
 // Chloe is eating
+
+// ES6 CLASS
+
+class Person {
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+
+    // Method
+    run(){
+        console.log(`${this.name} is running`);
+    }
+}
