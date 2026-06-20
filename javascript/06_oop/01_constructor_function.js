@@ -18,3 +18,8 @@ console.log(person2.name,person2.age);
 
 person1.eat();
 person2.eat();
+// The output:
+// Bob 12
+// Chloe 18
+// Bob is eating
+// Chloe is eating
