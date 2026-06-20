@@ -19,6 +19,24 @@ class Car extends Vehicle{
         this.fuelType = fuelType;
 
     }
+
+    // New method for CAR
+
+    showSpecs(){
+        return `${this.merk} ${this.model} have: ${this.wheel} wheel, fuel type: ${this.fuelType}`
+    }
 }
 
 // Create object
+const car1 = new Car('Mcleren 765LT',4,'McLeren',2,'Gas')
+
+console.log(car1.model);
+console.log(car1.wheel);
+console.log(car1.merk);
+// Output:
+// McLeren
+// 4
+// Mcleren 765LT
+console.log(car1.showSpecs());
+// Output:
+// Mcleren 765LT McLeren have: 4 wheel, fuel type: Gas
