@@ -1,0 +1,4 @@
+
+// New atribut Inheritance
+
+class 
