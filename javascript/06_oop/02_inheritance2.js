@@ -8,10 +8,17 @@ class Vehicle{
     }
 }
 
+// Child Class
 // New atribut Inheritance with Super
 class Car extends Vehicle{
-    constructor(model,wheel,merk, numOfDorss){
+    constructor(model,wheel,merk, doorCount, fuelType){
         super(merk,model,wheel); // call Constructor Perent
-        this.numOfDorss = numOfDorss; // Create Specific new Atribute in the Child Class for the car
+
+        // Create Specific new Atribute in the Child Class for the car
+        this.doorCount = doorCount; 
+        this.fuelType = fuelType;
+
     }
 }
+
+// Create object
