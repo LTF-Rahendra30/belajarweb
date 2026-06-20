@@ -18,4 +18,9 @@ class Smarthpone {
         this.brand = brand;
         this.model = model;
     }
+
+    charging(){
+        console.log(`Charging ${this.model}`);
+    }
 }
+
