@@ -24,3 +24,16 @@ class Smarthpone {
     }
 }
 
+// Inheritance
+class iOS extends Smarthpone{
+    airDrop(){
+        console.log("iOs have a behavior AirDrop");
+    }
+}
+
+class Android extends Smarthpone{
+    splitScreen(){
+        console.log("Android have a behavior Split Screen");
+
+    }
+}
