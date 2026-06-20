@@ -26,7 +26,7 @@ person2.eat();
 
 // ES6 CLASS
 
-class Person {
+class Person2 {
     constructor(name,age){
         this.name = name;
         this.age = age;
@@ -37,3 +37,19 @@ class Person {
         console.log(`${this.name} is running`);
     }
 }
+
+// Create object
+const person3 = new Person2('Bob',12);
+const person4 = new Person2('chloe',18);
+
+console.log(person3.name, person3.age);
+console.log(person4.name, person4.age);
+
+person3.run();
+person4.run();
+// The output:
+
+// Bob 12
+// chloe 18
+// Bob is running
+// chloe is running
