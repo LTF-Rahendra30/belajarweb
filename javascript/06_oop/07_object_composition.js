@@ -38,3 +38,23 @@ function canCastSpell(character) {
   }
 }
 
+// ============== OBJECT CREATOR ===========
+
+function createMonster(name){
+    const character = new Character(name,100,0);
+    return Object.assign(character, canAttack(name));
+}
+function createGuardian(name) {
+  const character = new Character(name, 100, 0);
+  return Object.assign(character, canDefend(character));
+}
+ 
+function createWizard(name) {
+  const character = new Character(name, 100, 0);
+  return Object.assign(character, canCastSpell(character));
+}
+ 
+function createWarrior(name) {
+  const character = new Character(name, 100, 0);
+  return Object.assign(character, canAttack(character), canDefend(character));
+}
