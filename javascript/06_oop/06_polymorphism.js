@@ -34,29 +34,38 @@ const android = new Android('white', 'B', 'Galaxy S21', 'smart TV');
 console.log(android);
 // Output:
 // Android {
-//   color: 'white',
-//   brand: 'B',
-//   model: 'Galaxy S21',
-//   device: 'smart TV'
-// }
-
-// 2. Overriding Method. changing the implementation of a method inherited from a parent class in a child class
-
-// I wanna change the charging() method inherited from a perent class 
-
-// 
-class iOS extends SmartPhones{
-    constructor(color,brand,model,device){
-        super(color,brand,model);
-        this.device = device;
-    }
-
+    //   color: 'white',
+    //   brand: 'B',
+    //   model: 'Galaxy S21',
+    //   device: 'smart TV'
+    // }
     
-  charging() {
-    console.log(`Charging ${this.model} with fast charger`);
-  }
-
-  airDrp() {
-    console.log('iOS have a AirDrop');
-  }
-}
+    // 2. Overriding Method. changing the implementation of a method inherited from a parent class in a child class
+    
+    // I wanna change the charging() method inherited from a perent class 
+    
+    // 
+    class iOS extends SmartPhones{
+        constructor(color,brand,model,device){
+            super(color,brand,model);
+            this.device = device;
+        }
+        
+        
+        charging() {
+            
+            // Call method charging form the Perent Class
+            super.charging();
+            
+            console.log(`Charging ${this.model} with fast charger`);
+        }
+        
+        airDrp() {
+            console.log('iOS have a AirDrop');
+        }
+    }
+const ios = new iOS('black','B','iPhone 17 pro','Handphone');
+ios.charging();
+// Output:
+// Charging iPhone 17 pro
+// Charging iPhone 17 pro with fast charger
