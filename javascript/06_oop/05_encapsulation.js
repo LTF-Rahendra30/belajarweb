@@ -27,7 +27,7 @@ class CoffeMachine2{
         this.waterAmount  = waterAmount;
         this._temperature = 90;
     }
-
+    
     // Set method
     set temperature(temperature){
         console.log("you're not all allowed to change the temperature");
@@ -46,17 +46,18 @@ console.log("Adfter change: ",coffe2.temperature)
 // Berofe change:  90
 // you're not all allowed to change the temperature
 // Adfter change:  90
+console.log("-".repeat(40));
 
 // ===== To the value cant be never change, I did this =====
 
 class CoffeMachine3{
     #temperature = 90;
-
+    
     constructor(waterAmount){
         this.waterAmount  = waterAmount;
         this.#temperature = this.#defaultTemperature();
     }
-
+    
     // Set method
     set temperature(temperature){
         console.log("you're not all allowed to change the temperature");
@@ -65,8 +66,16 @@ class CoffeMachine3{
     get temperature(){
         return this.#temperature;
     }
-
+    
     #defaultTemperature(){
         return 90;
     }
 }
+const coffe3 = new CoffeMachine3(10);
+console.log("Berofe change: ",coffe3.temperature);
+coffe3.temperature = 1000;
+console.log("Adfter change: ",coffe3.temperature)
+// Output:
+// Berofe change:  90
+// you're not all allowed to change the temperature
+// Adfter change:  90
