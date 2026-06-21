@@ -27,3 +27,14 @@ class Android extends SmartPhones{
     console.log('Android have a Split Screen');
   }
 }
+
+// Create object
+const android = new Android('white', 'B', 'Galaxy S21', 'smart TV');
+console.log(android);
+// Output:
+// Android {
+//   color: 'white',
+//   brand: 'B',
+//   model: 'Galaxy S21',
+//   device: 'smart TV'
+// }
