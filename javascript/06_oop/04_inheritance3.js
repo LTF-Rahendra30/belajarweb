@@ -39,3 +39,13 @@ Android.prototype.splitScreen = function(){
     console.log('Android have a Split Screen');
 }
 
+// Create Object
+
+const ios = new iOS('black','A','12 Pro Max');
+const android = new Android('white', 'B', 'Galaxy S21');
+
+ios.charging(); // Output: Charging 12 Pro Max
+ios.airDrop(); // Output: iOS have a behavior AirDrop
+
+android.charging(); // Output: Charging Galaxy S21
+android.splitScreen(); // Output: Android have a Split Screen
