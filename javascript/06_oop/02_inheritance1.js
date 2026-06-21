@@ -48,11 +48,3 @@ ios.airDrop(); // Output: iOS have a behavior AirDrop
 android.charging(); // Output: Charging Galaxy S21
 android.splitScreen(); // Output: Android have a Split Screen
 
-
-// =============== CLASS WITHOUT USE ES6 CLASS ==============
-
-function SmartPhone(color,brand,model){
-    this.color = color;
-    this.brand = brand;
-    this.model = model;
-}
