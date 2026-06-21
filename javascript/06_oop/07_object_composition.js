@@ -58,3 +58,33 @@ function createWarrior(name) {
   const character = new Character(name, 100, 0);
   return Object.assign(character, canAttack(character), canDefend(character));
 }
+
+// Crate object
+
+const monster = createMonster('Monster');
+monster.attack();
+monster.canMove();
+
+const guardian = createGuardian('Guardian');
+guardian.canMove();
+guardian.defend();
+ 
+const wizard = createWizard('Wizard');
+wizard.canMove();
+wizard.castSpell();
+ 
+const warrior = createWarrior('Warrior');
+warrior.canMove();
+warrior.attack();
+warrior.defend();
+
+// Output:
+// Monster attack with a weapon
+// Monster moves to 0
+// Guardian moves to 0
+// [object Object] defends with a shield!
+// Wizard moves to 0
+// [object Object] casts a spell!
+// Warrior moves to 0
+// [object Object] attack with a weapon
+// [object Object] defends with a shield!
