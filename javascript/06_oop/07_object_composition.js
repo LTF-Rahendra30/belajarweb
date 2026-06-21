@@ -12,22 +12,29 @@ class Character{
     }
 }
 
-// ============= CHILD CLASS ===========
- 
-class Monster extends Character {
-  canAttack() {
-    console.log(`${this.name} attacks with a weapon!`);
+
+// ============= OBJECT CREATOR FUNCTION ============
+
+function canAttack(character){
+    return {
+        attack: () => {
+            console.log(`${character} attack with a weapon`)
+        }
+    }
+}
+function canDefend(character) {
+  return {
+    defend: () => {
+      console.log(`${character} defends with a shield!`);
+    }
   }
 }
  
-class Guardian extends Character {
-  canDefend() {
-    console.log(`${this.name} defends with a shield!`);
+function canCastSpell(character) {
+  return {
+    castSpell: () => {
+      console.log(`${character} casts a spell!`);
+    }
   }
 }
- 
-class Wizard extends Character {
-  canCastSpell() {
-    console.log(`${this.name} casts a magic spell!`);
-  }
-}
+
