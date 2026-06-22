@@ -1,6 +1,6 @@
 // HOF is a function that accepts another function as an argument and/or returns another function.
 
-// Example
+// Example HOF
 
 function apply(opertion,...agrs){
     return opertion(...agrs)
@@ -20,3 +20,27 @@ const withDiscount = apply(discount,25,productPrice);
 
 console.log('Product price:', productPrice); // Output: Product price: 400
 console.log('With discount 25%:', withDiscount); // Output: With discount 25%: 300
+
+// ===== CURRYING WITH HOF =======
+
+
+function adjectivfy(adjective){
+    return function (noun){
+        return `${noun} ${adjective}`;
+    }
+}
+
+function multipleBy(x){
+    return function(y){
+        return x * y;
+    }
+}
+
+const coolifier = adjectivfy("you're so cool");
+const funnifier = adjectivfy("So Funny");
+const multipleByFive = multipleBy(5);
+
+console.log(coolifier('Chloe')); // Output: Chloe you're so cool.
+console.log(funnifier('JavaScript')); // Output: JavaScript seru.
+console.log(multipleByFive(7)); // Output: 35
+console.log(multipleByFive(10)); // Output: 50
