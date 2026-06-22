@@ -44,3 +44,9 @@ console.log(coolifier('Chloe')); // Output: Chloe you're so cool.
 console.log(funnifier('JavaScript')); // Output: JavaScript seru.
 console.log(multipleByFive(7)); // Output: 35
 console.log(multipleByFive(10)); // Output: 50
+
+// ===== HOF: Array.map() ======
+
+const numbers  = [1,2,3,4];
+const doubled = numbers.map((num) => num *2);
+console.log(doubled); // [2, 4, 6, 8]
