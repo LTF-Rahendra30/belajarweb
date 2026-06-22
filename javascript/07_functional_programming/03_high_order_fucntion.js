@@ -1,1 +1,22 @@
 // HOF is a function that accepts another function as an argument and/or returns another function.
+
+// Example
+
+function apply(opertion,...agrs){
+    return opertion(...agrs)
+}
+
+function sum(a,b,c){
+    return a+b+c;
+}
+
+function discount(disc,value){
+    return value - ((disc / 100)  * value);
+
+}
+
+const productPrice = apply(sum,100,100,200);
+const withDiscount = apply(discount,25,productPrice);
+
+console.log('Product price:', productPrice); // Output: Product price: 400
+console.log('With discount 25%:', withDiscount); // Output: With discount 25%: 300
