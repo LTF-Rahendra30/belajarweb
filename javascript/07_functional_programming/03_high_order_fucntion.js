@@ -1,0 +1,1 @@
+// HOF is a function that accepts another function as an argument and/or returns another function.
