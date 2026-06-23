@@ -38,3 +38,11 @@ const eligibleForScholarhip = students.filter((student) => student.score > 85);
 console.log(eligibleForScholarhip);
 // Output:
 // [ { name: 'Chloe', score: 88 }, { name: 'Ron', score: 90 } ]
+
+// 3. Array Reduce
+
+// Example array is same form before:
+
+// Calculate total score students 
+const totalScore = students.reduce((acc,student)=> acc+student.score,0);
+console.log(totalScore); //313
