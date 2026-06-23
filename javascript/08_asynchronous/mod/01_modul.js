@@ -8,8 +8,6 @@ export function  makeCoffe(){
 
     setTimeout(() => {
         console.log("The barista has finished making coffee.");
-        console.log("All Done!!")
-        console.log("I got the coffe and finished it")
     },estimationTime);
 
 }
