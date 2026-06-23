@@ -1,9 +1,11 @@
-import { makeCoffe } from "./mod/01_modul.js";
+import { sendCoffe,makeCoffe } from "./mod/01_modul.js";
 
 console.log("I ordered coffe at the cafe")
 makeCoffe(() => {
-    console.log("All Done!!")
-    console.log("I got the coffe and finished it")
+    sendCoffe(() =>{
+        console.log("All Done!!")
+        console.log("I got the coffe and finished it")
+    });
 });
 
 // Output:

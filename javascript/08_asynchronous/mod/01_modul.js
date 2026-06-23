@@ -8,8 +8,18 @@ export function  makeCoffe(callback){
 
     setTimeout(() => {
         console.log("The barista has finished making coffee.");
-
+        
         callback();
     },estimationTime);
+    
+}
 
+export function sendCoffe(callback){
+    const estimationTime = 2000;
+    console.log("The waiter is bringing your coffee");
+
+    setTimeout(()=> {
+        console.log("The Waiter has arrived");
+        callback();
+    },estimationTime);
 }
