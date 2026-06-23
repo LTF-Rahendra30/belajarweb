@@ -34,3 +34,26 @@ function deepFreeze(object){
     return Object.freeze(object);
 
 }
+
+// Exapmle Object
+const complexUser = {
+  name: 'Bob',
+  email: 'bob@dicoding.com',
+  preferences: {
+    newsletter: true,
+    notifications: 'weekly',
+    address: {
+      city: 'New York',
+      zip: '10001'
+    }
+  }
+};
+
+// Freeze
+deepFreeze(complexUser);
+
+complexUser.preferences.address.city = 'Seoul';
+
+console.log(complexUser.preferences.address.city);
+// Output: New York
+// Still and same from before
