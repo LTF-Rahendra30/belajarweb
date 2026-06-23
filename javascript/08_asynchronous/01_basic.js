@@ -11,6 +11,7 @@ function ambilDataSync() {
 console.log("=== PROSES SYNC ===");
 ambilDataSync();
 // Output:
+// === PROSES SYNC ===
 // 1. Start download data (Sync)...
 // 2. Done, Successed Download! (Sync), printed after 2 second
 
@@ -29,3 +30,8 @@ async function addDataAsync() {
 }
 console.log("=== PROSES ASYNC ===");
 addDataAsync();
+
+// Output:
+// === PROSES ASYNC ===
+// 1.Start Download (Async)
+// 2. Done, Successed Download! (Async)
