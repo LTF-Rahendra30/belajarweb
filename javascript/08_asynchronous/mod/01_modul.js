@@ -1,6 +1,6 @@
 // Simulaton make Coffe 
 
-export function  makeCoffe(){
+export function  makeCoffe(callback){
     const estimationTime = 5000;
 
     const inSecond = Math.ceil(estimationTime / 1000);
@@ -8,6 +8,8 @@ export function  makeCoffe(){
 
     setTimeout(() => {
         console.log("The barista has finished making coffee.");
+
+        callback();
     },estimationTime);
 
 }
