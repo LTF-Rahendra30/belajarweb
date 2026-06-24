@@ -1,6 +1,6 @@
 function promiseExecutor(resolve,reject){
     setTimeout(()=> {
-        console.log("Do something before before Promise has done");
+        console.log("Do something before Promise has done");
 
         // Result of Async Procces
         const number = Math.random();
