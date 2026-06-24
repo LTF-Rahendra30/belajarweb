@@ -1,12 +1,12 @@
-import {readFIle} from 'fs';
+import {readFile} from 'fs';
 
-readFIle('./mod/simple.txt', (error,data) => {
+readFile('./mod/simple.txt', (error,data) => {
     if (error){
         console.log(error);
         return;
     }
 
-    const greeting = data.toString()   .replace('%name%', 'Chloe').replace('%your_name','LTF')
+    const greeting = data.toString()   .replace('%name%', 'Chloe').replace('%your_name%','LTF')
 
     console.log(greeting);
 });
