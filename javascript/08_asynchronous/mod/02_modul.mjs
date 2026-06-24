@@ -38,6 +38,6 @@ export function sendCoffe(callback){
 
         }
         console.log("The Waiter has arrived");
-        callback();
+        callback(null,name);
     },estimationTime);
 }
