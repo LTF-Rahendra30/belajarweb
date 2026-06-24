@@ -23,3 +23,27 @@ export function makeCoffe(name){
     });
 }
 
+export function sendCoffe(name){
+    return new Promise((resolve,reject)=> {
+        const estimationTime = 2000;
+        let isSuccess = false;
+
+        console.log("The waiter is bringing your coffee");
+    
+        setTimeout(() =>{
+            const number = Math.random();
+
+            if (number > 0.3) {
+            isSuccess = true;
+            }
+
+            if (!isSuccess){
+                reject(new Error("Fail to send coffe"));
+                return;
+            }
+
+            console.log("The Waiter has arrived");
+            resolve(name);
+        },estimationTime);
+    });
+}
