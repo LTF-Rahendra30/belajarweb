@@ -1,6 +1,6 @@
 function promiseExcecutor(resolve,reject){
     setTimeout(()=>{
-        resolve("Ypu did it");
+        resolve("You did it");
     },2000);
 }
 
