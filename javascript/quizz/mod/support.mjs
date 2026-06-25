@@ -10,3 +10,27 @@ const API = {
         });
     }
 };
+
+const sampleErrorData = [
+    {
+        delay: 100,
+        simulateError: false,
+    },
+    {
+        delay: 50,
+        simulateError: true,
+    },
+];
+
+const sampleSuccessData = [
+    {
+        delay: 100,
+        simulateError: false,  
+    },
+    {
+        delay: 50,
+        simulateError: false,  
+    },
+];
+
+export {API,sampleErrorData,sampleSuccessData};
