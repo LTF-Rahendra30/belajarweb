@@ -19,5 +19,5 @@ const result = adding(10,10);
 console.log(result) // 20
 
 // Try add string and number
-const result2 = adding('10',10);
-console.log(result2) // 1010
+// const result2 = adding('10',10);
+// console.log(result2) // 1010, bcz, TypeScript cant be run in Node js
