@@ -1,0 +1,1 @@
+// JavaScript is a dynamically typed language that determines data types at runtime.
