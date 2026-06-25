@@ -9,7 +9,7 @@ makeCoffe(order)
     .then(
         (value) =>{
             return sendCoffe(value);
-        },)
+        })
     .then(
         (value) =>{
             console.log(`Barista give me ${value}`);
