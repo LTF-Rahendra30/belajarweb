@@ -9,19 +9,12 @@ makeCoffe(order)
     .then(
         (value) =>{
             return sendCoffe(value);
-        },
-        (error) =>{
-            console.log(error.message);
-            throw error;
-        },
-    )
+        },)
     .then(
         (value) =>{
             console.log(`Barista give me ${value}`);
             console.log(`I got ${value} and finished it`)
-        },
-        (error) =>{
+        })
+        .catch((error) =>{
             console.log(error.message);
-            throw error;
-        },
-    );
+        });
