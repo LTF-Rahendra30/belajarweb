@@ -57,3 +57,33 @@ test at 01_test.mjs:30:1
     diff: 'simple'
   }
 */
+
+test('should throw an error if string passed on numB parameter', () => {
+  const potentialErrorToBeThrew = () => {
+    // Arrange
+    const operandA = 10;
+    const operandB = '8';
+
+    // Action
+    add(operandA, operandB);
+  };
+
+  // Assert
+  assert.throws(potentialErrorToBeThrew, Error);
+});
+
+/* 
+
+The Output:
+✔ should add correctly (1.0816ms)
+✔ Should throw an error if string passed on numA parameter (0.6121ms)
+✔ should throw an error if string passed on numB parameter (0.1977ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10.9886
+ */
