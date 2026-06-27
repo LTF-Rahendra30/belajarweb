@@ -6,10 +6,13 @@
     <title>Try Inlane-Block Element</title>
 
     <style>
+        /* Block */
         .h2,.ul,.h3,.p{
             background-color: aqua;
         }
-        h2,h3,p{
+        
+        /* Inline */
+        p{
             background-color: rgb(0, 255, 98);
         }
         em{
@@ -20,6 +23,14 @@
             width: 200px;
             height: 200px;
             /* Try add witdh and height and then no effect for styling */
+        }
+
+        /* Inline-Block */
+        .Inlane-Block{
+            background-color: chocolate;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
         }
 
     </style>
@@ -38,13 +49,22 @@
     <h3 class="h3">Aricle</h3>
     <p class ="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, nam.</p>
 
-    <!-- Inlien Element -->
-    <h2>Inline-Element</h2>
+    <!-- Inline Element -->
+    <h2 >Inline-Element</h2>
     <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
     <a href="#">Services</a>
 
     <p>Lorem ipsum dolor sit, <em>Lorem ipsum dolor sit amet consectetur adipisicing elit.</em> </p>
+
+    <!-- Inline-Block Element -->
+    <h2>Inline-Element</h2>
+    <a class="Inlane-Block" href="#">Home</a>
+    <a class="Inlane-Block" href="#">About</a>
+    <a class="Inlane-Block" href="#">Contact</a>
+    <a class="Inlane-Block" href="#">Services</a>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, eligendi!</p>
 </body>
 </html>
