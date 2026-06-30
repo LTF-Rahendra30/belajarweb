@@ -15,8 +15,8 @@ body{
     margin-right: auto;
     padding: 25px;
     background-color: rgb(255, 255, 255);
-    width: 400px;
-    height: 700px;
+    width: 380px;
+    height: 750px;
     border: 1px solid rgba(128, 128, 128, 0.269);
     border-radius: 18px;
     box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.2);
@@ -43,9 +43,24 @@ img{
     font-weight: bold;
     color: rgb(40, 107, 233);
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     margin-top: 20px;
 }
 .product-title{
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+}
+
+.product-description{
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.price-box{
+    display: block;
+    margin: 25px 0 25px 0;
+}
+.size-label{
+    margin-bottom: 12px;
+}
+.size-selection{
+    margin-bottom: 25px;
 }
