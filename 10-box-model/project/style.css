@@ -11,12 +11,13 @@ body{
 
 .card-product{
     margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
     background-color: rgb(255, 255, 255);
     width: 380px;
-    height: 750px;
+    height: 780px;
     border: 1px solid rgba(128, 128, 128, 0.269);
     border-radius: 18px;
     box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.2);
@@ -54,10 +55,10 @@ img{
         line-height: 1.4;
         margin-bottom: 15px;
     }
-.price-box{
-    display: block;
-    margin: 25px 0 25px 0;
-}
+    .price-box{
+        display: block;
+        margin: 25px 0 25px 0;
+    }
 .size-label{
     margin-bottom: 12px;
     font-weight: 600;
@@ -82,10 +83,18 @@ img{
     background-color: rgb(255, 255, 255);
     border: 2px solid rgba(128, 128, 128, 0.269);
     font-weight: bold;
-
+    
     width: 40px;
     height: 40px;
     margin-right: 15px;
     border-radius: 10px;
     padding: 6px;
+}
+
+.add-to-cart{
+    height: 50px;
+    width: 328px;
+    border-radius: 12px;
+    border: 0 solid;
+    font-weight: bold;
 }
