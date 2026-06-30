@@ -59,11 +59,11 @@ img{
     margin: 25px 0 25px 0;
 }
 .size-label{
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     font-weight: 600;
 }
 .size-selection{
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 /* ======== STYLE PRICE TEXT ======== */
@@ -80,7 +80,7 @@ hr{
 }
 
 /* ======= SIZE BUTTON STYLE ======== */
-.size-item{
+.size-group label{
     background-color: rgb(255, 255, 255);
     border: 2px solid rgba(128, 128, 128, 0.269);
     font-weight: bold;
