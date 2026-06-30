@@ -34,3 +34,14 @@ img{
     /* height: 100%; */
     border-radius: 12px;
 }
+
+/* Product Desctription */
+.product-info{
+    margin-top: 15px;
+}
+.brand-name{
+    font-weight: bold;
+    color: rgb(40, 107, 233);
+    display: block;
+    margin-bottom: 12px;
+}
