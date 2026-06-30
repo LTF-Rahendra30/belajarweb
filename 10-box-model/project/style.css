@@ -64,3 +64,13 @@ img{
 .size-selection{
     margin-bottom: 25px;
 }
+
+/* ======== STYLE PRICE TEXT ======== */
+.current-price{
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+.slashed-price{
+    padding-left: 12px;
+    text-decoration: line-through;
+}
