@@ -40,25 +40,24 @@ img{
 /* .product-info{
     margin-top: 15px;
     } */
-    .brand-name{
-        font-weight: bold;
-        color: rgb(40, 107, 233);
-        display: block;
-        margin-bottom: 12px;
-        margin-top: 20px;
-    }
-    .product-title{
-        margin-bottom: 12px;
-    }
-    
-    .product-description{
-        line-height: 1.4;
-        margin-bottom: 15px;
-    }
-    .price-box{
-        display: block;
-        margin: 25px 0 25px 0;
-    }
+.brand-name{
+    font-weight: bold;
+    color: rgb(40, 107, 233);
+    display: block;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+.product-title{
+    margin-bottom: 12px;
+}
+
+.product-description{
+    line-height: 1.4;
+}
+.price-box{
+    display: block;
+    margin: 25px 0 25px 0;
+}
 .size-label{
     margin-bottom: 12px;
     font-weight: 600;
@@ -76,7 +75,9 @@ img{
     padding-left: 12px;
     text-decoration: line-through;
 }
-
+hr{
+    margin: 20px 0;
+}
 
 /* ======= SIZE BUTTON STYLE ======== */
 .size-item{
@@ -107,4 +108,5 @@ img{
     color: rgb(251, 255, 255);
     cursor: pointer;
     transform: translateY(-2px);
+    transition: all 0.1s ease-in-out;
 }
