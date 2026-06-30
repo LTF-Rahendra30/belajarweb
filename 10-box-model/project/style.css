@@ -95,6 +95,16 @@ img{
     height: 50px;
     width: 328px;
     border-radius: 12px;
-    border: 0 solid;
+    border: none;
     font-weight: bold;
+    color: rgb(251, 255, 255);
+    background-color: black;
+}
+
+/* Button Effect Hover*/
+.add-to-cart:hover{
+    background-color: black;
+    color: rgb(251, 255, 255);
+    cursor: pointer;
+    transform: translateY(-2px);
 }
