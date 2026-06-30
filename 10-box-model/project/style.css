@@ -27,7 +27,7 @@ img{
     display: block;
     object-position: center;
     object-fit: cover;
-    max-height: 300px;
+    max-height: 280px;
     /* max-width:280px; */
     width: 100%;
     /* margin: auto; */
@@ -36,12 +36,16 @@ img{
 }
 
 /* Product Desctription */
-.product-info{
+/* .product-info{
     margin-top: 15px;
-}
+} */
 .brand-name{
     font-weight: bold;
     color: rgb(40, 107, 233);
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.product-title{
+    margin-bottom: 20px;
 }
