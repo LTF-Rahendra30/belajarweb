@@ -21,22 +21,21 @@ body{
     
 }
 
-img{
-    display: block;
-    object-position: center;
-    object-fit: cover;
-    max-height: 280px;
-    /* max-width:280px; */
+.product-image{
     width: 100%;
-    /* margin: auto; */
-    /* height: 100%; */
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
     border-radius: 12px;
+
 }
 
-/* Product Desctription */
-/* .product-info{
-    margin-top: 15px;
-    } */
+.product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .brand-name{
     font-weight: bold;
     color: rgb(40, 107, 233);
