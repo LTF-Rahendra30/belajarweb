@@ -110,7 +110,7 @@ hr{
     color: rgb(251, 255, 255);
     background-color: black;
     scale: calc(1.1);
-
+    
 }
 .add-to-cart{
     height: 50px;
@@ -129,4 +129,5 @@ hr{
     cursor: pointer;
     transform: translateY(-2px);
     transition: all 0.1s ease-in-out;
+    scale: calc(1.03);
 }
