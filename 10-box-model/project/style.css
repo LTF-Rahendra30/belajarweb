@@ -41,14 +41,19 @@ body{
     color: rgb(40, 107, 233);
     display: block;
     margin-bottom: 12px;
-    margin-top: 20px;
 }
 .product-title{
+    font-size: 32px;
     margin-bottom: 12px;
+    color: #1a1a1a;
 }
 
 .product-description{
     line-height: 1.4;
+    color: #666;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeee;
 }
 .price-box{
     display: block;
@@ -70,9 +75,6 @@ body{
 .slashed-price{
     padding-left: 12px;
     text-decoration: line-through;
-}
-hr{
-    margin: 20px 0;
 }
 
 /* ======= SIZE BUTTON STYLE ======== */
