@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.main-header{
+    height: 200px;
+    background-color: rgb(29, 29, 29);
+    color: azure;
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.genre-category{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.genre-category span{
+    margin-right: 12px;
+    background-color: #06b6d4;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+/* Card */
+
+.profile-card{
+    margin: 20px;
+    padding: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.269);
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Artist Image */
+
+.artist-image img{
+    border: 2px solid #06b6d4;
+    border-radius: 50%;
+    overflow: hidden;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
