@@ -55,7 +55,7 @@ main{
     padding: 40px;
     border: 1px solid rgba(128, 128, 128, 0.269);
     border-radius: 18px;
-    box-shadow: 1px 1px 8px 0 rgba(0 0 0 0.2);
+    box-shadow: 1px 1px 8px 0 rgba(0 0 0 / 0.2);
     text-align: center;
 }
 
@@ -90,7 +90,7 @@ main .profile-card .stats .stats-item{
     margin: 10px 20px;
     border-radius: 12px;
     border: 2px solid #61e7ff;
-
+    
 }
 
 main .profile-card .stats .stats-item .stat-value{
@@ -101,6 +101,65 @@ main .profile-card .stats .stats-item .stat-value{
 main .profile-card .stats .stats-item .stat-label{
     color: #666;
 }
-.album-card img{
+
+
+/* Album Card */
+main .discography{
+    margin: 50px 0;
+}
+
+main .discography h3{
+    text-align: center;
+    font-size: 2em;
+    mask-border: 20px;
+}
+
+main .discography .album-list{
+    text-align: center;
+}
+
+main .discography .album-list .album-card{
     width: 200px;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.269);
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 rgba(0 0 0 / 0.2);
+}
+main .discography .album-list .album-card img{
+    width: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+main .discography .album-list .album-card h4{
+    margin-bottom: 15px;
+}
+
+main .discography .album-list .album-card p{
+    color: #666;
+    margin-bottom: 15px;
+}
+main .discography .album-list .album-card a{
+    display: inline-block;
+    font-size: 0.9em;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #06b6d4;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+
+main .discography .album-list .album-card a:hover{
+    background-color: #089db8;
+    scale: calc(1.04);
+    transition: all 0.3s ease-in-out;
+}
+/* Connect Link */
+main .social-link{
+
 }
