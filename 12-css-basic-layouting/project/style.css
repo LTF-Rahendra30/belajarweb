@@ -13,3 +13,24 @@ body{
     color: #b8c5d6;
     font-family: "Nunito Sans" , Arial, Helvetica, sans-serif;
 }
+
+/* Benner Section */
+.top-banner{
+    text-align: center;
+    font-family: "Inter";
+    font-weight: bold;
+    height: 60px;
+    background: linear-gradient(135deg,
+    #f08206 0%,
+  #eec407 100%);
+    color: black;
+    padding: 20px;
+}
+
+/* ======== NAVIGATION ================= */
+.navbar{
+    background-color:#1f2a3f;
+}
+.navbar a{
+    display: inline-block;
+}
