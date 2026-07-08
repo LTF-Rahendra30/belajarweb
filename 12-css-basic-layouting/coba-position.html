@@ -53,6 +53,7 @@
             width: 324px;
             height: 324px;
             margin: 20px auto;
+            position: relative;
         }
 
         /* Try Static */
@@ -71,6 +72,13 @@
             position: absolute;
             top: 0;
             left: 0;
+        }
+        /* Try Absolute posisioning from perent Container */
+        .absolute-2{
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -95,7 +103,7 @@
     <h2>4. Position: Absolute (Relative ke perent)</h2>
     <div class="container">
         <div class="box satu">1</div>
-        <div class="box dua">2</div>
+        <div class="box dua absolute-2">X</div>
         <div class="box tiga">3</div>
     </div>
     
