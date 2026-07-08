@@ -37,7 +37,7 @@
             color: white;
             font-weight: bold;
             text-align: center;
-            line-height: 100px;
+            line-height: 20px;
         }
         .satu{
             background-color: #BADA55;
@@ -56,31 +56,6 @@
             position: relative;
         }
 
-        /* Try Static */
-        .static{
-            position: static;
-            top: 20px;
-        } /* } =========>> DONT WORK */
-
-        .relative{
-            position: relative;
-            left: 20px;
-            top: 0px;
-        }
-
-        .absolute{
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        /* Try Absolute posisioning from perent Container */
-        .absolute-2{
-            position: absolute;
-            top: -50px;
-            right: -50px;
-            border-radius: 50%;
-        }
-
         /* Try Fixed Positioning */
         .fixed{
             position: fixed;
@@ -88,6 +63,13 @@
             right: 50px;
             border-radius: 50%;
         }
+
+        /* Try Sticky positioning */
+        .sticky{
+            position: sticky;
+            top: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -95,26 +77,15 @@
 
     <h2>1. Position: Fixed</h2>
     <div class="box satu">1</div>
-    <div class="box dua fixed">2</div>
+    <div class="box dua fixed">Fixed, bottom: 50px, right:50px</div>
     <div class="box tiga">3</div>
     
-    <h2>2. Position: Relative</h2>
+    <h2>2. Position: Sticky</h2>
     <div class="box satu">1</div>
-    <div class="box dua relative">2</div>
-    <div class="box tiga">3</div>
-
-    <h2>3. Position: Absolute (Relatif ke body)</h2>
-    <div class="box satu">1</div>
-    <div class="box dua absolute">2</div>
+    <div class="box dua sticky">Sticky, Top:0</div>
     <div class="box tiga">3</div>
     
-    <h2>4. Position: Absolute (Relative ke perent)</h2>
-    <div class="container">
-        <div class="box satu">1</div>
-        <div class="box dua absolute-2">X</div>
-        <div class="box tiga">3</div>
-    </div>
-    
+    <p style="height: 1000px; margin-top: 100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam quasi cumque sed, quod facere provident debitis deleniti. Neque temporibus odit vitae provident unde saepe, debitis reprehenderit ipsa explicabo at magni enim perspiciatis quidem, nihil quas mollitia distinctio excepturi, ipsam quam praesentium cum! Velit, ea reiciendis? Repellendus error exercitationem necessitatibus, voluptatem voluptas et facilis! Nemo minima perspiciatis repudiandae accusamus architecto ratione placeat enim esse nisi cum cupiditate ipsam veniam nulla, eligendi recusandae libero quaerat quibusdam! Aut corporis quia atque necessitatibus iure cupiditate repellat quibusdam dolores inventore officia blanditiis sed mollitia, maxime natus possimus quidem, perspiciatis alias ullam impedit quo totam. Quis, tenetur at molestiae numquam placeat amet incidunt quod. Deserunt doloremque doloribus quam commodi temporibus mollitia sunt, est exercitationem dicta quasi ullam nemo ducimus maxime architecto impedit praesentium eligendi voluptatem, obcaecati id odio libero, dolores sequi eveniet. Accusantium suscipit minima eius dolorem. Pariatur delectus, molestias rerum consequatur deleniti neque quisquam doloribus. Esse minus ipsa repellat dolorem facere! Expedita, ea. Modi est facere in eum similique numquam ab quas molestiae officia aspernatur voluptates magni cum, cupiditate, corrupti, recusandae vel. Aliquam, rem ipsam tenetur alias at sequi repellendus quam itaque tempora? Corporis, ea esse! Eveniet laudantium atque rerum id consequatur in nihil!</p>
     
 </body>
 </html>
