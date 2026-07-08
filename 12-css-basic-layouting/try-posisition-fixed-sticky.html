@@ -80,14 +80,22 @@
             right: -50px;
             border-radius: 50%;
         }
+
+        /* Try Fixed Positioning */
+        .fixed{
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
     <h1>Eksperimen CSS Position</h1>
 
-    <h2>1. Position: Static (Normal Flow)</h2>
+    <h2>1. Position: Fixed</h2>
     <div class="box satu">1</div>
-    <div class="box dua static">2</div>
+    <div class="box dua fixed">2</div>
     <div class="box tiga">3</div>
     
     <h2>2. Position: Relative</h2>
@@ -99,13 +107,14 @@
     <div class="box satu">1</div>
     <div class="box dua absolute">2</div>
     <div class="box tiga">3</div>
-
+    
     <h2>4. Position: Absolute (Relative ke perent)</h2>
     <div class="container">
         <div class="box satu">1</div>
         <div class="box dua absolute-2">X</div>
         <div class="box tiga">3</div>
     </div>
+    
     
 </body>
 </html>
