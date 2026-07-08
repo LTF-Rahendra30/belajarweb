@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: "Inter", sans-serif;
+            padding: 50px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }h2{
+            margin-top: 40px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        p{
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+        }
+        .satu{
+            background-color: #BADA55;
+        }
+        .dua{
+            background-color: #9b59b6;
+        }
+        .tiga{
+            background-color: #f1c40f;
+        }
+        .container{
+            border: 8px solid #34495e;
+            width: 324px;
+            height: 324px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        /* Try Static */
+        .static{
+            position: static;
+            top: 20px;
+        } /* } =========>> DONT WORK */
+
+        .relative{
+            position: relative;
+            left: 20px;
+            top: 0px;
+        }
+
+        .absolute{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        /* Try Absolute posisioning from perent Container */
+        .absolute-2{
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eksperimen CSS Position</h1>
+
+    <h2>1. Position: Static (Normal Flow)</h2>
+    <div class="box satu">1</div>
+    <div class="box dua static">2</div>
+    <div class="box tiga">3</div>
+    
+    <h2>2. Position: Relative</h2>
+    <div class="box satu">1</div>
+    <div class="box dua relative">2</div>
+    <div class="box tiga">3</div>
+
+    <h2>3. Position: Absolute (Relatif ke body)</h2>
+    <div class="box satu">1</div>
+    <div class="box dua absolute">2</div>
+    <div class="box tiga">3</div>
+
+    <h2>4. Position: Absolute (Relative ke perent)</h2>
+    <div class="container">
+        <div class="box satu">1</div>
+        <div class="box dua absolute-2">X</div>
+        <div class="box tiga">3</div>
+    </div>
+    
+</body>
+</html>
