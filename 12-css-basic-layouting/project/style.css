@@ -19,10 +19,10 @@ body{
     text-align: center;
     font-family: "Inter";
     font-weight: bold;
-    height: 60px;
+    height: 50px;
     background: linear-gradient(135deg,
     #f08206 0%,
-  #eec407 100%);
+    #eec407 100%);
     color: black;
     padding: 20px;
 }
@@ -30,7 +30,35 @@ body{
 /* ======== NAVIGATION ================= */
 .navbar{
     background-color:#1f2a3f;
+    height: 60px;
+    border-bottom: 3px solid #444e5e ;
+    position: sticky;
+    top: 0;
+    padding: 20px;
 }
-.navbar a{
+.navbar .nav-logo{
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    color: rgb(95, 43, 226);
+    float: left;
+
+
+}
+.navbar .nav-menu li{
     display: inline-block;
+    float: right;
+}
+.navbar .nav-menu li a{
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+.clear-fix::after{
+        content: "";
+        display: table;
+        clear: both;
+
 }
