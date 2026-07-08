@@ -61,13 +61,14 @@
             position: fixed;
             /* bottom: 50px;
             right: 50px; */
-            border-radius: 50%;
+            /* border-radius: 50%; */
         }
 
         /* Try Sticky positioning */
         .sticky{
             position: sticky;
             top: 0;
+            z-index: 2;
         }
         /* Try top bar fixed positioning */
         .top-bar{
@@ -76,7 +77,14 @@
             top: 0;
             left: 0;
             right: 0;
-            position: fixed;
+            z-index: 1;
+        }
+
+        /* REALTIVE SPECIAL FOR Z INDEX */
+        .relative{
+            position: relative;
+            left: -50px;
+            top: 0px;
         }
     </style>
 </head>
@@ -85,12 +93,11 @@
 
     <h2>1. Position: Fixed</h2>
     <div class="box satu">1</div>
-    <div class="box dua fixed">Fixed, bottom: 50px, right:50px</div>
+    <div class="box dua fixed top-bar">Fixed</div>
     <div class="box tiga">3</div>
-    <div class="box dua top-bar"></div>
     
     <h2>2. Position: Sticky</h2>
-    <div class="box satu">1</div>
+    <div class="box satu relative">Relatif for Z Index</div>
     <div class="box dua sticky">Sticky, Top:0</div>
     <div class="box tiga">3</div>
     
