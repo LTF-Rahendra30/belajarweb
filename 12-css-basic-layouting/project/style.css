@@ -41,9 +41,9 @@ body{
 .navbar .nav-logo{
     font-family: "Inter";
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8em;
     text-decoration: none;
-    color: rgb(95, 43, 226);
+    color: rgb(59, 117, 231);
     float: left;
     margin-bottom: 20px;
 }
