@@ -148,7 +148,7 @@ body{
 }
 
 .schedule ul li:nth-child(even){
-    background-color: #1f2a3f;
+    background-color: #031941;
 }
 
 .schedule ul li b{
@@ -162,6 +162,38 @@ body{
     cursor: pointer;
 }
 .schedule ul li:nth-child(odd):hover{
-    background-color: #314363;
+    background-color: #1e365f;
     cursor: pointer;
+}
+
+
+
+/* ============== HIGHLIGHT ============== */
+
+.gallery h3{
+    border-left: 5px solid #3280f6;
+    color: white;
+    padding: 10px;
+    margin-left:50px ;
+    margin-bottom: 50px;
+}
+
+.gallery h4{
+    color: #e5e6e8;
+    margin-bottom: 20px;
+}
+.gallery .video-item{
+    background-color: #1E2E4B;
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.gallery .video-item img{
+    width: 250px;
+    border-radius: 20px 20px 0 0;
+}
+
+.gallery .video-item .video-info{
+    padding: 30px 20px;
 }
