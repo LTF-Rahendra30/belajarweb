@@ -155,3 +155,13 @@ body{
     color: #3280f6;
     font-weight: bold;
 }
+
+/* Hover */
+.schedule ul li:nth-child(even):hover{
+    background-color: #1c3868;
+    cursor: pointer;
+}
+.schedule ul li:nth-child(odd):hover{
+    background-color: #314363;
+    cursor: pointer;
+}
