@@ -133,3 +133,25 @@ body{
     padding: 30px 20px;
     text-align: center;
 }
+
+.schedule h3{
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.schedule ul li{
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 10px;
+    color: #e5e6e8;
+}
+
+.schedule ul li:nth-child(even){
+    background-color: #1f2a3f;
+}
+
+.schedule ul li b{
+    color: #3280f6;
+    font-weight: bold;
+}
