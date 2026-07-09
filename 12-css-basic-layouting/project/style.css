@@ -35,6 +35,7 @@ body{
     position: sticky;
     top: 0;
     padding: 20px;
+    line-height: 20px;
 }
 .navbar .nav-logo{
     font-family: "Inter";
@@ -59,3 +60,16 @@ body{
     
 }
 
+/* Stream Card */
+.bio{
+    background-color: #1f2a3f;
+    /* margin: 50px auto; */
+    margin: 50px 60px;
+    border-radius: 15px;
+}
+.bio img{
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgb(79, 79, 250);
+    border-radius: 10px;
+}
