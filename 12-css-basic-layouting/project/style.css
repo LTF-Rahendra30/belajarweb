@@ -169,13 +169,18 @@ body{
 
 
 /* ============== HIGHLIGHT ============== */
-
+.gallery{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
 .gallery h3{
     border-left: 5px solid #3280f6;
     color: white;
     padding: 10px;
     margin-left:50px ;
     margin-bottom: 50px;
+    text-align: left;
 }
 
 .gallery h4{
@@ -183,7 +188,8 @@ body{
     margin-bottom: 20px;
 }
 .gallery .video-item{
-    background-color: #1E2E4B;
+    background-color: #192134;
+    border: 1px solid #646f82;
     display: inline-block;
     border-radius: 20px;
     margin-left: 20px;
