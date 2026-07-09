@@ -7,9 +7,7 @@
 }
 
 body{
-    background: linear-gradient(135deg,
-    #0b1c38 0%,
-  #0f1419 100%);
+    background-color: #0b1c38;
     color: #b8c5d6;
     font-family: "Nunito Sans" , Arial, Helvetica, sans-serif;
 }
@@ -67,7 +65,7 @@ body{
 }
 /* ============= Stream Card =============== */
 .bio{
-    background-color: #1f2a3f;
+    background-color: #1e2e4b;
     width: 900px;
     margin: 50px auto;
     border-radius: 15px;
@@ -122,4 +120,16 @@ body{
     border-radius: 15px;
     padding: 10px;
     font-weight: bold;
+}
+
+
+/* ========= SECHDULE ========== */
+.schedule{
+    background-color: #01112c;
+    width: 900px;
+    margin: 50px auto;
+    border-radius: 12px;
+    border: 1px solid #042c7d;
+    padding: 30px 20px;
+    text-align: center;
 }
