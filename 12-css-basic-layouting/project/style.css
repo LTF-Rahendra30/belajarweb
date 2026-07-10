@@ -95,6 +95,7 @@ main{
 
 :is(h2,h3,h4){
     font-family: "Inter";
+    text-align: center;
 }
 /* ============= Stream Card =============== */
 .bio{
@@ -163,12 +164,10 @@ main{
 /* ========= SECHDULE ========== */
 .schedule{
     background-color: #01112c;
-    width: 900px;
-    margin: 50px auto;
+    margin-bottom: 60px;
     border-radius: 12px;
     border: 1px solid #042c7d;
-    padding: 30px 20px;
-    text-align: center;
+    padding: 30px ;
 }
 
 .schedule h3{
@@ -177,13 +176,16 @@ main{
     margin-bottom: 30px;
 }
 
-.schedule ul li{
-    margin-bottom: 20px;
+.schedule ul {
+    text-align: center;
     list-style: none;
+}
+
+.schedule ul li{
+    margin-bottom: 10px;
     padding: 10px;
     color: #e5e6e8;
 }
-
 .schedule ul li:nth-child(even){
     background-color: #031941;
 }
