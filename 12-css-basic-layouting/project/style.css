@@ -66,8 +66,25 @@ body{
     text-decoration: none;
     text-transform: uppercase;
 
+     /* To Add Hover Effect */
+    position: relative;
 }
 
+/* Add Bar For hover effect */
+.navbar .nav-menu li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #126ff9;
+    transition: width 0.3s ;
+}
+/* hover Effect */
+.navbar .nav-menu li a:hover::after{
+    width: 100%;
+}
 /* ========= Heading Typography ========= */
 
 :is(h2,h3,h4){
