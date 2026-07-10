@@ -53,7 +53,7 @@ body{
 .navbar .nav-menu{
     float: right;
     list-style: none;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .navbar .nav-menu li{
     display: inline-block;
