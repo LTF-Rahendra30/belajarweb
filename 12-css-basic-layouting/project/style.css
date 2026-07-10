@@ -215,34 +215,39 @@ main{
 .gallery h3{
     border-left: 5px solid #3280f6;
     color: white;
-    padding: 10px;
-    margin-left:50px ;
+    padding-left: 10px;
     margin-bottom: 50px;
     text-align: left;
 }
 
-.gallery h4{
-    color: #e5e6e8;
-    margin-bottom: 20px;
-}
 .gallery .video-item{
     background-color: #192134;
     border: 1px solid #4d5563;
     display: inline-block;
+    width: 23%;
+    margin: 1%;
+    overflow: hidden;
     border-radius: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
     transition: transform 0.4s ease,opacity 0.4s ease;
 }
 
 .gallery .video-item img{
-    width: 250px;
-    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 120px;
     object-fit: cover;
 }
-
 .gallery .video-item .video-info{
-    padding: 30px 20px;
+    padding: 12px;
+}
+
+.gallery .video-item .video-info h4{
+    color: #e5e6e8;
+    margin-bottom: 8px;
+}
+
+.gallery .video-item .video-info p{
+    font-size: 0.9em;
+    color: #a9b9d2;
 }
 /* Hover */
 .video-item:hover{
