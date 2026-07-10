@@ -85,6 +85,11 @@ body{
 .navbar .nav-menu li a:hover::after{
     width: 100%;
 }
+
+main{
+    width: 90%;
+    margin: 40px auto;
+}
 /* ========= Heading Typography ========= */
 
 :is(h2,h3,h4){
