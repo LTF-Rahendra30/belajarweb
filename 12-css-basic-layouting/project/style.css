@@ -19,12 +19,13 @@ body{
     text-align: center;
     font-family: "Inter";
     font-weight: bold;
-    height: 50px;
-    background: linear-gradient(135deg,
-    #f08206 0%,
-    #eec407 100%);
-    color: black;
-    padding: 20px;
+    background: linear-gradient(to right,
+    #f08206,
+    #eec407);
+    color: #0b1c38;
+    padding: 12px;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 0.3);
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 0.4);
 }
 
 /* ======== NAVIGATION ================= */
