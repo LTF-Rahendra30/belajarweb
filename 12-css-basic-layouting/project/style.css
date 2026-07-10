@@ -31,36 +31,43 @@ body{
 /* ======== NAVIGATION ================= */
 .navbar{
     background-color:#1f2a3f;
-    height: 60px;
     border-bottom: 3px solid #444e5e ;
     position: sticky;
     top: 0;
-    padding: 20px;
-    line-height: 20px;
+    padding: 15px 50px;
     z-index: 99999;
+    /* To fix Container Collapse */
+    overflow: auto;
 }
+
 .navbar .nav-logo{
     font-family: "Inter";
     font-weight: bold;
     font-size: 1.8em;
+    letter-spacing: 1px;
     text-decoration: none;
     color: rgb(59, 117, 231);
     float: left;
-    margin-bottom: 20px;
 }
 
+.navbar .nav-menu{
+    float: right;
+    list-style: none;
+    margin-top: 5px;
+}
 .navbar .nav-menu li{
     display: inline-block;
-    float: right;
+    margin-left: 25px;
 }
+
 .navbar .nav-menu li a{
     font-weight: bold;
     color: aliceblue;
     text-decoration: none;
-    margin: 0 20px;
     text-transform: uppercase;
-    
+
 }
+
 /* ========= Heading Typography ========= */
 
 :is(h2,h3,h4){
