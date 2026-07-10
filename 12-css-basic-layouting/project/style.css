@@ -89,6 +89,7 @@ body{
 main{
     width: 90%;
     margin: 40px auto;
+    max-width: 1000px;
 }
 /* ========= Heading Typography ========= */
 
@@ -98,16 +99,13 @@ main{
 /* ============= Stream Card =============== */
 .bio{
     background-color: #1e2e4b;
-    width: 900px;
-    margin: 50px auto;
+    padding: 50px;
+    margin-bottom: 50px;
     border-radius: 15px;
     border: 1px solid #474b53;
-    box-shadow: 0 0 8px 0 rgb(50, 51, 58);
+    box-shadow: 0 5px 30px rgb(0 0 0 / 0.5);
 }
-.bio .content-container{
-    padding: 50px;
-}
-.bio .content-container img{
+.bio img{
     height: 200px;
     width: 200px;
     border: 5px solid rgb(79, 79, 250);
