@@ -137,6 +137,7 @@ main .content .content-wrapper h2{
 
 main .content .content-wrapper .content__paragraph{
     margin-bottom: 20px;
+    line-height: 2;
 }
 main .content .content-wrapper .content__paragraph span{
     font-weight: bold;
