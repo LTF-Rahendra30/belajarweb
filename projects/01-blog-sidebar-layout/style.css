@@ -51,17 +51,41 @@ body{
 .site-header .site-header__nav .nav-list li a{
     text-decoration: none;
     font-weight: bold;
-    color: #3872ef;
+    color: #1c5aab;
 }
 
 
 /* ========== MAIN CONTENT =========== */
 
 main .page-layout{
-    overflow: hidden;
+    overflow: auto;
 }
 /* ------- SIDE BAR ----------- */
 main .sidebar{
     float: left;
     width: 250px;
+    line-height: 2;
+    padding: 20px;
+    border-right: 2px solid #e1e1df;
+    background-color: #FCFCFB;
+}
+
+main .sidebar .sidebar__title{
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #747475;
+}
+
+/* Side bar list */
+main .sidebar .sidebar__list{
+    list-style: none;
+} 
+main .sidebar .sidebar__list li a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #184F95;
+}
+footer{
+    clear: both;
 }
