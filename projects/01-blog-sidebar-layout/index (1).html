@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Article with Sidebar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <h1 class="site-header__title">Nama Blog Gue</h1>
+    <nav class="site-header__nav">
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="#">Home</a></li>
+        <li class="nav-list__item"><a href="#">Articles</a></li>
+        <li class="nav-list__item"><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN WRAPPER: isi sidebar + content -->
+  <main class="page-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2 class="sidebar__title">Kategori</h2>
+      <ul class="sidebar__list">
+        <li class="sidebar__item"><a href="#">Web3</a></li>
+        <li class="sidebar__item"><a href="#">Frontend</a></li>
+        <li class="sidebar__item"><a href="#">Blockchain</a></li>
+      </ul>
+
+      <h2 class="sidebar__title">Artikel Terkait</h2>
+      <ul class="sidebar__list">
+        <li class="sidebar__item"><a href="#">Kenapa Box Model Penting</a></li>
+        <li class="sidebar__item"><a href="#">Float vs Flexbox</a></li>
+      </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <article class="content">
+      <h2 class="content__title">Judul Artikel Blog Lu Disini</h2>
+      <p class="content__meta">Ditulis oleh LTF · 11 Juli 2026</p>
+
+      <p class="content__paragraph">
+        Ini paragraf pembuka artikel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="content__paragraph">
+        Paragraf kedua buat nambah panjang konten, biar keliatan efek float dan wrapping-nya
+        pas lu styling sidebar-nya nanti pake CSS.
+      </p>
+
+      <p class="content__paragraph">
+        Paragraf ketiga, biar makin jelas gimana konten mengalir di sebelah sidebar
+        ketika pake traditional layout dengan float.
+      </p>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p class="site-footer__text">&copy; 2026 Nama Blog Gue. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
