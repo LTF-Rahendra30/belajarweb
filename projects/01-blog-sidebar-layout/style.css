@@ -105,6 +105,7 @@ main .content{
     padding-left: 40px;
 }
 
-main .content .content__paragraph{
-    margin-top: 40px;
+main .content__meta{
+    margin-bottom: 40px;
+    color: #747475;
 }
