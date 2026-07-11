@@ -58,7 +58,9 @@ body{
 /* ========== MAIN CONTENT =========== */
 
 main .page-layout{
-    overflow: auto;
+    /* overflow: hidden; */
+    display: table;
+    width: 100%;
 }
 /* ------- SIDE BAR ----------- */
 main .sidebar{
@@ -67,10 +69,21 @@ main .sidebar{
     line-height: 2;
     padding: 20px;
     border-right: 2px solid #e1e1df;
+    border-bottom: 2px solid #e1e1df;
+    border-radius: 0 0 15px 0 ;
     background-color: #FCFCFB;
     margin-right: 40px;
+    
+    position: sticky;
+    top: 65px;
+
+    display: table-cell;
+    vertical-align: top;
 }
 
+main .sidebar .sidebar__list{
+    margin-bottom: 30px;
+}
 main .sidebar .sidebar__title, main .content .sidebar__title{
     text-transform: uppercase;
     font-size: 18px;
@@ -100,9 +113,9 @@ footer{
 /* ====== MAIN CONTENT ========= */
 main .content{
     background-color: #F8F8F6;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
+    display: table-cell;
+    vertical-align: top;
+    padding: 20px 30px;
 }
 
 /* Content Headline  */
