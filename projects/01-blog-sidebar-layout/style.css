@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F9F9F7;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+:is(h1,h2,h3,h4){
+    font-family: "Montserrat";
+}
