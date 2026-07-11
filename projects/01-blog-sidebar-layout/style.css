@@ -71,7 +71,7 @@ main .sidebar{
     margin-right: 40px;
 }
 
-main .sidebar .sidebar__title{
+main .sidebar .sidebar__title, main .content .sidebar__title{
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 1px;
@@ -95,7 +95,7 @@ footer{
 /* ====== MAIN CONTENT ========= */
 main .content{
     background-color: #F8F8F6;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-right: 40px;
     padding-left: 40px;
 }
