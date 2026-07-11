@@ -53,3 +53,15 @@ body{
     font-weight: bold;
     color: #3872ef;
 }
+
+
+/* ========== MAIN CONTENT =========== */
+
+main .page-layout{
+    overflow: hidden;
+}
+/* ------- SIDE BAR ----------- */
+main .sidebar{
+    float: left;
+    width: 250px;
+}
