@@ -14,8 +14,10 @@ body{
 }
 :is(h1,h2,h3,h4){
     font-family: "Montserrat";
-}
+    font-weight: 700;
 
+}
+/* ============  NAVBAR ============ */
 .site-header{
     background-color: #FCFCFB;
     border-bottom: 2px solid #e1e1df;
@@ -23,4 +25,29 @@ body{
     top: 0;
     position: sticky;
     z-index: 99999;
+    overflow: auto;
+}
+
+/* ======= MAIN HEADLINE ======== */
+.site-header .site-header__title{
+    background: linear-gradient(to right, #111827, #2D1E18);
+    color: transparent;
+    background-clip: text;
+    float: left;
+}
+
+.site-header .site-header__nav{
+    float: right;
+}
+.site-header .site-header__nav .nav-list{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.site-header .site-header__nav .nav-list li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.site-header .site-header__nav .nav-list li a{
+    text-decoration: none;
 }
