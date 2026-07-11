@@ -68,6 +68,7 @@ main .sidebar{
     padding: 20px;
     border-right: 2px solid #e1e1df;
     background-color: #FCFCFB;
+    margin-right: 40px;
 }
 
 main .sidebar .sidebar__title{
@@ -88,4 +89,13 @@ main .sidebar .sidebar__list li a{
 }
 footer{
     clear: both;
+}
+
+
+/* ====== MAIN CONTENT ========= */
+main .content{
+    background-color: #F8F8F6;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
