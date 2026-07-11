@@ -105,7 +105,26 @@ main .content{
     padding-left: 40px;
 }
 
-main .content__meta{
+/* Content Headline  */
+main .content .content-headline{
     margin-bottom: 40px;
+}
+main .content .content-headline .content__meta{
     color: #747475;
+}
+
+/* Content  */
+main .content .content-wrapper{
+    margin-bottom: 80px;
+}
+
+main .content .content-wrapper h2{
+    margin-bottom: 30px;
+}
+
+main .content .content-wrapper .content__paragraph{
+    margin-bottom: 20px;
+}
+main .content .content-wrapper .content__paragraph span{
+    font-weight: bold;
 }
