@@ -74,7 +74,7 @@ main .page-layout{
 /* ------- SIDE BAR ----------- */
 main .sidebar{
     float: left;
-    width: 350px;
+    width: 330px;
     line-height: 2;
     padding: 20px;
     border-right: 2px solid #e1e1df;
@@ -98,6 +98,7 @@ main .sidebar .sidebar__title, main .content .sidebar__title{
     font-size: 18px;
     letter-spacing: 1px;
     color: #747475;
+    font-weight: bold;
 }
 
 /* Side bar list */
@@ -175,6 +176,16 @@ main .content .content-headline .content__meta{
     color: #747475;
 }
 
+/* Head Image */
+main .content .content-headline .head-image{
+    max-width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+main .content .content-headline .head-image img{
+    width: 600px;
+    object-fit: cover;
+}
 /* Content  */
 main .content .content-wrapper{
     margin-bottom: 80px;
