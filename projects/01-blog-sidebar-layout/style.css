@@ -99,6 +99,7 @@ main .sidebar .sidebar__title, main .content .sidebar__title{
     letter-spacing: 1px;
     color: #747475;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 /* Side bar list */
@@ -130,13 +131,25 @@ footer{
 /* ----------- RELATED CATEGORY SIDEBAR CONTENT --------- */
 
 main .sidebar .related-post .related-post-content{
-    background-color: #f3f3f2;
+    background-color: #fcebdd;
     margin-bottom: 20px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     display: table;
+    transition: transform 0.4s ease;
 }
+/* Hover effect */
+main .sidebar .related-post .related-post-content:hover{
+    box-shadow: 0 0 10px 5px rgba(113, 51, 3, 0.2);
+    transform: translateY(-5px);
+    cursor: pointer;
 
+    h4{
+        color: #034498;
+        text-decoration: underline;
+
+    }
+}
 main .sidebar .related-post .related-post-content .content-description{
     display: table-cell;
     vertical-align: top;
@@ -219,7 +232,6 @@ main .populer-post .blog-box{
     overflow: auto;
     margin-right: 15px;
     margin-bottom: 20px;
-    /* border: 1px solid #7e3f0b; */
     transition: transform 0.4s ease;
     
 }
