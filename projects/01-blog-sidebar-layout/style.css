@@ -74,7 +74,7 @@ main .page-layout{
 /* ------- SIDE BAR ----------- */
 main .sidebar{
     float: left;
-    width: 280px;
+    width: 300px;
     line-height: 2;
     padding: 20px;
     border-right: 2px solid #e1e1df;
@@ -126,7 +126,14 @@ footer{
     color: #747475;
 }
 
+/* ----------- RELATED CATEGORY SIDEBAR CONTENT --------- */
 
+main .sidebar .related-post .related-post-content{
+    background-color: #f3f3f2;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
 /* ====== MAIN CONTENT ========= */
 main .content{
     background-color: #F8F8F6;
