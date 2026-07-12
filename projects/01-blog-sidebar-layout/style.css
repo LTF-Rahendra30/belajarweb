@@ -184,6 +184,7 @@ main .content .content-headline .head-image{
 }
 main .content .content-headline .head-image img{
     width: 600px;
+    height: auto;
     object-fit: cover;
 }
 /* Content  */
@@ -206,4 +207,34 @@ main .content .content-wrapper .content__paragraph span{
 
 
 /* ======== RECOMENDATION BLOG SECTION ========= */
+main .populer-post .blog-box{
+    background-color: #e8e8e8;
+    display: inline-block;
+    width: 400px;
+    border-radius: 20px;
+    overflow: auto;
+    margin-right: 10px;
+}
+main .populer-post .blog-box .blog-item{
+    overflow: hidden;
+    
+}
+main .populer-post .blog-item img{
+    width: 150px;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
 
+main .populer-post .blog-item figcaption{
+    padding: 15px;
+}
+
+main .populer-post .blog-item figcaption h4{
+    line-height: normal;
+}
+main .populer-post .blog-item figcaption p{
+    font-size: 15px;
+    line-height: 1.3;
+}
