@@ -207,10 +207,14 @@ main .content .content-wrapper .content__paragraph span{
 
 
 /* ======== RECOMENDATION BLOG SECTION ========= */
+main .populer-post{
+    font-size: 0;
+}
 main .populer-post .blog-box{
-    background-color: #e8e8e8;
+    background-color: #fcebdd;
     display: inline-block;
     width: 400px;
+    vertical-align: top;
     border-radius: 20px;
     overflow: auto;
     margin-right: 10px;
@@ -221,6 +225,7 @@ main .populer-post .blog-box .blog-item{
 }
 main .populer-post .blog-item img{
     width: 150px;
+    height: 150px;
     object-fit: cover;
     float: left;
     margin-right: 20px;
@@ -233,6 +238,8 @@ main .populer-post .blog-item figcaption{
 
 main .populer-post .blog-item figcaption h4{
     line-height: normal;
+    font-size: 15px;
+    margin-bottom: 5px;
 }
 main .populer-post .blog-item figcaption p{
     font-size: 15px;
