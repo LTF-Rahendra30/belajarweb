@@ -76,75 +76,80 @@
           margin-bottom: 20px;
           min-height: 200px;
         }
+
+        /* Try Flex container1 */
+        .container1{
+            display: flex;
+        }
       </style>
 </head>
 
 <body>
     <h1>Mengenal Flexbox Container</h1>
-    
-      <h2>1. display: flex</h2>
-      <p>Secara default (Normal Flow), elemen div menumpuk ke bawah. Begitu kita beri <code>display: flex</code>, mereka
-        langsung berjejer ke samping.</p>
-    
-      <div class="container container1">
-        <div class="box satu">1</div>
-        <div class="box dua">2</div>
-        <div class="box tiga">3</div>
-      </div>
-  
-      <h2>2. flex-direction (Menentukan Sumbu/arah)</h2>
-      <p>Menentukan arah barisan (Main Axis). Ingat: Jika direction berubah, maka fungsi alignment/perataan juga ikut
-        berubah arah!
-      </p>
-  
-      <div class="container container2">
-        <div class="box satu">1</div>
-        <div class="box dua">2</div>
-        <div class="box tiga">3</div>
-      </div>
-  
-      <h2>3. justify-content (Alignment di Main Axis)</h2>
-      <p>Mengatur bagaimana item berbaris di <strong>Main Axis</strong>. Sangat berguna untuk mendistribusikan ruang kosong.
-      </p>
-  
-      <div class="container container3">
-        <div class="box satu">1</div>
-        <div class="box dua">2</div>
-        <div class="box tiga">3</div>
-      </div>
-  
-      <h2>4. gap</h2>
-      <p>Dulu kita butuh <code>margin</code> untuk memisahkan kotak. Sekarang cukup gunakan <code>gap</code> di parent-nya.
-        Kelebihannya: tidak ada margin sisa di item terakhir!</p>
-    
-      <div class="container container4">
-        <div class="box satu">1</div>
-        <div class="box dua">2</div>
-        <div class="box tiga">3</div>
-      </div>
-  
-      <h2>5. align-items (Alignment di Cross Axis)</h2>
-      <p>Mengatur perataan/alignment di <strong>Cross Axis</strong> (tegak lurus dengan arah barisan). Di sini wadah diberi
-        tinggi
-        300px agar terlihat bedanya.</p>
-    
-      <div class="container container5">
-        <div class="box satu">1</div>
-        <div class="box dua">2</div>
-        <div class="box tiga">3</div>
-      </div>
-  
-      <h2>6. flex-wrap & align-content</h2>
-      <p><code>flex-wrap</code> membuat item pindah ke baris baru. Jika sudah ada multi-baris, kita gunakan
-        <code>align-content</code> untuk mengatur jarak antar tumpukan baris tersebut.
-      </p>
-  
-      <div class="container container6">
-        <div class="box satu">1</div>
-        <div class="box dua">2</div>
-        <div class="box tiga">3</div>
-        <div class="box empat">4</div>
-        <div class="box lima">5</div>
-      </div>
+
+    <h2>1. display: flex</h2>
+    <p>Secara default (Normal Flow), elemen div menumpuk ke bawah. Begitu kita beri <code>display: flex</code>, mereka
+      langsung berjejer ke samping.</p>
+
+    <div class="container container1">
+      <div class="box satu">1</div>
+      <div class="box dua">2</div>
+      <div class="box tiga">3</div>
+    </div>
+
+    <h2>2. flex-direction (Menentukan Sumbu/arah)</h2>
+    <p>Menentukan arah barisan (Main Axis). Ingat: Jika direction berubah, maka fungsi alignment/perataan juga ikut
+      berubah arah!
+    </p>
+
+    <div class="container container2">
+      <div class="box satu">1</div>
+      <div class="box dua">2</div>
+      <div class="box tiga">3</div>
+    </div>
+
+    <h2>3. justify-content (Alignment di Main Axis)</h2>
+    <p>Mengatur bagaimana item berbaris di <strong>Main Axis</strong>. Sangat berguna untuk mendistribusikan ruang kosong.
+    </p>
+
+    <div class="container container3">
+      <div class="box satu">1</div>
+      <div class="box dua">2</div>
+      <div class="box tiga">3</div>
+    </div>
+
+    <h2>4. gap</h2>
+    <p>Dulu kita butuh <code>margin</code> untuk memisahkan kotak. Sekarang cukup gunakan <code>gap</code> di parent-nya.
+      Kelebihannya: tidak ada margin sisa di item terakhir!</p>
+
+    <div class="container container4">
+      <div class="box satu">1</div>
+      <div class="box dua">2</div>
+      <div class="box tiga">3</div>
+    </div>
+
+    <h2>5. align-items (Alignment di Cross Axis)</h2>
+    <p>Mengatur perataan/alignment di <strong>Cross Axis</strong> (tegak lurus dengan arah barisan). Di sini wadah diberi
+      tinggi
+      300px agar terlihat bedanya.</p>
+
+    <div class="container container5">
+      <div class="box satu">1</div>
+      <div class="box dua">2</div>
+      <div class="box tiga">3</div>
+    </div>
+
+    <h2>6. flex-wrap & align-content</h2>
+    <p><code>flex-wrap</code> membuat item pindah ke baris baru. Jika sudah ada multi-baris, kita gunakan
+      <code>align-content</code> untuk mengatur jarak antar tumpukan baris tersebut.
+    </p>
+
+    <div class="container container6">
+      <div class="box satu">1</div>
+      <div class="box dua">2</div>
+      <div class="box tiga">3</div>
+      <div class="box empat">4</div>
+      <div class="box lima">5</div>
+    </div>
 
 </html>
