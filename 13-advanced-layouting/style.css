@@ -49,15 +49,23 @@ h2 {
   padding: 20px;
   border-radius: 8px;
   background-color: #f8fafc;
+
 }
 .navbar {
   background-color: #1e293b;
   color: white;
   padding: 15px 25px;
   border-radius: 8px;
+  /* Implementation Flexbox in perent of navbar */
+  display: flex;
+  /* Nav Content to right & head to left */
+  justify-content: space-between;
 }
 .nav-menu {
   list-style: none;
+  /* Displaying Nav item   */
+  display: flex;
+  gap: 15px;
 }
 .nav-menu a {
   color: white;
