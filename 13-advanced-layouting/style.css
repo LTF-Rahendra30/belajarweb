@@ -154,13 +154,22 @@ h2 {
   /* To avatar dosent shrinking  */
   flex-shrink: 0;
 }
-.gallery {}
+
+/* Add flex display & Wrapping flex */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 .gallery-item {
-  height: 150px;
-  background-color: #0ea5e9;
-  border-radius: 6px;
-  color: white;
-  font-weight: bold;
+    /* To flex grow is 1 and basis in 200px */
+    flex-grow: 1;
+    flex-basis: 200px;
+    height: 150px;
+    background-color: #0ea5e9;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
 }
 main {}
 footer {
