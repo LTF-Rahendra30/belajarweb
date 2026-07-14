@@ -277,6 +277,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  flex-grow: 0;
 }
 
 .dashboard__title {
@@ -301,6 +303,7 @@ p {
 
 .dashboard__body {
   display: flex;
+
 }
 
 .dashboard__sidebar {
@@ -308,6 +311,9 @@ p {
   padding: 24px 0;
   border-right: 1px solid #e8eef5;
   background-color: #fafbfc;
+
+  /* Fixed */
+  flex: 0 0 220px;
 }
 
 .sidebar-menu {
