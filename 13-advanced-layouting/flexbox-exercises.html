@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Exercises - 5 Level Progressive Learning</title>
+  <link rel="stylesheet" href="flexbox-exercises.css">
+</head>
+<body>
+
+  <!-- ============================================
+       LEVEL 1: NAVIGATION BAR
+       
+       Konsep yang akan dipelajari:
+       - display: flex (basic flex container)
+       - flex-direction: row (default - horizontal)
+       - justify-content: space-between (spread items horizontally)
+       - align-items: center (vertical center)
+       - gap (space antar items)
+       
+       Tujuan: Buat navbar yang responsive dengan logo di kiri
+               dan navigation items di kanan, semua centered vertikal
+       ============================================ -->
+  <section class="level level-1">
+    <div class="level__header">
+      <h2>Level 1: Navigation Bar</h2>
+      <p class="level__description">
+        Flex container dengan justify-content: space-between + align-items: center.
+        Logo di kiri, nav items di kanan, semua vertikal centered.
+      </p>
+    </div>
+
+    <header class="navbar">
+      <div class="navbar__logo">
+        <span class="logo-icon">W3</span>
+      </div>
+      <nav class="navbar__nav">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Learn</a>
+        <a href="#" class="nav-link">Projects</a>
+        <a href="#" class="nav-link">Contact</a>
+      </nav>
+    </header>
+  </section>
+
+  <!-- ============================================
+       LEVEL 2: HERO SECTION
+       
+       Konsep yang akan dipelajari:
+       - display: flex
+       - justify-content: center (horizontal center)
+       - align-items: center (vertical center)
+       - height: 100vh (full viewport height)
+       - Combining justify + align untuk "perfect centering"
+       
+       Tujuan: Center konten (heading + button) di tengah halaman
+               baik horizontal maupun vertical
+       ============================================ -->
+  <section class="level level-2">
+    <div class="level__header">
+      <h2>Level 2: Hero Section - Centered Content</h2>
+      <p class="level__description">
+        Flex container dengan height: 100vh + justify-content & align-items: center.
+        Semua konten centered perfect di viewport.
+      </p>
+    </div>
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Welcome to Flexbox Mastery</h1>
+        <p class="hero__subtitle">Learn modern CSS layout dengan praktik langsung</p>
+        <button class="hero__button">Get Started</button>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============================================
+       LEVEL 3: CARD GRID
+       
+       Konsep yang akan dipelajari:
+       - display: flex + flex-wrap: wrap (wrap ke row berikutnya)
+       - gap (consistent spacing antar items)
+       - flex: 0 1 300px (flex-basis, width minimum)
+       - flex: 1 (equal width items)
+       - Responsive columns (by changing flex-basis)
+       
+       Tujuan: Build responsive card grid yang otomatis wrap
+               ketika ga ada space, semua card consistent spacing
+       ============================================ -->
+  <section class="level level-3">
+    <div class="level__header">
+      <h2>Level 3: Card Grid - Flex Wrap & Gap</h2>
+      <p class="level__description">
+        Flex container dengan flex-wrap: wrap + gap.
+        Cards otomatis wrap ke row berikutnya. Try resize browser!
+      </p>
+    </div>
+
+    <div class="card-container">
+      <article class="card">
+        <div class="card__image">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="40" fill="#5b7eb3" opacity="0.2"/>
+            <text x="50" y="55" text-anchor="middle" font-size="24" fill="#5b7eb3">1</text>
+          </svg>
+        </div>
+        <h3 class="card__title">Flex Direction</h3>
+        <p class="card__description">Pahami row vs column flex direction dan impactnya terhadap layout.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__image">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" width="60" height="60" fill="#7cb98e" opacity="0.2"/>
+            <text x="50" y="55" text-anchor="middle" font-size="24" fill="#7cb98e">2</text>
+          </svg>
+        </div>
+        <h3 class="card__title">Justify Content</h3>
+        <p class="card__description">Control spacing items secara horizontal dalam flex container.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__image">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="35" fill="#e8a8a8" opacity="0.2"/>
+            <text x="50" y="55" text-anchor="middle" font-size="24" fill="#d9847a">3</text>
+          </svg>
+        </div>
+        <h3 class="card__title">Align Items</h3>
+        <p class="card__description">Vertically align flex items dan pahami baseline alignment.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__image">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="50,20 80,80 20,80" fill="#c9b8a8" opacity="0.2"/>
+            <text x="50" y="60" text-anchor="middle" font-size="24" fill="#a88f75">4</text>
+          </svg>
+        </div>
+        <h3 class="card__title">Flex Wrap</h3>
+        <p class="card__description">Make items wrap ke baris berikutnya ketika tidak ada space.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__image">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" width="60" height="60" fill="#5b7eb3" opacity="0.2"/>
+            <circle cx="50" cy="50" r="20" fill="#5b7eb3" opacity="0.3"/>
+            <text x="50" y="55" text-anchor="middle" font-size="24" fill="#5b7eb3">5</text>
+          </svg>
+        </div>
+        <h3 class="card__title">Gap & Spacing</h3>
+        <p class="card__description">Consistent spacing antar items tanpa perlu margin hacks.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__image">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 30 30 L 70 30 L 70 70 L 30 70 Z" fill="#7cb98e" opacity="0.2"/>
+            <text x="50" y="55" text-anchor="middle" font-size="24" fill="#7cb98e">6</text>
+          </svg>
+        </div>
+        <h3 class="card__title">Flex Basis</h3>
+        <p class="card__description">Set base width items sebelum growing atau shrinking.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LEVEL 4: DASHBOARD LAYOUT (NESTED FLEXBOX)
+       
+       Konsep yang akan dipelajari:
+       - Nested flex containers (flex items yang juga flex container)
+       - flex-grow (how much space item grow)
+       - flex-shrink (how much item shrink)
+       - flex: 1 shortcuts (flex-grow: 1, flex-shrink: 1, flex-basis: 0)
+       - order property (reorder items tanpa ubah HTML)
+       
+       Tujuan: Build complex dashboard dengan:
+               - Header fixed (flex-grow: 0)
+               - Sidebar fixed width (flex: 0 0 200px)
+               - Main content flex-grow (flex: 1)
+               - Inner grid responsive
+       ============================================ -->
+  <section class="level level-4">
+    <div class="level__header">
+      <h2>Level 4: Dashboard Layout - Nested Flexbox</h2>
+      <p class="level__description">
+        Complex layout dengan nested flex containers.
+        Header fixed, sidebar fixed width (200px), main content flex-grow.
+        Inner grid wrap responsively. Multiple flex concepts combined!
+      </p>
+    </div>
+
+    <div class="dashboard">
+      <!-- Dashboard Header -->
+      <header class="dashboard__header">
+        <h3 class="dashboard__title">Analytics Dashboard</h3>
+        <button class="dashboard__btn">+ Add Widget</button>
+      </header>
+
+      <!-- Dashboard Body: Sidebar + Main Content -->
+      <div class="dashboard__body">
+        <!-- Sidebar -->
+        <aside class="dashboard__sidebar">
+          <nav class="sidebar-menu">
+            <a href="#" class="sidebar-menu__item sidebar-menu__item--active">Overview</a>
+            <a href="#" class="sidebar-menu__item">Reports</a>
+            <a href="#" class="sidebar-menu__item">Analytics</a>
+            <a href="#" class="sidebar-menu__item">Settings</a>
+          </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard__content">
+          <!-- Stats Row (flex items) -->
+          <div class="stats-grid">
+            <div class="stat-box">
+              <h4 class="stat-box__label">Total Users</h4>
+              <p class="stat-box__value">12,345</p>
+            </div>
+            <div class="stat-box">
+              <h4 class="stat-box__label">Revenue</h4>
+              <p class="stat-box__value">$45,678</p>
+            </div>
+            <div class="stat-box">
+              <h4 class="stat-box__label">Growth</h4>
+              <p class="stat-box__value">+23%</p>
+            </div>
+            <div class="stat-box">
+              <h4 class="stat-box__label">Active</h4>
+              <p class="stat-box__value">89%</p>
+            </div>
+          </div>
+
+          <!-- Charts Row -->
+          <div class="charts-grid">
+            <div class="chart-item chart-item--large">
+              <h4 class="chart-item__title">Traffic Over Time</h4>
+              <div class="chart-item__placeholder"></div>
+            </div>
+            <div class="chart-item">
+              <h4 class="chart-item__title">Breakdown</h4>
+              <div class="chart-item__placeholder"></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LEVEL 5: RESPONSIVE LAYOUT CHALLENGE
+       
+       Konsep yang akan dipelajari:
+       - Media queries untuk responsive flex
+       - flex-direction: row → column
+       - flex-basis change berdasarkan breakpoint
+       - Reordering dengan order property
+       - Hidden elements dengan flex: 0 0 auto
+       
+       Tujuan: Combine semua concepts dari level 1-4
+               Desktop: horizontal layout
+               Tablet: adjusted columns
+               Mobile: full vertical stack
+               
+       Gunakan DevTools untuk resize dan lihat perubahan layout!
+       ============================================ -->
+  <section class="level level-5">
+    <div class="level__header">
+      <h2>Level 5: Responsive Layout Challenge</h2>
+      <p class="level__description">
+        Combine semua concepts! Desktop: navbar + sidebar + grid.
+        Tablet: adjusted. Mobile: full vertical stack.
+        Buka DevTools (F12) dan resize browser untuk lihat responsive behavior!
+      </p>
+    </div>
+
+    <!-- Responsive Layout Container -->
+    <div class="responsive-layout">
+      <!-- Header -->
+      <header class="resp-header">
+        <div class="resp-header__logo">Responsive</div>
+        <nav class="resp-nav">
+          <a href="#" class="resp-nav__item">Home</a>
+          <a href="#" class="resp-nav__item">Services</a>
+          <a href="#" class="resp-nav__item">Portfolio</a>
+        </nav>
+      </header>
+
+      <!-- Main Content: Sidebar + Grid -->
+      <div class="resp-container">
+        <!-- Sidebar -->
+        <aside class="resp-sidebar">
+          <h3 class="resp-sidebar__title">Categories</h3>
+          <ul class="category-list">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        </aside>
+
+        <!-- Grid -->
+        <main class="resp-grid">
+          <article class="grid-item">
+            <div class="grid-item__image">Featured</div>
+            <h3 class="grid-item__title">Project Alpha</h3>
+            <p class="grid-item__description">Modern web design dengan flexbox layout.</p>
+          </article>
+
+          <article class="grid-item">
+            <div class="grid-item__image">Featured</div>
+            <h3 class="grid-item__title">Project Beta</h3>
+            <p class="grid-item__description">Responsive mobile-first development.</p>
+          </article>
+
+          <article class="grid-item">
+            <div class="grid-item__image">Featured</div>
+            <h3 class="grid-item__title">Project Gamma</h3>
+            <p class="grid-item__description">Interactive user experience design.</p>
+          </article>
+
+          <article class="grid-item">
+            <div class="grid-item__image">Featured</div>
+            <h3 class="grid-item__title">Project Delta</h3>
+            <p class="grid-item__description">Real-time data visualization platform.</p>
+          </article>
+
+          <article class="grid-item">
+            <div class="grid-item__image">Featured</div>
+            <h3 class="grid-item__title">Project Epsilon</h3>
+            <p class="grid-item__description">Cloud-based application architecture.</p>
+          </article>
+
+          <article class="grid-item">
+            <div class="grid-item__image">Featured</div>
+            <h3 class="grid-item__title">Project Zeta</h3>
+            <p class="grid-item__description">Machine learning integration system.</p>
+          </article>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer class="resp-footer">
+        <p>&copy; 2026 Flexbox Learning. All rights reserved.</p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Footer Utama -->
+  <footer class="main-footer">
+    <p>Flexbox Exercises - Progressive Learning dari Level 1 sampai 5</p>
+    <p style="font-size: 12px; color: #999;">Scroll ke atas untuk lihat semua level, atau resize browser untuk responsive behavior di Level 5</p>
+  </footer>
+
+</body>
+</html>
