@@ -1,0 +1,1 @@
+gue pilih C bro, sebelum buat code HTML + CSS nya, tolong buat mockup dulu,dan gunakan desain minimalis & modern,color palete soft, fokus ke displaying layout flexbox (bisa kasih guide lewat komentar), jangan kasih media query & grid kaya sebelumnya, pokoknya gue mau fokus style layout (diluar box model & spacing)
