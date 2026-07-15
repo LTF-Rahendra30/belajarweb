@@ -1,0 +1,537 @@
+/* ============================================================
+   AGENCY.CSS — Pixel Studio
+   
+   COLOR PALETTE:
+   --navy:      #1a1f2e   → text utama, dark surface
+   --slate:     #4a5568   → text sekunder
+   --mist:      #f7f8fc   → background utama
+   --white:     #ffffff   → card surface
+   --blue-soft: #dbeafe   → accent blue muted
+   --blue:      #3b82f6   → accent blue vivid
+   --green-soft:#d1fae5   → accent green muted
+   --green:     #10b981   → accent green vivid
+   --rose-soft: #fce7f3   → accent rose muted
+   --rose:      #f472b6   → accent rose vivid
+   --amber-soft:#fef3c7   → accent amber muted
+   --border:    #e8edf5   → border default
+   
+   NOTE: File ini BELUM include flexbox layout properties!
+   Lu perlu tambahkan sendiri sesuai komentar di HTML.
+   Yang ada di sini: colors, typography, spacing, box-model.
+   ============================================================ */
+
+/* ========== RESET & BASE ========== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navy:       #1a1f2e;
+  --slate:      #4a5568;
+  --mist:       #f7f8fc;
+  --white:      #ffffff;
+  --blue-soft:  #dbeafe;
+  --blue:       #3b82f6;
+  --green-soft: #d1fae5;
+  --green:      #10b981;
+  --rose-soft:  #fce7f3;
+  --rose:       #f472b6;
+  --amber-soft: #fef3c7;
+  --amber:      #f59e0b;
+  --border:     #e8edf5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background-color: var(--mist);
+  color: var(--navy);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ========== SHARED: SECTION LABELS & TITLES ========== */
+
+.section__label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 12px;
+}
+
+.section__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+/* ========== SHARED: BUTTONS ========== */
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.btn--primary {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background-color: #2d3548;
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--navy);
+  border: 1.5px solid var(--border);
+}
+
+.btn--secondary:hover {
+  border-color: var(--navy);
+  background-color: var(--white);
+}
+
+/* ========== NAVBAR ========== */
+
+.navbar {
+  /* FLEXBOX TASK: display flex, justify-content, align-items */
+  padding: 0 60px;
+  height: 72px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__logo {
+  /* flex-shrink: 0 supaya logo ga menyusut */
+  /* FLEXBOX TASK: tambahkan flex-shrink: 0 */
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo__mark {
+  width: 38px;
+  height: 38px;
+  background-color: var(--navy);
+  color: var(--white);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__mark--sm {
+  width: 32px;
+  height: 32px;
+  font-size: 0.7rem;
+}
+
+.logo__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+
+.navbar__nav {
+  /* FLEXBOX TASK: display flex, align-items center, gap */
+  gap: 8px;
+}
+
+.nav__link {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--slate);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav__link:hover {
+  color: var(--navy);
+  background-color: var(--mist);
+}
+
+.nav__link--cta {
+  background-color: var(--navy);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.nav__link--cta:hover {
+  background-color: #2d3548;
+  color: var(--white);
+}
+
+/* ========== HERO ========== */
+
+.hero {
+  /* FLEXBOX TASK: display flex, justify-content center, align-items center */
+  min-height: 90vh;
+  padding: 80px 60px;
+  background-color: var(--mist);
+}
+
+.hero__content {
+  /* FLEXBOX TASK: display flex, flex-direction column, align-items center, gap */
+  text-align: center;
+  max-width: 680px;
+}
+
+.hero__label {
+  display: inline-block;
+  background-color: var(--blue-soft);
+  color: #1d4ed8;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.hero__subtitle {
+  font-size: 1.1rem;
+  color: var(--slate);
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+.hero__actions {
+  /* FLEXBOX TASK: display flex, gap */
+}
+
+/* ========== SERVICES ========== */
+
+.services {
+  padding: 100px 60px;
+  background-color: var(--white);
+}
+
+.services__header {
+  margin-bottom: 60px;
+}
+
+.services__grid {
+  /* FLEXBOX TASK: display flex, gap */
+  /* semua .service-card akan pakai flex: 1 → equal width */
+}
+
+.service-card {
+  /* FLEXBOX TASK: flex: 1 */
+  background-color: var(--mist);
+  border-radius: 16px;
+  padding: 36px 32px;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(26, 31, 46, 0.08);
+}
+
+.service-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.service-card__icon--blue  { background-color: var(--blue-soft); }
+.service-card__icon--green { background-color: var(--green-soft); }
+.service-card__icon--rose  { background-color: var(--rose-soft); }
+
+.service-card__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.service-card__description {
+  font-size: 0.9rem;
+  color: var(--slate);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.service-card__link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--blue);
+  transition: letter-spacing 0.2s ease;
+}
+
+.service-card__link:hover {
+  letter-spacing: 0.02em;
+}
+
+/* ========== FEATURES ========== */
+
+.features {
+  padding: 100px 60px;
+  background-color: var(--mist);
+}
+
+.features__header {
+  margin-bottom: 80px;
+}
+
+.feature {
+  /* FLEXBOX TASK: display flex, align-items center, gap */
+  margin-bottom: 80px;
+}
+
+.feature:last-child {
+  margin-bottom: 0;
+}
+
+.feature--reverse {
+  /* FLEXBOX TASK: flex-direction: row-reverse */
+  /* Ini akan balik urutan visual tanpa ubah HTML */
+}
+
+.feature__image {
+  /* FLEXBOX TASK: flex: 0 0 45% */
+  /* grow: 0 → ga tumbuh */
+  /* shrink: 0 → ga menyusut */
+  /* basis: 45% → selalu 45% width */
+  min-height: 380px;
+  border-radius: 20px;
+}
+
+.feature__image--discover { background-color: var(--blue-soft); }
+.feature__image--design   { background-color: var(--green-soft); }
+.feature__image--build    { background-color: var(--rose-soft); }
+
+.feature__content {
+  /* FLEXBOX TASK: flex: 1 */
+  /* Ambil sisa space setelah image */
+}
+
+.feature__number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--blue);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.feature__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.feature__description {
+  font-size: 0.95rem;
+  color: var(--slate);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  max-width: 480px;
+}
+
+.feature__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature__list li {
+  font-size: 0.875rem;
+  color: var(--slate);
+  padding-left: 20px;
+  position: relative;
+}
+
+.feature__list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-size: 0.8rem;
+}
+
+/* ========== TEAM ========== */
+
+.team {
+  padding: 100px 60px;
+  background-color: var(--white);
+}
+
+.team__header {
+  margin-bottom: 60px;
+}
+
+.team__grid {
+  /* FLEXBOX TASK: display flex, flex-wrap wrap, gap */
+}
+
+.team-card {
+  /* FLEXBOX TASK: flex: 0 1 220px */
+  /* grow: 0   → ga tumbuh lebih besar dari basis */
+  /* shrink: 1 → boleh menyusut */
+  /* basis: 220px → starting width */
+  background-color: var(--mist);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+}
+
+.team-card__avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+
+.team-card__avatar--blue  { background-color: var(--blue-soft);  color: #1d4ed8; }
+.team-card__avatar--green { background-color: var(--green-soft); color: #065f46; }
+.team-card__avatar--rose  { background-color: var(--rose-soft);  color: #9d174d; }
+.team-card__avatar--amber { background-color: var(--amber-soft); color: #92400e; }
+
+.team-card__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.team-card__role {
+  font-size: 0.85rem;
+  color: var(--slate);
+}
+
+/* ========== FOOTER ========== */
+
+.footer {
+  background-color: var(--navy);
+  padding: 80px 60px 40px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__top {
+  /* FLEXBOX TASK: display flex, gap, align-items flex-start */
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 40px;
+}
+
+.footer__brand {
+  /* FLEXBOX TASK: flex: 1.5 → lebih lebar dari kolom lain */
+}
+
+.footer__logo {
+  /* FLEXBOX TASK: display flex, align-items center, gap */
+  margin-bottom: 20px;
+}
+
+.footer__logo .logo__mark {
+  background-color: var(--white);
+  color: var(--navy);
+}
+
+.footer__logo .logo__name {
+  color: var(--white);
+}
+
+.footer__tagline {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 260px;
+}
+
+.footer__col {
+  /* FLEXBOX TASK: flex: 1 → equal width dengan kolom lain */
+}
+
+.footer__col-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__list a {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s ease;
+}
+
+.footer__list a:hover {
+  color: var(--white);
+}
+
+.footer__bottom {
+  /* FLEXBOX TASK: display flex, justify-content space-between, align-items center */
+}
+
+.footer__bottom p {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.35);
+}

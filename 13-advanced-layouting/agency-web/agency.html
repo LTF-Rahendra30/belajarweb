@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Studio — Creative Agency</title>
+  <link rel="stylesheet" href="agency.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       SECTION: NAVBAR
+       
+       STRUKTUR:
+       .navbar (flex container)
+       ├── .navbar__logo     → kiri
+       └── .navbar__nav      → kanan
+           └── .nav__link (multiple)
+       
+       FLEXBOX TASK:
+       .navbar {
+         display: flex;
+         justify-content: space-between; → logo kiri, nav kanan
+         align-items: center;            → semua centered vertikal
+       }
+       
+       .navbar__nav {
+         display: flex;   → nav items horizontal
+         gap: ...px;      → jarak antar link
+       }
+       
+       KONSEP: flex-shrink: 0 pada logo supaya logo
+       tidak menyusut ketika space sempit
+       ============================================================ -->
+  <header class="navbar">
+    <div class="navbar__logo">
+      <span class="logo__mark">PS</span>
+      <span class="logo__name">Pixel Studio</span>
+    </div>
+    <nav class="navbar__nav">
+      <a href="#" class="nav__link">Work</a>
+      <a href="#" class="nav__link">Services</a>
+      <a href="#" class="nav__link">Team</a>
+      <a href="#" class="nav__link nav__link--cta">Get in Touch</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       SECTION: HERO
+       
+       STRUKTUR:
+       .hero (flex container, full height)
+       └── .hero__content (flex container, vertical)
+           ├── .hero__label
+           ├── .hero__title
+           ├── .hero__subtitle
+           └── .hero__actions (flex container)
+               ├── button primary
+               └── button secondary
+       
+       FLEXBOX TASK:
+       .hero {
+         display: flex;
+         justify-content: center;  → horizontal center
+         align-items: center;      → vertical center
+         min-height: 90vh;         → hampir full page
+       }
+       
+       .hero__content {
+         display: flex;
+         flex-direction: column;   → semua stack vertikal
+         align-items: center;      → konten center horizontal
+         gap: ...px;               → jarak antar elemen
+       }
+       
+       .hero__actions {
+         display: flex;
+         gap: ...px;               → jarak antar button
+       }
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__label">Creative Digital Agency</p>
+      <h1 class="hero__title">We build things<br>people remember</h1>
+      <p class="hero__subtitle">
+        Brand identities, web experiences, and digital products
+        crafted for ambitious companies ready to stand out.
+      </p>
+      <div class="hero__actions">
+        <button class="btn btn--primary">See Our Work</button>
+        <button class="btn btn--secondary">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION: SERVICES GRID
+       
+       STRUKTUR:
+       .services (section wrapper)
+       ├── .services__header
+       └── .services__grid (flex container)
+           ├── .service-card  (flex: 1)
+           ├── .service-card  (flex: 1)
+           └── .service-card  (flex: 1)
+       
+       FLEXBOX TASK:
+       .services__grid {
+         display: flex;
+         gap: ...px;  → jarak antar card
+       }
+       
+       .service-card {
+         flex: 1;     → ketiga card sama lebar (equal width)
+                         karena flex-grow: 1 semua dapat jatah sama
+       }
+       
+       KONSEP YANG DIPELAJARI:
+       flex: 1 = flex-grow:1 flex-shrink:1 flex-basis:0
+       Karena grow + basis sama, hasilnya EQUAL WIDTH otomatis.
+       ============================================================ -->
+  <section class="services">
+    <div class="services__header">
+      <p class="section__label">What We Do</p>
+      <h2 class="section__title">Services built<br>for real results</h2>
+    </div>
+    <div class="services__grid">
+      <article class="service-card">
+        <div class="service-card__icon service-card__icon--blue"></div>
+        <h3 class="service-card__title">Brand Identity</h3>
+        <p class="service-card__description">
+          Logo systems, visual languages, and brand guidelines
+          that make your business instantly recognizable.
+        </p>
+        <a href="#" class="service-card__link">Explore →</a>
+      </article>
+      <article class="service-card">
+        <div class="service-card__icon service-card__icon--green"></div>
+        <h3 class="service-card__title">Web Development</h3>
+        <p class="service-card__description">
+          Fast, accessible, and beautifully crafted websites
+          that convert visitors into loyal customers.
+        </p>
+        <a href="#" class="service-card__link">Explore →</a>
+      </article>
+      <article class="service-card">
+        <div class="service-card__icon service-card__icon--rose"></div>
+        <h3 class="service-card__title">Digital Strategy</h3>
+        <p class="service-card__description">
+          Research-backed strategies that align your digital
+          presence with real business goals.
+        </p>
+        <a href="#" class="service-card__link">Explore →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION: FEATURES (Alternating text-image layout)
+       
+       STRUKTUR:
+       .features (section wrapper)
+       ├── .feature (flex container) → image kiri, text kanan
+       │   ├── .feature__image  (flex: 0 0 45%)
+       │   └── .feature__content (flex: 1)
+       │
+       └── .feature.feature--reverse (flex container, reversed)
+           ├── .feature__content (flex: 1)
+           └── .feature__image  (flex: 0 0 45%)
+       
+       FLEXBOX TASK:
+       .feature {
+         display: flex;
+         align-items: center;
+         gap: ...px;
+       }
+       
+       .feature__image {
+         flex: 0 0 45%;  → fixed 45% width, ga grow ga shrink
+       }
+       
+       .feature__content {
+         flex: 1;        → ambil sisa space
+       }
+       
+       .feature--reverse {
+         flex-direction: row-reverse; → balik urutan tanpa ubah HTML!
+       }
+       
+       KONSEP: flex-direction: row-reverse adalah cara paling clean
+       untuk alternate layout tanpa duplikat HTML structure.
+       ============================================================ -->
+  <section class="features">
+    <div class="features__header">
+      <p class="section__label">Our Approach</p>
+      <h2 class="section__title">How we work<br>with you</h2>
+    </div>
+
+    <!-- Feature 1: image kiri, text kanan -->
+    <div class="feature">
+      <div class="feature__image feature__image--discover"></div>
+      <div class="feature__content">
+        <p class="feature__number">01</p>
+        <h3 class="feature__title">Discovery & Research</h3>
+        <p class="feature__description">
+          We start every project by deeply understanding your business,
+          your users, and your competitors. No assumptions, only data
+          and real conversations with the people who matter most.
+        </p>
+        <ul class="feature__list">
+          <li>Stakeholder interviews</li>
+          <li>Competitive analysis</li>
+          <li>User research</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Feature 2: image kanan, text kiri (flex-direction: row-reverse) -->
+    <div class="feature feature--reverse">
+      <div class="feature__image feature__image--design"></div>
+      <div class="feature__content">
+        <p class="feature__number">02</p>
+        <h3 class="feature__title">Design & Prototyping</h3>
+        <p class="feature__description">
+          Ideas become tangible. We build interactive prototypes
+          you can actually click through, so you see the real
+          experience before a single line of code is written.
+        </p>
+        <ul class="feature__list">
+          <li>Wireframing & ideation</li>
+          <li>High-fidelity design</li>
+          <li>Interactive prototypes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Feature 3: image kiri, text kanan -->
+    <div class="feature">
+      <div class="feature__image feature__image--build"></div>
+      <div class="feature__content">
+        <p class="feature__number">03</p>
+        <h3 class="feature__title">Build & Launch</h3>
+        <p class="feature__description">
+          Clean code, solid architecture, and rigorous testing.
+          We ship on time and hand off everything you need to
+          grow independently after launch.
+        </p>
+        <ul class="feature__list">
+          <li>Frontend development</li>
+          <li>Performance optimization</li>
+          <li>Post-launch support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION: TEAM GRID
+       
+       STRUKTUR:
+       .team (section wrapper)
+       ├── .team__header
+       └── .team__grid (flex container, wrap)
+           ├── .team-card (flex: 0 1 220px)
+           ├── .team-card
+           ├── .team-card
+           └── .team-card
+       
+       FLEXBOX TASK:
+       .team__grid {
+         display: flex;
+         flex-wrap: wrap;  → card yang ga muat wrap ke bawah
+         gap: ...px;
+       }
+       
+       .team-card {
+         flex: 0 1 220px;
+         → grow:0  (ga tumbuh lebih besar dari basis)
+         → shrink:1 (boleh menyusut kalau perlu)
+         → basis:220px (starting width tiap card)
+       }
+       
+       KONSEP: Berbeda dari flex: 1 (equal width),
+       flex: 0 1 220px kasih tiap card "natural width" 220px.
+       Mereka ga grow tapi boleh shrink.
+       ============================================================ -->
+  <section class="team">
+    <div class="team__header">
+      <p class="section__label">The People</p>
+      <h2 class="section__title">Team behind<br>the work</h2>
+    </div>
+    <div class="team__grid">
+      <div class="team-card">
+        <div class="team-card__avatar team-card__avatar--blue">AR</div>
+        <h4 class="team-card__name">Arya Ramadhan</h4>
+        <p class="team-card__role">Creative Director</p>
+      </div>
+      <div class="team-card">
+        <div class="team-card__avatar team-card__avatar--green">SN</div>
+        <h4 class="team-card__name">Sinta Nugraha</h4>
+        <p class="team-card__role">Lead Designer</p>
+      </div>
+      <div class="team-card">
+        <div class="team-card__avatar team-card__avatar--rose">DF</div>
+        <h4 class="team-card__name">Dimas Firmansyah</h4>
+        <p class="team-card__role">Frontend Engineer</p>
+      </div>
+      <div class="team-card">
+        <div class="team-card__avatar team-card__avatar--amber">PL</div>
+        <h4 class="team-card__name">Putri Lestari</h4>
+        <p class="team-card__role">Strategy Lead</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION: FOOTER
+       
+       STRUKTUR:
+       .footer (flex container, column)
+       ├── .footer__top (flex container, row)
+       │   ├── .footer__brand (flex: 1.5)
+       │   ├── .footer__col   (flex: 1)
+       │   ├── .footer__col   (flex: 1)
+       │   └── .footer__col   (flex: 1)
+       └── .footer__bottom (flex container, space-between)
+           ├── p copyright
+           └── p credit
+       
+       FLEXBOX TASK:
+       .footer__top {
+         display: flex;
+         gap: ...px;
+       }
+       
+       .footer__brand { flex: 1.5; } → lebih lebar dari kolom lain
+       .footer__col   { flex: 1;   } → equal width
+       
+       .footer__bottom {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+       }
+       
+       KONSEP: flex: 1.5 vs flex: 1 — brand column dapat
+       1.5x lebih banyak space. Ini cara mengatur proporsi kolom.
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="logo__mark logo__mark--sm">PS</span>
+          <span class="logo__name">Pixel Studio</span>
+        </div>
+        <p class="footer__tagline">
+          We build things people remember.
+          Based in Jakarta, working worldwide.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h5 class="footer__col-title">Services</h5>
+        <ul class="footer__list">
+          <li><a href="#">Brand Identity</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Digital Strategy</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5 class="footer__col-title">Company</h5>
+        <ul class="footer__list">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5 class="footer__col-title">Contact</h5>
+        <ul class="footer__list">
+          <li><a href="#">hello@pixelstudio.id</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Pixel Studio. All rights reserved.</p>
+      <p>Built with HTML & CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
