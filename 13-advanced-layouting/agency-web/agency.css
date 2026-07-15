@@ -207,6 +207,10 @@ ul {
 
 .hero {
   /* FLEXBOX TASK: display flex, justify-content center, align-items center */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 90vh;
   padding: 80px 60px;
   background-color: var(--mist);
@@ -214,6 +218,11 @@ ul {
 
 .hero__content {
   /* FLEXBOX TASK: display flex, flex-direction column, align-items center, gap */
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 25px;
+
   text-align: center;
   max-width: 680px;
 }
@@ -247,6 +256,8 @@ ul {
 
 .hero__actions {
   /* FLEXBOX TASK: display flex, gap */
+  display: flex;
+  gap: 12px;
 }
 
 /* ========== SERVICES ========== */
