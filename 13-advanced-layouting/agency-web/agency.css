@@ -508,6 +508,9 @@ ul {
 
 .footer__top {
   /* FLEXBOX TASK: display flex, gap, align-items flex-start */
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 40px;
@@ -515,10 +518,14 @@ ul {
 
 .footer__brand {
   /* FLEXBOX TASK: flex: 1.5 → lebih lebar dari kolom lain */
+  flex: 1.5;
 }
 
 .footer__logo {
   /* FLEXBOX TASK: display flex, align-items center, gap */
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
@@ -540,6 +547,7 @@ ul {
 
 .footer__col {
   /* FLEXBOX TASK: flex: 1 → equal width dengan kolom lain */
+  flex: 1;
 }
 
 .footer__col-title {
@@ -569,6 +577,9 @@ ul {
 
 .footer__bottom {
   /* FLEXBOX TASK: display flex, justify-content space-between, align-items center */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer__bottom p {
