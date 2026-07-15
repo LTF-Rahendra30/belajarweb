@@ -441,6 +441,10 @@ ul {
 }
 
 .team__grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
   /* FLEXBOX TASK: display flex, flex-wrap wrap, gap */
 }
 
@@ -449,6 +453,9 @@ ul {
   /* grow: 0   → ga tumbuh lebih besar dari basis */
   /* shrink: 1 → boleh menyusut */
   /* basis: 220px → starting width */
+  flex: 0 1 220px;
+
+
   background-color: var(--mist);
   border-radius: 16px;
   padding: 32px 24px;
