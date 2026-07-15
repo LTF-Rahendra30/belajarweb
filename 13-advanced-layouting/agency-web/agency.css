@@ -274,10 +274,16 @@ ul {
 .services__grid {
   /* FLEXBOX TASK: display flex, gap */
   /* semua .service-card akan pakai flex: 1 → equal width */
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .service-card {
   /* FLEXBOX TASK: flex: 1 */
+  flex: 1 0 220px;
+
   background-color: var(--mist);
   border-radius: 16px;
   padding: 36px 32px;
