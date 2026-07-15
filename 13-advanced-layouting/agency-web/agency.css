@@ -346,6 +346,9 @@ ul {
 
 .feature {
   /* FLEXBOX TASK: display flex, align-items center, gap */
+  display: flex;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 80px;
 }
 
@@ -356,9 +359,11 @@ ul {
 .feature--reverse {
   /* FLEXBOX TASK: flex-direction: row-reverse */
   /* Ini akan balik urutan visual tanpa ubah HTML */
+  flex-direction:row-reverse;
 }
 
 .feature__image {
+  flex: 0 0 45%;
   /* FLEXBOX TASK: flex: 0 0 45% */
   /* grow: 0 → ga tumbuh */
   /* shrink: 0 → ga menyusut */
@@ -372,6 +377,7 @@ ul {
 .feature__image--build    { background-color: var(--rose-soft); }
 
 .feature__content {
+  flex: 1;
   /* FLEXBOX TASK: flex: 1 */
   /* Ambil sisa space setelah image */
 }
