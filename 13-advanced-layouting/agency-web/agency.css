@@ -124,11 +124,9 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px; 
   
 
-  padding: 0 60px;
-  height: 72px;
+  padding: 20px 60px;
   background-color: var(--white);
   border-bottom: 1px solid var(--border);
   position: sticky;
@@ -139,6 +137,9 @@ ul {
 .navbar__logo {
   /* flex-shrink: 0 supaya logo ga menyusut */
   /* FLEXBOX TASK: tambahkan flex-shrink: 0 */
+  flex-shrink: 0;
+
+
   gap: 10px;
   cursor: pointer;
 }
@@ -171,7 +172,9 @@ ul {
 
 .navbar__nav {
   /* FLEXBOX TASK: display flex, align-items center, gap */
-  gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .nav__link {
@@ -180,12 +183,13 @@ ul {
   font-weight: 500;
   color: var(--slate);
   border-radius: 6px;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
 }
 
 .nav__link:hover {
   color: var(--navy);
   background-color: var(--mist);
+  transform: translateY(-5px);
 }
 
 .nav__link--cta {
@@ -195,7 +199,7 @@ ul {
 }
 
 .nav__link--cta:hover {
-  background-color: #2d3548;
+  background-color: #1f2536;
   color: var(--white);
 }
 
