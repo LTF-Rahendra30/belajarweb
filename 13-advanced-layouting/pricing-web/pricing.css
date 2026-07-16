@@ -378,11 +378,6 @@ ul { list-style: none; padding: 0; }
 }
 
 .pricing-card__features {
-  /* FLEXBOX TASK:
-     display: flex;
-     flex-direction: column;
-     gap: 12px;
-     flex: 1;              → push button ke bawah */
 
   display: flex;
   flex-direction: column;
@@ -392,10 +387,10 @@ ul { list-style: none; padding: 0; }
 }
 
 .feature-item {
-  /* FLEXBOX TASK:
-     display: flex;
-     align-items: center;
-     gap: 10px; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
   font-size: 0.875rem;
   color: var(--ink);
 }
