@@ -101,6 +101,34 @@
         grid-column: start / end;
 
     }
+
+    /* ======== GRID AREA ======= */
+    .container3 {
+        grid-template-areas: 
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+
+        grid-template-columns: 150px 1fr 1fr;
+        gap: 10px;
+    }
+
+    .container3 .header{
+        background-color: #f1c40f;
+        grid-area: header;
+    }
+    .container3 .sidebar{
+        background-color: #3b82f6;
+        grid-area: sidebar;
+    }
+    .container3 .sidebar{
+        background-color: #9b59b6;
+        grid-area: content;
+    }
+    .container3 .footer{
+        background-color: #BADA55;
+        grid-area: footer;
+    }
   </style>
 </head>
 
