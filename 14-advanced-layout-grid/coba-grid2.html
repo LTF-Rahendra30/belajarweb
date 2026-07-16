@@ -75,6 +75,20 @@
       display: grid;
     }
 
+        /* Try Placing Items */
+    .container1{
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+
+    /* From track 1 to track 3*/
+    .container1 .satu{
+        grid-column: 1 / 3;
+    }
+    /* Span grid Item to bottom */
+    .container1 .dua{
+        grid-row: span 2;
+    }
   </style>
 </head>
 
