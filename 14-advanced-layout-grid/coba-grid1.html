@@ -81,6 +81,15 @@
       font-weight: normal;
       line-height: 1.4;
     }
+
+    /* Contaiiner1 */
+    .container1{
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 300px 1fr;
+
+        /* shorthand */
+        grid-template: 300px 1fr / 200px 1fr;
+    }
   </style>
 </head>
 
@@ -90,7 +99,7 @@
   <p>Silakan buka <strong>Inspect Element (F12)</strong>, lalu klik badge <strong>"grid"</strong> pada elemen kontainer
     untuk melihat visualisasi jalurnya.</p>
 
-  <h2>1. Defining Columns (px vs fr)</h2>
+  <h2>1. Defining Columns (px vs fr) & Rows</h2>
 
   <div class="container container1">
     <div class="item satu">200px</div>
