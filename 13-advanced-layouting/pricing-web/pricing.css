@@ -383,6 +383,11 @@ ul { list-style: none; padding: 0; }
      flex-direction: column;
      gap: 12px;
      flex: 1;              → push button ke bawah */
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
   margin-bottom: 32px;
 }
 
