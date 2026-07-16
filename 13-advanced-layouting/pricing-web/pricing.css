@@ -119,10 +119,9 @@ ul { list-style: none; padding: 0; }
 /* ========== NAVBAR ========== */
 
 .navbar {
-  /* FLEXBOX TASK:
-     display: flex;
-     justify-content: space-between;
-     align-items: center; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 60px;
   height: 68px;
   background-color: var(--white);
@@ -133,11 +132,10 @@ ul { list-style: none; padding: 0; }
 }
 
 .navbar__logo {
-  /* FLEXBOX TASK:
-     display: flex;
-     align-items: center;
-     gap: 10px;
-     flex-shrink: 0; */
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  align-items: center;
 }
 
 .logo__mark {
@@ -161,10 +159,9 @@ ul { list-style: none; padding: 0; }
 }
 
 .navbar__nav {
-  /* FLEXBOX TASK:
-     display: flex;
-     align-items: center;
-     gap: 4px; */
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
 .nav__link {
