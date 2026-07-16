@@ -488,16 +488,14 @@ ul { list-style: none; padding: 0; }
 }
 
 .comparison__summary {
-  /* FLEXBOX TASK:
-     flex: 1; */
+  flex: 1;
 }
 
 .summary-card {
-  /* FLEXBOX TASK:
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     gap: 16px; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
   background-color: var(--ghost);
   border-radius: 16px;
   padding: 36px 32px;
