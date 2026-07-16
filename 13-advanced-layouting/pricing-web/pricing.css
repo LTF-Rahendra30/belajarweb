@@ -565,10 +565,9 @@ ul { list-style: none; padding: 0; }
 /* ========== FOOTER ========== */
 
 .footer {
-  /* FLEXBOX TASK:
-     display: flex;
-     justify-content: space-between;
-     align-items: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 28px 60px;
   background-color: var(--ink);
 }
