@@ -82,7 +82,7 @@
       line-height: 1.4;
     }
 
-    /* Contaiiner1 */
+    /* Contaiiner1 COLUM & ROW */
     .container1{
         grid-template-columns: 200px 1fr;
         grid-template-rows: 300px 1fr;
@@ -90,6 +90,18 @@
         /* shorthand */
         grid-template: 300px 1fr / 200px 1fr;
     }
+
+        /* Try Gap */
+    .container2{
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+
+    /* Min content & Max Content */
+    .container3{
+        grid-template-columns: min-content 1fr max-content;
+    }
+
   </style>
 </head>
 
@@ -123,7 +135,7 @@
   <h2>3. min-content & max-content</h2>
 
   <div class="container container3">
-    <div class="item satu text-demo">Kolom Ini Mencoba Mengecil (min-content)</div>
+    <div class="item satu text-demo">Kolom Ini Mencoba Mengecil desentralisasiSysytem (min-content)</div>
     <div class="item dua">Sisa Ruang</div>
     <div class="item tiga text-demo">Kolom Ini Memanjang Mengikuti Teks (max-content)</div>
   </div>
