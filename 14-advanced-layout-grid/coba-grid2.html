@@ -89,6 +89,18 @@
     .container1 .dua{
         grid-row: span 2;
     }
+
+    /* WITH NAMED TRACK GRID */
+    .container2{
+        grid-template-columns: [start]1fr [middle]1fr [end];
+        gap: 10px;
+    }
+
+    /* Span grid item */
+    .container2 .satu{
+        grid-column: start / end;
+
+    }
   </style>
 </head>
 
