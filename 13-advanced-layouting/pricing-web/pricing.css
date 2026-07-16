@@ -293,17 +293,18 @@ ul { list-style: none; padding: 0; }
 }
 
 .pricing__grid {
-  /* FLEXBOX TASK:
-     display: flex;
-     gap: 24px;
-     align-items: stretch; */
+  display: flex;
+  gap: 25px;
+  align-items: stretch;
+  /* justify-content: center; */
+  flex-wrap: wrap;
 }
 
 .pricing-card {
-  /* FLEXBOX TASK:
-     display: flex;
-     flex-direction: column;
-     flex: 1; */
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 250px;
+  
   background-color: var(--white);
   border-radius: 16px;
   padding: 36px 32px;
@@ -350,10 +351,9 @@ ul { list-style: none; padding: 0; }
 }
 
 .pricing-card__price {
-  /* FLEXBOX TASK:
-     display: flex;
-     align-items: flex-end;
-     gap: 4px; */
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
   margin-bottom: 16px;
 }
 
