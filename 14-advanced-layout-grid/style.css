@@ -254,7 +254,7 @@ h2 {
 }
 .blog-featured {
   grid-row: span 2;
-  
+
   background: linear-gradient(160deg, #0f172a 50%, #1e293b);
   color: white;
   border-radius: 10px;
@@ -312,6 +312,9 @@ h2 {
 .photo-gallery {
   display: grid;
   gap: 10px;
+  
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 120px;
 }
 .photo {
   border-radius: 8px;
@@ -321,6 +324,18 @@ h2 {
   color: white;
   font-weight: bold;
   font-size: 0.9rem;
+}
+
+/* To mercenary Photo */
+.photo.tall{
+  grid-row: span 2;
+}
+
+.photo.wide{
+  grid-column: span 2;
+}
+.photo.tall3{
+  grid-row: span 3;
 }
 .photo:nth-child(1) {
   background: linear-gradient(135deg, #7c3aed, #a78bfa);
