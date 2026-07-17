@@ -36,16 +36,22 @@ body{
     top: 0;
 }
 /* Nav Link */
-.site-header .site-navbar .nav-list{
+
+.site-header .site-navbar{
     display: flex;
     align-items: center;
-    flex-direction: row;
-    gap: 24px;
+    gap: 40px;
 }
-.site-header .site-navbar .nav-list .nav-list__item{
+.site-header .site-navbar .nav-list__item{
     font-weight: bold;
     font-size: 1.1rem;
-
+    transition: 0.3s ease;
+}
+.site-header .site-navbar .nav-list__item:hover{
+    background-color: #1AACBD;
+    padding: 4px 6px;
+    border-radius: 10px;
+    
 }
 .site-header .site-title{
     font-size: 1.8em;
