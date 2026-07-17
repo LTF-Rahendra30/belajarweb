@@ -57,8 +57,19 @@ h2 {
 /* ============================================ */
 .page-layout {
   min-height: 300px;
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "sidebar content"
+  "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr min-content;
+
+    gap: 12px;
 }
 .page-layout .pg-header {
+  grid-area: header;
+
   background: #1e293b;
   color: white;
   padding: 15px 20px;
@@ -67,11 +78,14 @@ h2 {
   font-size: 1.1rem;
 }
 .page-layout .pg-sidebar {
+    grid-area: sidebar;
   background: #334155;
   color: #cbd5e1;
   padding: 15px;
   border-radius: 6px;
   font-size: 0.9rem;
+
+
 }
 .page-layout .pg-sidebar ul {
   list-style: none;
@@ -85,22 +99,26 @@ h2 {
   border: none;
 }
 .page-layout .pg-content {
+    grid-area: content;
   background: #f8fafc;
   padding: 20px;
   border-radius: 6px;
   border: 1px solid #e2e8f0;
+
 }
 .page-layout .pg-content h3 {
   color: #1e293b;
   margin-bottom: 10px;
 }
 .page-layout .pg-footer {
+    grid-area: footer;
   background: #0f172a;
   color: #64748b;
   padding: 12px 20px;
   border-radius: 6px;
   font-size: 0.85rem;
   text-align: center;
+
 }
 /* ============================================ */
 /* --- CASE 2: RESPONSIVE CARD GRID ---        */
