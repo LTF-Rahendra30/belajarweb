@@ -365,6 +365,7 @@ h2 {
 /* ============================================ */
 .pricing-grid {
   display: grid;
+  grid-template-columns: repeat(3,1fr);
   gap: 20px;
 }
 .pricing-card {
@@ -374,6 +375,7 @@ h2 {
   text-align: center;
 }
 .pricing-card.popular {
+  transform: scale(1.05);
   border-color: #7c3aed;
   background: linear-gradient(160deg, #1e293b, #111827);
   color: white;
