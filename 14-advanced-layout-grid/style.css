@@ -249,8 +249,12 @@ h2 {
 .blog-layout {
   display: grid;
   gap: 15px;
+
+  grid-template-columns: 2fr 1fr;
 }
 .blog-featured {
+  grid-row: span 2;
+  
   background: linear-gradient(160deg, #0f172a 50%, #1e293b);
   color: white;
   border-radius: 10px;
