@@ -5,7 +5,17 @@
     margin: 0;
     padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
 
+}
 body{
     background: #0f172a;
     color: #cbd5e1;
@@ -13,6 +23,36 @@ body{
     min-width: 100vh;
     line-height: 1.6;
 }
+
+/* =========== NAVBAR & HEADER =========== */
+.site-header{
+    padding: 20px 50px;
+    background-color: #0f192f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+}
+/* Nav Link */
+.site-header .site-navbar .nav-list{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+}
+.site-header .site-navbar .nav-list .nav-list__item{
+    font-weight: bold;
+    font-size: 1.1rem;
+
+}
+.site-header .site-title{
+    font-size: 1.8em;
+    color: #1AACBD;
+}
+
+
 h1{
     font-family: "Poppins",sans-serif;
     color: #fff;
