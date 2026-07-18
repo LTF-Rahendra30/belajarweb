@@ -144,12 +144,31 @@ main .about-section .about-content p{
 }
 
 /* ======= LINEUP ========== */
-
+.lineup-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin: 30px 50px;
+}
 /* ---- CARD ------- */
+.lineup-section .lineup-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
 .lineup-section .lineup-container .artis-card {
-    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 300px;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 20px;
     background-color: #1D293B;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .lineup-section .lineup-container .artis-card .artist-card-title{
     color: #fff;
