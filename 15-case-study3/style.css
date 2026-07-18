@@ -169,6 +169,7 @@ main .about-section .about-content p{
     padding: 30px 20px;
     background-color: #1D293B;
     border-radius: 15px;
+    position: relative;
 }
 .lineup-section .lineup-container .artis-card .artist-card-title{
     color: #fff;
@@ -181,4 +182,15 @@ main .about-section .about-content p{
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #06b6d4;
+}
+
+/* Live Bagde */
+.lineup-section .lineup-container .artis-card .live-badge{
+    padding: 6px 10px;
+    background-color: #fe4a4a;
+    font-weight: bold;
+    border-radius: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
