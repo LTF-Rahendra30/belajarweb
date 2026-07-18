@@ -26,12 +26,13 @@ body{
 
 /* =========== NAVBAR & HEADER =========== */
 .site-header{
-    padding: 20px 50px;
+    padding: 15px 50px;
     background-color: #0f192f;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    width: 100%;
     z-index: 9999;
     top: 0;
 }
@@ -40,6 +41,7 @@ body{
 .site-header .site-navbar{
     display: flex;
     align-items: center;
+    
     gap: 10px;
 }
 .nav-link{
@@ -55,8 +57,9 @@ body{
     
 }
 .site-header .site-title{
+    flex-shrink: 0;
     font-size: 1.8em;
-    color: #1AACBD;
+    color: #18A7C1;
 }
 
 
