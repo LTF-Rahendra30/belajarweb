@@ -23,7 +23,19 @@ body{
     min-width: 100vh;
     line-height: 1.6;
 }
+/* ====== TYPOGRAPHY ===== */
+h1{
+    font-family: "Poppins",sans-serif;
+    color: #fff;
+    font-size: 2.5em;
+}
 
+:is(h2,h3,h4){
+    color:#2FADC7 ;
+    font-size: 1.8em;
+    font-weight: bolder;
+    font-family: "Poppins",sans-serif;
+}
 /* =========== NAVBAR & HEADER =========== */
 .site-header{
     padding: 15px 50px;
@@ -64,11 +76,6 @@ body{
 
 
 /* ============ HERO SECTION ============== */
-h1{
-    font-family: "Poppins",sans-serif;
-    color: #fff;
-    font-size: 2.5em;
-}
 
 .hero-section{
     display: flex;
