@@ -63,7 +63,31 @@ body{
 }
 
 
+/* ============ HERO SECTION ============== */
 h1{
     font-family: "Poppins",sans-serif;
     color: #fff;
+    font-size: 2.5em;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 40px;
+    margin: 30px 20px;
+    background-color: #19294d;
+}
+
+main .hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
 }
