@@ -78,7 +78,9 @@ h1{
     text-align: center;
     padding: 70px 40px;
     margin: 30px 20px;
-    background-color: #19294d;
+    background: linear-gradient(to bottom, #162341,#111a30);
+    border-bottom: 2px solid #172441;
+    border-radius: 10px;
 }
 
 main .hero-content{
@@ -90,4 +92,18 @@ main .hero-content{
     text-align: center;
     width: 100%;
     max-width: 600px;
+}
+
+/* ---- Get ticket Button ----- */
+main .hero-content .hero__ticket__button{
+    padding: 12px 26px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: #03B6D4;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+    transition: 0.3s ease;
+}
+
+main .hero-content .hero__ticket__button:hover{
+    transform: translateY(-3px);
 }
