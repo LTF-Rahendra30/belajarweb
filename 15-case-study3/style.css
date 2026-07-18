@@ -36,6 +36,7 @@ h1{
     font-weight: bolder;
     font-family: "Poppins",sans-serif;
 }
+
 /* =========== NAVBAR & HEADER =========== */
 .site-header{
     padding: 15px 50px;
@@ -144,3 +145,21 @@ main .about-section .about-content p{
 
 /* ======= LINEUP ========== */
 
+/* ---- CARD ------- */
+.lineup-section .lineup-container .artis-card {
+    padding: 10px 20px;
+    background-color: #1D293B;
+    border-radius: 10px;
+}
+.lineup-section .lineup-container .artis-card .artist-card-title{
+    color: #fff;
+    font-size: 1.4em;
+}
+/* Artist Photo */
+.lineup-section .lineup-container .artis-card figure img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #06b6d4;
+}
