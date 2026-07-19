@@ -280,5 +280,5 @@ main .about-section .about-content p{
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 20px;
 }

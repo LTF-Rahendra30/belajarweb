@@ -308,33 +308,38 @@
         <section id="Tickets" class="ticket-section">
             <h2>Ticket</h2>
             <form class="from-container">
-                <label for="nama">Nama: </label>
-                <input type="text" name="nama" id="nama" autocomplete="off" autofocus required>
+                <div class="from-item">
+                    <label for="nama">Nama: </label>
+                    <input type="text" name="nama" id="nama" autocomplete="off" autofocus required>
+                </div>
                 
-
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" autocomplete="off">
-
-
-                <span>Ticket Type: </span>
+                <div class="from-item">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" autocomplete="off">
+                </div>
                 
-
-                <label for="reguler">
-                    <input type="radio" name="tipe-tiket" id="reguler" value="Reguler Rp 500,000">Reguler Rp 500,000
-                </label>
                 
-
-                <label for="vip">
-                    <input type="radio" name="tipe-tiket" id="vip" value="VIP Rp 1,500,000">VIP Rp 1,500,000
-                </label>
+                <div class="from-item">
+                    <span>Ticket Type: </span>                
+                    <label for="reguler">
+                        <input type="radio" name="tipe-tiket" id="reguler" value="Reguler Rp 500,000">Reguler Rp 500,000
+                    </label>
+                    
+                    
+                    <label for="vip">
+                        <input type="radio" name="tipe-tiket" id="vip" value="VIP Rp 1,500,000">VIP Rp 1,500,000
+                    </label>
+                    
+                    
+                    <label for="vvip"></label>
+                    <input type="radio" name="tipe-tiket" id="vvip" value="VVIP Rp 3,000,000">VVIP Rp 3,000,000
+                </div>
+                    
                 
-
-                <label for="vvip"></label>
-                <input type="radio" name="tipe-tiket" id="vvip" value="VVIP Rp 3,000,000">VVIP Rp 3,000,000
-                
-
-                <label for="number-of-ticket">Jumlah Tiket: </label>
-                <input type="number" name="amount" id="number-of-ticket" min="1" max="10">
+                <div class="from-item"> 
+                    <label for="number-of-ticket">Jumlah Tiket: </label>
+                    <input type="number" name="amount" id="number-of-ticket" min="1" max="10">
+                </div>
                 
 
 
