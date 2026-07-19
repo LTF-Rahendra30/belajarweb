@@ -309,39 +309,33 @@
             <h2>Ticket</h2>
             <form class="from-container">
                 <div class="from-item">
-                    <label for="nama">Nama: </label>
+                    <label for="nama" class="label-title">Nama: </label>
                     <input type="text" name="nama" id="nama" autocomplete="off" autofocus required>
                 </div>
                 
                 <div class="from-item">
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" autocomplete="off">
+                    <label for="email" class="label-title">Email: </label>
+                    <input type="email" name="email" id="email" autocomplete="off" required>
                 </div>
                 
                 
                 <div class="from-item">
-                    <span>Ticket Type: </span>                
-                    <label for="reguler">
+                    <span class="label-title">Ticket Type: </span>                
+                    <label for="reguler"  class="type-ticket-form">
                         <input type="radio" name="tipe-tiket" id="reguler" value="Reguler Rp 500,000">Reguler Rp 500,000
                     </label>
                     
                     
-                    <label for="vip">
+                    <label for="vip" class="type-ticket-form">
                         <input type="radio" name="tipe-tiket" id="vip" value="VIP Rp 1,500,000">VIP Rp 1,500,000
                     </label>
                     
                     
-                    <label for="vvip"></label>
-                    <input type="radio" name="tipe-tiket" id="vvip" value="VVIP Rp 3,000,000">VVIP Rp 3,000,000
+                    <label for="vvip" class="type-ticket-form">
+                        <input type="radio" name="tipe-tiket" id="vvip" value="VVIP Rp 3,000,000">VVIP Rp 3,000,000
+                    </label>
                 </div>
                     
-                
-                <div class="from-item"> 
-                    <label for="number-of-ticket">Jumlah Tiket: </label>
-                    <input type="number" name="amount" id="number-of-ticket" min="1" max="10">
-                </div>
-                
-
 
                 <button type="submit">Buy Now!</button>
             </form>

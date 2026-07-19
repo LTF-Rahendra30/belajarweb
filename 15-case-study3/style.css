@@ -277,8 +277,36 @@ main .about-section .about-content p{
 }
 
 .ticket-section .from-container{
-    max-width: 600px;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 40px;
+    background-color: #162341;
+    border-radius: 16px;
+}
+
+.ticket-section .from-container .from-item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.from-container .from-item .type-ticket-form{
+    display: flex;
+    gap: 10px;
+}
+
+/* --- Label title ---- */
+.label-title{
+    font-weight: 600;
+}
+input, textarea{
+    padding: 8px 10px;
+    max-width: 100%;
+    background: #011238;
+    color: #eaeaea;
+    outline: none;
+    border-radius: 8px;
+    font-family: inherit;
+    border: 1px ;
 }
