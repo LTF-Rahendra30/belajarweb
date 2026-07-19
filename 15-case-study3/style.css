@@ -108,12 +108,13 @@ main .hero-content .hero__ticket__button{
     border-radius: 25px;
     font-weight: bold;
     background-color: #03B6D4;
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
     transition: 0.3s ease;
 }
 
 main .hero-content .hero__ticket__button:hover{
     transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
 }
 
 
@@ -170,6 +171,15 @@ main .about-section .about-content p{
     background-color: #1D293B;
     border-radius: 15px;
     position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* ------- Card hover ---- */
+.lineup-section .lineup-container .artis-card:hover{
+    transform: translateY(-4px);
+    border: 1px solid #06b6d4;
+    box-shadow: 4px 6px 10px rgba(47, 173, 251, 0.4);
+    cursor: pointer;
 }
 .lineup-section .lineup-container .artis-card .artist-card-title{
     color: #fff;
