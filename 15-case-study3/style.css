@@ -265,3 +265,20 @@ main .about-section .about-content p{
 
 
 /* ======= FORM ====== */
+
+/* ---Ticket COntainer ---- */
+.ticket-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.ticket-section .from-container{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
