@@ -253,6 +253,12 @@ main .about-section .about-content p{
     color: #111a30;
 }
 
+/* Zebra Color evry tr */
 .schedule-section table tbody tr:nth-child(even){
-    background-color: #273347;
+    background-color: #243147;
+}
+
+.schedule-section table tbody tr:hover{
+    background-color: #243a68;
+    cursor: pointer;
 }
