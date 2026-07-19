@@ -165,7 +165,7 @@ main .about-section .about-content p{
     flex: 0 0 300px;
     text-align: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     padding: 60px 30px 30px 30px;
     background-color: #1D293B;
     border-radius: 15px;
@@ -194,4 +194,15 @@ main .about-section .about-content p{
     position: absolute;
     right: 16px;
     top: 16px;
+}
+/* -------- Genre Capsule ----- */
+.artis-card .genre-container{
+    display: flex;
+    gap: 12px;
+}
+.artis-card .genre-container .genre-capsule{
+    padding: 4px 10px;
+    background-color: #03B6D4;
+    border-radius: 25px;
+    font-weight: bold;
 }
