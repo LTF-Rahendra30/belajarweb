@@ -310,6 +310,8 @@ input, textarea{
     font-family: inherit;
     border: 1px solid rgba(77, 217, 217, 0.2);
 }
+
+
 /*  -- Active Effect -- */
 input:focus, textarea:focus{
     border-color: #4dd9d9;
@@ -333,5 +335,13 @@ input:focus, textarea:focus{
 .ticket-section .buy-button:hover{
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+}
 
+
+/* ====== Gallery Section ========*/
+.gallery-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
 }
