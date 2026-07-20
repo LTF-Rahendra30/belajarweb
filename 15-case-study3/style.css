@@ -378,3 +378,16 @@ input:focus, textarea:focus{
 
 
 /* ========== FOOTER ========= */
+footer{
+    padding: 80px 60px;
+    background-color: #162341;
+}
+
+/* Footer title */
+.footer-title{
+    color: #fff;
+}
+
+footer .footer-contanct-container .contact-item a{
+    color: #03B6D4;
+}
