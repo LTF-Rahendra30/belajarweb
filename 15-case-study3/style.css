@@ -347,3 +347,9 @@ input:focus, textarea:focus{
     gap: 40px;
     align-items: center;
 }
+
+/* Image gallery
+.gallery-card figure img{
+    width: 240px;
+    height: 120px;
+} */
