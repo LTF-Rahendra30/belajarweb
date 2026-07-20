@@ -348,8 +348,8 @@ input:focus, textarea:focus{
     align-items: center;
 }
 
-/* Image gallery
+/* Image gallery */
 .gallery-card figure img{
-    width: 240px;
-    height: 120px;
-} */
+    width: 330px;
+    height: auto;
+}
