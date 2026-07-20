@@ -379,15 +379,29 @@ input:focus, textarea:focus{
 
 /* ========== FOOTER ========= */
 footer{
-    padding: 80px 60px;
+    padding: 40px 30px;
     background-color: #162341;
 }
 
+footer .footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #3c4559;
+}
 /* Footer title */
 .footer-title{
     color: #fff;
 }
 
-footer .footer-contanct-container .contact-item a{
+footer .footer-top a,.footer-contanct-container .footer-title a{
     color: #03B6D4;
+}
+
+/* --- Footer Bottom --- */
+footer .footer-bottom{
+    display: flex;
+    justify-content: center;
 }
