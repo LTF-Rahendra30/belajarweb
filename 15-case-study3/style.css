@@ -379,7 +379,7 @@ input:focus, textarea:focus{
 
 /* ========== FOOTER ========= */
 footer{
-    padding: 50px 100px;
+    padding: 50px 80px;
     background-color: #162341;
 }
 
@@ -393,8 +393,14 @@ footer .footer-top{
     gap: 20px;
 }
 /* Footer Logo*/
+.footer-top .footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .footer-top .footer-logo h2{
     font-size: 1.7em;
+    flex: 1.5;
 }
 
 
@@ -404,6 +410,7 @@ footer .footer-top{
     text-transform: uppercase;
 }
 /* ---- Footer top Link ---- */
+
 .footer-top .footer-link .footer-list{
     display: flex;
     flex-direction: column;
