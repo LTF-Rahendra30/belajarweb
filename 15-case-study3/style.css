@@ -379,13 +379,13 @@ input:focus, textarea:focus{
 
 /* ========== FOOTER ========= */
 footer{
-    padding: 40px 30px;
+    padding: 50px 100px;
     background-color: #162341;
 }
 
 footer .footer-top{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 40px;
     margin-bottom: 40px;
@@ -394,6 +394,7 @@ footer .footer-top{
 /* Footer title */
 .footer-title{
     color: #fff;
+    text-transform: uppercase;
 }
 /* ---- Footer top Link ---- */
 
