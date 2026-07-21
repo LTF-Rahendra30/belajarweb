@@ -419,5 +419,16 @@ footer .footer-top{
 /* --- Footer Bottom --- */
 footer .footer-bottom{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+footer .footer-bottom .footer-legal{
+    display: flex;
+    gap: 14px;
+}
+.footer-bottom .footer-legal a{
+    transition: 0.3s ease;
+    color: #cbd5e1;
+}
+.footer-bottom .footer-legal a:hover{
+    color: #fff;
 }
