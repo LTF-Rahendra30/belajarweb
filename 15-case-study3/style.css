@@ -283,7 +283,7 @@ main .about-section .about-content p{
     min-width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     padding: 40px;
     background-color: #162341;
     border-radius: 16px;
@@ -311,7 +311,7 @@ main .about-section .about-content p{
     outline: none;
     border-radius: 8px;
     font-family: inherit;
-    border: 1px solid rgba(77, 217, 217, 0.2);
+    border: 1px solid rgba(161, 251, 251, 0.371);
 }
 
 
@@ -336,8 +336,9 @@ input:focus, select:focus{
     transition: 0.3s ease;
 }
 .ticket-section .buy-button:hover{
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+    cursor: pointer;
 }
 
 
