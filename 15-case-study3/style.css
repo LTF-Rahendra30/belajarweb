@@ -115,8 +115,9 @@ main .hero-content .hero__ticket__button{
     border-radius: 25px;
     font-weight: bold;
     background-color: #03B6D4;
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 0 20px rgba(2, 104, 213, 0.3);
     transition: 0.3s ease;
+    margin-top: 20px;
 }
 
 main .hero-content .hero__ticket__button:hover{
@@ -139,6 +140,7 @@ main .about-section{
     border-radius: 10px;
     border-bottom: 2px solid #172441;
     border-top: 2px solid #172441;
+    text-indent: 3em;
 }
 
 main .about-section .about-content{
