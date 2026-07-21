@@ -350,7 +350,7 @@ input:focus, textarea:focus{
 
 .gallery-section .gallery-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 25px;
 }
 /* ---- Galery Caed ---- */
@@ -370,6 +370,9 @@ input:focus, textarea:focus{
     object-fit: cover;
     border-radius: 10px;
     overflow: hidden;
+
+    flex: 0 0 45%;
+    min-height: 240px;
 }
 .gallery-card figure img{
     width: 330px;
