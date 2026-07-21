@@ -397,27 +397,7 @@ footer .footer-top{
 }
 /* ---- Footer top Link ---- */
 
-.footer-top .footer-email, .footer-contanct-container{
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-}
 
-/* Footer top item link */
-.medsos-item{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-footer .footer-top a,.footer-contanct-container .footer-title a{
-    color: #03B6D4;
-    transition: transform 0.3s ease;
-}
-/* hover link */
-footer a:hover{
-    font-weight: bold;
-    transform: translateY(-3px);
-}
 /* --- Footer Bottom --- */
 footer .footer-bottom{
     display: flex;
