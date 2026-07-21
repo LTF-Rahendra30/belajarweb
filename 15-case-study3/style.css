@@ -404,8 +404,18 @@ footer .footer-top{
     text-transform: uppercase;
 }
 /* ---- Footer top Link ---- */
-
-
+.footer-top .footer-link .footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-list li a{
+    color: #cbd5e1;
+    transition: 0.3s ease;
+}
+.footer-list li a:hover{
+    color: #03B6D4;
+}
 /* --- Footer Bottom --- */
 footer .footer-bottom{
     display: flex;
