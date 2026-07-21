@@ -247,13 +247,12 @@ main .about-section .about-content p{
 .schedule-section table th,td{
     padding: 14px;
     color: #fcfbfb;
+    border-bottom: 1px solid #334155;
 }
 /* -------- head table ------ */
-.schedule-section table thead{
-    background-color: #04B7D3;
-}
 
 .schedule-section table thead .table-head-content th{
+    background-color: #04B7D3;
     color: #111a30;
 }
 
