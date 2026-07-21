@@ -320,22 +320,18 @@
                 
                 
                 <div class="from-item">
-                    <span class="label-title">Ticket Type: </span>                
-                    <label for="reguler"  class="type-ticket-form">
-                        <input type="radio" name="tipe-tiket" id="reguler" value="Reguler Rp 500,000">Reguler Rp 500,000
-                    </label>
-                    
-                    
-                    <label for="vip" class="type-ticket-form">
-                        <input type="radio" name="tipe-tiket" id="vip" value="VIP Rp 1,500,000">VIP Rp 1,500,000
-                    </label>
-                    
-                    
-                    <label for="vvip" class="type-ticket-form">
-                        <input type="radio" name="tipe-tiket" id="vvip" value="VVIP Rp 3,000,000">VVIP Rp 3,000,000
-                    </label>
+                    <label for="ticket_category">Ticket Category (3 Days Pass)</label>
+                    <select name="ticket_category" id="ticket_category">
+                        <option value="regular">Regular Rp 500.000</option>
+                        <option value="vip">VIP Rp 1.500.000</option>
+                        <option value="vvip">VVIP Rp 3.000.000</option>
+                    </select>
                 </div>
-                    
+                
+                <div class="from-item">
+                    <label for="quantity">Quantity (1-10)</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                </div>
 
                 <button type="submit" class="button buy-button">Buy Now!</button>
             </form>
