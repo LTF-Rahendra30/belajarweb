@@ -303,7 +303,7 @@ main .about-section .about-content p{
 .label-title{
     font-weight: 600;
 }
-input, textarea{
+.from-container input,select{
     padding: 8px 10px;
     max-width: 100%;
     background: #011238;
@@ -316,7 +316,7 @@ input, textarea{
 
 
 /*  -- Active Effect -- */
-input:focus, textarea:focus{
+input:focus, select:focus{
     border-color: #4dd9d9;
     box-shadow: 0 0 10px rgba(77, 217, 217, 0.15);
 }
