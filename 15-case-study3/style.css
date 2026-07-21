@@ -444,3 +444,23 @@ footer .footer-bottom .footer-legal{
 .footer-bottom .footer-legal a:hover{
     color: #fff;
 }
+
+/* ---- Floating Ticket button ------ */
+.flooating-ticket-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #fde047;
+    color: #0f172a;
+    padding: 8px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow:0 4px 10x rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+}
+
+.flooating-ticket-btn:hover{
+    background-color: #facc15;
+    
+}
