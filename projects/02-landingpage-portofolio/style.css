@@ -17,6 +17,10 @@ body {
     font-family: 'Inter', sans-serif;
     color: #1A1A1A;
 }
+
+h2{
+    font-size: 2.4em;
+}
 a{
     text-decoration: none;
 }
@@ -24,7 +28,7 @@ ul{
     list-style: none;
 }
 section{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 /* ============ Header & Navbar ============ */
 
@@ -59,6 +63,7 @@ header .navbar_wrap ul li a{
     font-weight: 500;
     color: #323131;
     padding: 6px 12px;
+    transition: 0.3s ease;
 }
 header .navbar_wrap ul li a:hover{
     color: #0066CC;
@@ -72,7 +77,7 @@ header .navbar_wrap ul li a:hover{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 400px));
     justify-content: center;
-    padding: 20px 100px;
+    padding: 40px 100px;
     gap: 80px;
 }
 h1{
@@ -105,4 +110,31 @@ h1{
 }
 .hero-button:hover{
     background-color: #0251a0;
+}
+
+/* ========= ABOUT SECTION ======== */
+
+.about_section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 400px));
+    justify-content: center;
+    padding:120px  100px;
+    gap: 80px;
+    background-color: #FFFFFF;
+}
+
+/* --- About Content ---- */
+.about_section .about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ---- ABOUT IMAGE --- */
+.about-image{
+    background: linear-gradient(135deg,#F3A6F7,#F77B8E);
+    width: 100%;
+    border-radius: 20px;
+    min-height: 500px;
+
 }
