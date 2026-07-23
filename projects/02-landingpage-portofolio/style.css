@@ -10,6 +10,7 @@ html{
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background-color: #F8FAFC;
+  line-height: 1.6;
 }
 :is(h1,h2,h3,h4){
     font-family: 'Inter', sans-serif;
@@ -40,9 +41,22 @@ header .nav_logo{
     font-weight: bolder;
     font-size: 1.4em;
     letter-spacing: 2px;
+    color: #1a1a1a;
 }
 header .navbar_wrap ul{
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: center;
+    
+}
+header .navbar_wrap ul li a{
+    font-weight: 500;
+    color: #323131;
+    padding: 6px 12px;
+}
+header .navbar_wrap ul li a:hover{
+    color: #0066CC;
+    background-color: #F8FAFC;
+    border-radius: 12px;
 }
