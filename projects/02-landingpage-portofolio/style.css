@@ -155,19 +155,23 @@ h1{
 /* ---- Porto container ---- */
 .portofolio-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit ,minmax(280px,1fr));
     justify-content: center;
-    padding:120px 100px;
-    gap: 20px;
+    padding:30px 60px;
+    gap: 40px;
 }
 /* --- porto card ---- */
 .portofolio-card{
+    box-shadow: 0 0 10px rgba(0,0,0, 0.4);
     border-radius: 20px;
     overflow: hidden;
+}
+.porto-desk{
+    padding: 15px;
 }
 /* --- Porto image --- */
 .portofolio-card .portofolio-image{
     width: 100%;
-    height: 120px;
+    height: 180px;
     background: linear-gradient(135deg,#8495EA,#9171B8);
 }
