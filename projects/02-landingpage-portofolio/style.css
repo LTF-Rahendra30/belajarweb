@@ -161,14 +161,13 @@ h1{
     gap: 20px;
 }
 /* --- porto card ---- */
-/* --- Porto image --- */
-.portofolio-card figure{
-    width: 100%;
-    height: 120px;
+.portofolio-card{
     border-radius: 20px;
     overflow: hidden;
-
 }
+/* --- Porto image --- */
 .portofolio-card .portofolio-image{
+    width: 100%;
+    height: 120px;
     background: linear-gradient(135deg,#8495EA,#9171B8);
 }
